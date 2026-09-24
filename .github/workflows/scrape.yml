@@ -1,0 +1,26 @@
+name: scrape-volley
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 4 * * 1"   # haftada bir PAZARTESI
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install deps
+        run: pip install requests blackboxprotobuf
+      - name: Run scraper
+        run: python scrape.py
+      - name: Upload DB
+        uses: actions/upload-artifact@v4
+        with:
+          name: aiscore_full_db
+          path: aiscore_full.db
+          retention-days: 30
