@@ -16,6 +16,8 @@ jobs:
           python-version: "3.12"
       - name: Install deps
         run: pip install requests blackboxprotobuf
+      - name: Run probe
+        run: python probe.py || true
       - name: Run scraper
         run: python scrape.py
       - name: Upload DB
