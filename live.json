@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-25T23:47:47Z",
+ "generated": "2026-09-25T23:49:29Z",
  "matches": [
   {
    "match_id": "ezk95izy6y8t17n",
@@ -19,11 +19,11 @@
    "league": "None",
    "home": "Costa Rica U23",
    "away": "Dominican Republic U23",
-   "start": "1790384400",
+   "start": "1790377200",
    "status": "434",
    "set_home": 2,
    "set_away": 0,
-   "pt_home": 43,
+   "pt_home": 45,
    "pt_away": 38,
    "odds": {}
   },
@@ -35,9 +35,9 @@
    "start": "1790377200",
    "status": "434",
    "set_home": 0,
-   "set_away": 2,
-   "pt_home": 29,
-   "pt_away": 32,
+   "set_away": 1,
+   "pt_home": 23,
+   "pt_away": 25,
    "odds": {}
   }
  ]
