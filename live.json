@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-25T23:53:22Z",
+ "generated": "2026-09-25T23:55:39Z",
  "matches": [
   {
    "match_id": "ezk95izy6y8t17n",
@@ -12,19 +12,6 @@
    "set_away": 2,
    "pt_home": 38,
    "pt_away": 50,
-   "odds": {}
-  },
-  {
-   "match_id": "edq0yie5p8zte7x",
-   "league": "Pan-American Cup Final Six Women",
-   "home": "Dominican Republic Women",
-   "away": "Cuba Women",
-   "start": "1790373600",
-   "status": "438",
-   "set_home": 2,
-   "set_away": 1,
-   "pt_home": 80,
-   "pt_away": 73,
    "odds": {}
   },
   {
@@ -47,10 +34,10 @@
    "away": "Praia Clube Women",
    "start": "1790377200",
    "status": "434",
-   "set_home": 0,
+   "set_home": 1,
    "set_away": 1,
-   "pt_home": 33,
-   "pt_away": 35,
+   "pt_home": 36,
+   "pt_away": 36,
    "odds": {}
   }
  ]
