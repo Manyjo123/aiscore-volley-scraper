@@ -150,31 +150,27 @@ def main():
     have = [m for m in odds_map if m in cdx]
     metas = {}
     t0 = time.time()
-    ARCH_BUDGET = 540   # saniye siniri
+    ARCH_BUDGET = 420   # saniye siniri
     if have:
-        idx = 0
-        # round-robin is pencerelerini isaretle
         import threading, queue
         q = queue.Queue()
         for m in have: q.put(m)
+        lock = threading.Lock()
         def wkr():
             while True:
                 try: mid = q.get(timeout=2)
                 except queue.Empty: return
                 ts, u = cdx[mid]
                 r = arc_worker(mid, ts, u)
-                if r[1].get("_ok"): metas[r[0]] = r[1]
-        with ThreadPoolExecutor(max_workers=4) as ex:
-            fs = [ex.submit(wkr) for _ in range(4)]
-            while time.time() - t0 < ARCH_BUDGET:
-                time.sleep(5)
-                if q.empty():   # hepsi bitince dur
-                    break
-        # queue'y doldurup worker'lari bitir
-        try:
-            while True: q.get_nowait()
-        except queue.Empty:
-            pass
+                if r[1].get("_ok"):
+                    with lock: metas[r[0]] = r[1]
+        ths = [threading.Thread(target=wkr, daemon=True) for _ in range(4)]
+        for th in ths: th.start()
+        while time.time() - t0 < ARCH_BUDGET:
+            time.sleep(5)
+            with lock:
+                done = q.empty()
+            if done: break
         log("arsiv meta (budget):", len(metas), f"{time.time()-t0:.0f}s")
     else:
         log("arsiv yok")
