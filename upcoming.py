@@ -18,28 +18,22 @@ def b2s(v):
     return s[2:-1] if s.startswith("b'") and s.endswith("'") else s
 
 
-def fix(o, _top=True):
+def fix(o, _top=True, _depth=0):
     """blackbox her zaman tutarli decode etmiyor: bazi field'lar 'str(dict)' olarak
     doner. Bunlari ast.literal_eval ile gercek objeye cevir."""
     if isinstance(o, str):
         s = o.strip()
         if s.startswith("{") or s.startswith("["):
             try:
-                return fix(ast.literal_eval(s), _top=False)
+                return fix(ast.literal_eval(s), _top=False, _depth=_depth + 1)
             except Exception as e:
-                if _top:
-                    print("  literal_eval HATA:", str(e)[:200])
-                    print("  ornek:", s[:150])
-                # fallback: bytes literal'larini (b'...') string'e cevir, tekrar dene
-                fixed = re.sub(r"b'((?:[^'\\]|\\.)*)'", lambda m: "'" + m.group(1) + "'", s)
-                fixed = fixed.replace("'", '"')
-                try:
-                    return fix(json.loads(fixed), _top=False)
-                except Exception:
-                    pass
+                if _depth <= 2:
+                    print("  literal_eval HATA[d%d]:" % _depth, str(e)[:160])
+                    print("  str basi:", s[:200].replace(chr(10), " "))
+                return o
         return o
-    if isinstance(o, list): return [fix(x, _top=False) for x in o]
-    if isinstance(o, dict): return {k: fix(v, _top=False) for k, v in o.items()}
+    if isinstance(o, list): return [fix(x, _top=False, _depth=_depth) for x in o]
+    if isinstance(o, dict): return {k: fix(v, _top=False, _depth=_depth) for k, v in o.items()}
     return o
 
 
