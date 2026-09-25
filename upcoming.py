@@ -101,6 +101,9 @@ def main():
         if not isinstance(src, dict):
             continue
         t15 = src.get("15")
+        if isinstance(t15, str):
+            print("  t15 str ozet:", t15[:400].replace(chr(10), " "))
+            continue
         if not isinstance(t15, dict):
             print("  t15 dict degil:", type(t15).__name__)
             continue
