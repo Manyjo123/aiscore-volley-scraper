@@ -20,6 +20,8 @@ jobs:
         run: python live.py
       - name: Probe live odds
         run: python probe_live_odds.py || true
+      - name: Probe live odds2
+        run: python probe_live_odds2.py || true
       - name: Commit live.json
         run: |
           git config user.name "manyjo-bot"
