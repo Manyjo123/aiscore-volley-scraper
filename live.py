@@ -120,8 +120,12 @@ def get_match_score(mid):
             "away": b2s((mobj.get("7") or {}).get("6"))}
 
 
-def extract_bet365(f15):
+def extract_bet365(msg):
     out = {}
+    try:
+        f15 = msg.get("15")
+    except Exception:
+        return out
     if not isinstance(f15, dict):
         return out
     for mkey, mname in MARKET_NAMES.items():
@@ -144,6 +148,19 @@ def extract_bet365(f15):
                           "current": [b2s(x) for x in cur] if isinstance(cur, list) else [],
                           "company": "bet365"}
     return out
+
+
+def odds_for(mid):
+    """upcoming.py ile kanıtlanmış: /v1/m/api/match/odds/list → extract_bet365."""
+    try:
+        r = requests.get(f"{API}/v1/m/api/match/odds/list?match_id={mid}&code=&platform=1",
+                         headers=HEADERS, timeout=15)
+        if len(r.content) < 100:
+            return {}
+        msg = blackboxprotobuf.decode_message(r.content)[0]
+        return extract_bet365(clean(msg))
+    except Exception:
+        return {}
 
 
 def main():
@@ -184,9 +201,7 @@ def main():
         for s in sets:
             if s[0] > s[1]: sh += 1
             elif s[1] > s[0]: sa += 1
-        is_live = bool(sets) and final is None
-        if m.get("status") in CANLI_STATUS and final is None and sets:
-            is_live = True
+        is_live = bool(sets) and sh < 3 and sa < 3
         hname = (sc or {}).get("home") or teams.get(m.get("home_id"), "")
         aname = (sc or {}).get("away") or teams.get(m.get("away_id"), "")
         lleague = (sc or {}).get("league") or leagues.get(m.get("league_id"), "")
@@ -194,10 +209,7 @@ def main():
             m.get("status"), sets, final, is_live, hname[:14], aname[:14]))
         if not is_live:
             continue
-        odds = {}
-        od = get_proto("/v1/m/api/match/odds/list?match_id=%s&code=&platform=1" % mid, timeout=15)
-        if isinstance(od, dict):
-            odds = extract_bet365(od.get("15", {}).get("1", {}) if isinstance(od.get("15"), dict) else {})
+        odds = odds_for(mid)
         matches.append({
             "match_id": mid,
             "league": lleague,
