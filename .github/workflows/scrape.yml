@@ -18,6 +18,8 @@ jobs:
           python-version: "3.12"
       - name: Install deps
         run: pip install requests blackboxprotobuf
+      - name: Probe endpoints
+        run: python probe_endpoints.py || true
       - name: Run scraper
         run: python scrape.py
         timeout-minutes: 12
