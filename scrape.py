@@ -128,33 +128,44 @@ def main():
     con.execute("""CREATE TABLE IF NOT EXISTS matches(match_id TEXT PRIMARY KEY,
         date TEXT, league TEXT, home TEXT, away TEXT, pt_home INT, pt_away INT,
         bet365_json TEXT)""")
+    existing = {}
+    for r in con.execute("SELECT match_id, date, league, pt_home, bet365_json FROM matches"):
+        existing[r[0]] = (r[1], r[2], r[4])
+    log("DB'de mevcut:", len(existing))
 
     seeds = load_seeds()
     cdx = load_cdx()
-    log("seed:", len(seeds), "cdx:", len(cdx))
     targets = seeds | set(cdx.keys())
+    # zaten odds'lu ve meta'li olanlari atla
+    to_fetch = [m for m in targets if m not in existing]
+    log("yeni hedef:", len(to_fetch), "| mevcut oranli:", sum(1 for v in existing.values() if v[2]))
 
-    # 1) ODDS
+    # 1) ODDS (sadece yeni)
     odds_map = {}
-    with ThreadPoolExecutor(max_workers=25) as ex:
-        futs = {ex.submit(odds_worker, m): m for m in targets}
-        done = 0
-        for fut in as_completed(futs):
-            mid, b = fut.result()
-            if b: odds_map[mid] = b
-            done += 1
-            if done % 400 == 0: log("odds", done, "oranli", len(odds_map))
-    log("odds:", len(odds_map), "/", len(targets))
+    if to_fetch:
+        with ThreadPoolExecutor(max_workers=25) as ex:
+            futs = {ex.submit(odds_worker, m): m for m in to_fetch}
+            done = 0
+            for fut in as_completed(futs):
+                mid, b = fut.result()
+                if b: odds_map[mid] = b
+                done += 1
+                if done % 400 == 0: log("odds", done, "oranli", len(odds_map))
+        log("yeni odds:", len(odds_map), "/", len(to_fetch))
+    else:
+        log("yeni odds yok (hepsi DB'de)")
 
-    # 2) ARSIV HTML (sadece odds'lular, rate-limit'e hassas)
-    have = [m for m in odds_map if m in cdx]
+    # 2) ARSIV (sadece skorsuz/ozetsiz odds'lular)
+    need_meta = [m for m in odds_map if m not in existing] + \
+                [m for m in existing if existing[m][0] == "" and m in cdx]
+    need_meta = list(dict.fromkeys(need_meta))
     metas = {}
     t0 = time.time()
     ARCH_BUDGET = 420   # saniye siniri
-    if have:
+    if need_meta:
         import threading, queue
         q = queue.Queue()
-        for m in have: q.put(m)
+        for m in need_meta: q.put(m)
         lock = threading.Lock()
         def wkr():
             while True:
@@ -173,9 +184,9 @@ def main():
             if done: break
         log("arsiv meta (budget):", len(metas), f"{time.time()-t0:.0f}s")
     else:
-        log("arsiv yok")
+        log("arsiv gereken yok")
 
-    # 3) DB
+    # 3) DB (mevcut + yeni birlestir, arsiv meta'larini uygula)
     mk = {k: 0 for k in MARKET_NAMES.values()}
     n = 0
     for mid, b in odds_map.items():
@@ -189,10 +200,23 @@ def main():
                      pt[1] if len(pt) > 1 else None,
                      json.dumps(b, ensure_ascii=False)))
         n += 1
+    # existing satirlar icin arsiv meta varsa guncelle
+    if metas:
+        for mid, meta in metas.items():
+            cur = con.execute("SELECT date, league FROM matches WHERE match_id=?", (mid,)).fetchone()
+            if not cur: continue
+            if cur[0] or not meta.get("date"): continue  # zaten meta'li
+            pt = meta.get("pt") or [None, None]
+            con.execute("UPDATE matches SET date=?, league=?, home=?, away=?, pt_home=?, pt_away=? WHERE match_id=?",
+                        (meta.get("date", ""), meta.get("league", ""),
+                         meta.get("home", ""), meta.get("away", ""),
+                         pt[0] if len(pt) > 0 else None,
+                         pt[1] if len(pt) > 1 else None, mid))
     con.commit()
     total = con.execute("SELECT COUNT(*) FROM matches").fetchone()[0]
     scored = sum(1 for r in con.execute("SELECT pt_home FROM matches") if r[0] is not None)
-    log(f"DB: new={n} total={total} skorlu={scored} markets={mk}")
+    dated = sum(1 for r in con.execute("SELECT date FROM matches") if r[0])
+    log(f"DB: total={total} skorlu={scored} tarihli={dated} markets={mk}")
     with open("aiscore_full.json", "w", encoding="utf-8") as f:
         json.dump({m: odds_map[m] for m in odds_map}, f, ensure_ascii=False)
     con.close()
