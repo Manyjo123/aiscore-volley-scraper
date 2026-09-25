@@ -21,25 +21,23 @@ def b2s(v):
     return s[2:-1] if s.startswith("b'") and s.endswith("'") else s
 
 
-def resolve(o):
-    """blackbox string-parsed dicts'i gerçek nesneye çevir."""
-    if isinstance(o, str):
-        s = o.strip()
-        if s.startswith("{") or s.startswith("["):
-            try:
-                return resolve(ast.literal_eval(s))
-            except Exception:
-                return o
-        return o
-    if isinstance(o, list): return [resolve(x) for x in o]
-    if isinstance(o, dict): return {k: resolve(v) for k, v in o.items()}
-    return o
-
-
 def clean(o):
     if isinstance(o, dict): return {k: clean(b2s(v)) for k, v in o.items()}
     if isinstance(o, list): return [clean(b2s(v)) for v in o]
     return b2s(o)
+
+
+def nested(o):
+    """Python-repr dict string'lerini gerçek nesneye çevir (probe'da kanıtlanan yol)."""
+    if isinstance(o, dict): return {k: nested(b2s(v)) for k, v in o.items()}
+    if isinstance(o, list): return [nested(b2s(v)) for v in o]
+    s = b2s(o)
+    if s.startswith("{") or s.startswith("["):
+        try:
+            return nested(ast.literal_eval(s))
+        except Exception:
+            return s
+    return s
 
 
 def get_proto(path, timeout=20, _dbg=False):
@@ -60,7 +58,7 @@ def get_proto(path, timeout=20, _dbg=False):
         print("DECODE ERR", path[:40], str(e)[:90])
         return None
     try:
-        return clean(resolve(msg))
+        return nested(msg)
     except Exception as e:
         print("RESOLVE ERR", path[:40], str(e)[:90])
         return None
