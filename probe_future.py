@@ -26,8 +26,8 @@ def clean(o):
 
 
 for name, url in {
-    "future": API + "/v1/web/api/matches/future?lang=tr&sid=2",
-    "today": API + "/v1/web/api/today/matches?sid=2&tz=08:00&lang=tr",
+    "today": API + "/v1/web/api/today/matches?sid=10&tz=08:00&lang=tr",
+    "future": API + "/v1/web/api/matches/future?lang=tr&sid=10",
 }.items():
     try:
         r = requests.get(url, headers=UA, timeout=20)
