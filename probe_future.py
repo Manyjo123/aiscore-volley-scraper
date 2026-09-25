@@ -1,7 +1,6 @@
 import requests
 import blackboxprotobuf
 import json
-import datetime
 import io
 import sys
 
@@ -12,30 +11,31 @@ UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.3
       "Referer": "https://www.aiscore.com/"}
 
 
-def dec(content):
-    try:
-        msg, _ = blackboxprotobuf.decode_message(content)
-        return msg
-    except Exception as e:
-        return {"_err": str(e)}
+def b2s(v):
+    if isinstance(v, bytes):
+        return v.decode("utf-8", "replace")
+    return v
 
 
-def norm(v):
-    s = str(v)
-    return s[2:-1] if s.startswith("b'") and s.endswith("'") else s
+def clean(o):
+    if isinstance(o, dict):
+        return {k: clean(b2s(v)) for k, v in o.items()}
+    if isinstance(o, list):
+        return [clean(b2s(v)) for v in o]
+    return b2s(o)
 
 
-# 1) gelecek maclar
-out = {}
 for name, url in {
     "future": API + "/v1/web/api/matches/future?lang=tr&sid=2",
     "today": API + "/v1/web/api/today/matches?sid=2&tz=08:00&lang=tr",
 }.items():
     try:
         r = requests.get(url, headers=UA, timeout=20)
-        m = dec(r.content)
-        json.dump(m, open(f"probe_{name}.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-        print(f"=== {name}: {len(r.content)} byte -> probe_{name}.json")
-        print(json.dumps(m, ensure_ascii=False)[:1500])
+        msg, _ = blackboxprotobuf.decode_message(r.content)
+        msg = clean(msg)
+        json.dump(msg, open(f"probe_{name}.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        s = json.dumps(msg, ensure_ascii=False)[:1800]
+        print(f"=== {name}: {len(r.content)} byte")
+        print(s)
     except Exception as e:
-        print(name, "ERR", str(e)[:100])
+        print(name, "ERR", str(e)[:150])
