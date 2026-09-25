@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
-"""AiScore voleybol - GitHub Actions: API uzerinden bet365 oranlari.
-Dogrudan erisim: api.aiscore.com (list endpoint yok, HTML 403 ama odds calisiyor).
-seeds.txt'teki tum mac id'leri icin odds. Skor/lig bilgisi yereldeki arsiv HTML'lerinde."""
+"""AiScore voleybol - GitHub Actions TAM PIPELINE.
+1) api.aiscore.com'dan bet365 odds (tum seed'ler)
+2) web.archive.org'dan mac sayfa HTML'leri (rate-limit'e saygi)
+3) NUXT regex parse -> lig/ev/dep/tarih/final skor
+Sonuc -> aiscore_full.db"""
 import signal
 signal.signal(signal.SIGINT, lambda *a: (_ for _ in ()).throw(KeyboardInterrupt()))
-import re, json, time, sqlite3
+import re, json, time, sqlite3, datetime
 import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36"}
 API = "https://api.aiscore.com"
+ARCH = "https://web.archive.org"
 BET365_ID = 2
 MARKET_NAMES = {"1": "AH", "2": "1X2", "3": "OU", "5": "OU2"}
 T0 = time.time()
@@ -46,6 +49,31 @@ def extract_bet365(msg):
                           "company": "bet365"}
     return out
 
+# ---- seeds + cdx listeleri ----
+def load_seeds():
+    seeds = set()
+    for line in open("seeds.txt", encoding="utf-8"):
+        mid = line.split("\t")[0].strip()
+        if re.fullmatch(r"[a-z0-9]{15}", mid): seeds.add(mid)
+    return seeds
+
+def load_cdx():
+    """cdx listelerinden (repo'ya kopyalanmis) mac id -> en guncel snapshot."""
+    best = {}
+    for fn in ["cdx_all.json", "cdx_mobile.json"]:
+        try:
+            rows = json.load(open(fn, encoding="utf-8"))
+        except FileNotFoundError:
+            continue
+        for r in rows[1:]:
+            u = r[0]
+            if "match-" not in u or u.rstrip("/").endswith("/odds"): continue
+            mid = u.rstrip("/").split("/")[-1]
+            if not re.fullmatch(r"[a-z0-9]{15}", mid): continue
+            if mid not in best or r[1] > best[mid][0]:
+                best[mid] = (r[1], u)
+    return best
+
 def odds_worker(mid):
     try:
         r = requests.get(f"{API}/v1/m/api/match/odds/list?match_id={mid}&code=&platform=1",
@@ -55,43 +83,97 @@ def odds_worker(mid):
     except Exception:
         return mid, {}
 
+def parse_meta(html):
+    """Regex ile NUXT icinden meta cikar (JSON islemi gerektirmez)."""
+    out = {}
+    m = re.search(r'"competition":\{"name":"([^"]+)"', html)
+    if m: out["league"] = m.group(1)
+    m = re.search(r'"homeTeam":\{"name":"([^"]+)"', html)
+    if m: out["home"] = m.group(1)
+    m = re.search(r'"awayTeam":\{"name":"([^"]+)"', html)
+    if m: out["away"] = m.group(1)
+    m = re.search(r'"matchTime":(\d{9,11})', html)
+    if m:
+        try:
+            out["date"] = datetime.datetime.fromtimestamp(int(m.group(1))).strftime("%Y-%m-%d")
+        except Exception: pass
+    m = re.search(r'"vbScores":\{[^}]*"pt":\[(\d+),(\d+)\]', html)
+    if m:
+        out["pt"] = [int(m.group(1)), int(m.group(2))]
+    return out
+
+def arc_worker(mid, ts, u):
+    try:
+        r = requests.get(f"{ARCH}/web/{ts}id_/{u}", headers=HEADERS, timeout=60)
+        if r.status_code == 200 and len(r.text) > 8000:
+            meta = parse_meta(r.text)
+            meta["_ok"] = True
+            return mid, meta
+    except Exception:
+        pass
+    return mid, {"_ok": False}
+
 def main():
-    con = sqlite3.connect("aiscore_full.db")
+    db = "aiscore_full.db"
+    con = sqlite3.connect(db)
     con.execute("""CREATE TABLE IF NOT EXISTS matches(match_id TEXT PRIMARY KEY,
         date TEXT, league TEXT, home TEXT, away TEXT, pt_home INT, pt_away INT,
         bet365_json TEXT)""")
-    have = {r[0] for r in con.execute("SELECT match_id FROM matches")}
-    seeds = {}
-    for line in open("seeds.txt", encoding="utf-8"):
-        parts = line.strip().split("\t")
-        mid = parts[0]
-        if re.fullmatch(r"[a-z0-9]{15}", mid) and mid not in have:
-            seeds[mid] = parts[1] if len(parts) > 1 else ""
-    log("hedef (yeni):", len(seeds))
 
+    seeds = load_seeds()
+    cdx = load_cdx()
+    log("seed:", len(seeds), "cdx:", len(cdx))
+    targets = seeds | set(cdx.keys())
+
+    # 1) ODDS
     odds_map = {}
     with ThreadPoolExecutor(max_workers=25) as ex:
-        futs = {ex.submit(odds_worker, m): m for m in seeds}
+        futs = {ex.submit(odds_worker, m): m for m in targets}
         done = 0
         for fut in as_completed(futs):
             mid, b = fut.result()
             if b: odds_map[mid] = b
             done += 1
-            if done % 300 == 0: log("odds", done, "oranli", len(odds_map))
-    log("odds bitti:", len(odds_map), "oranli /", len(seeds), "hedef")
+            if done % 400 == 0: log("odds", done, "oranli", len(odds_map))
+    log("odds:", len(odds_map), "/", len(targets))
 
+    # 2) ARSIV HTML (sadece odds'lular)
+    have = set()
+    for mid in odds_map:
+        if mid in cdx: have.add(mid)
+    metas = {}
+    if have:
+        with ThreadPoolExecutor(max_workers=8) as ex:
+            futs = {ex.submit(arc_worker, m, cdx[m][0], cdx[m][1]): m for m in have}
+            done = 0
+            for fut in as_completed(futs):
+                mid, meta = fut.result()
+                if meta.get("_ok"):
+                    metas[mid] = meta
+                done += 1
+                if done % 100 == 0: log("arc", done, "meta'li", len(metas))
+    log("arsiv meta:", len(metas))
+
+    # 3) DB
+    mk = {k: 0 for k in MARKET_NAMES.values()}
     n = 0
-    markets = {k: 0 for k in MARKET_NAMES.values()}
     for mid, b in odds_map.items():
-        for mk in b: markets[mk] += 1
-        con.execute("INSERT OR REPLACE INTO matches(match_id, bet365_json) VALUES(?,?)",
-                    (mid, json.dumps(b, ensure_ascii=False)))
+        for k in b: mk[k] += 1
+        meta = metas.get(mid, {})
+        pt = meta.get("pt") or [None, None]
+        con.execute("INSERT OR REPLACE INTO matches VALUES(?,?,?,?,?,?,?,?)",
+                    (mid, meta.get("date", ""), meta.get("league", ""),
+                     meta.get("home", ""), meta.get("away", ""),
+                     pt[0] if len(pt) > 0 else None,
+                     pt[1] if len(pt) > 1 else None,
+                     json.dumps(b, ensure_ascii=False)))
         n += 1
     con.commit()
     total = con.execute("SELECT COUNT(*) FROM matches").fetchone()[0]
-    log("DB toplam:", total, "| pazar dagilimi:", dict(markets))
-    with open("odds_dump.json", "w", encoding="utf-8") as f:
-        json.dump(odds_map, f, ensure_ascii=False)
+    scored = sum(1 for r in con.execute("SELECT pt_home FROM matches") if r[0] is not None)
+    log(f"DB: new={n} total={total} skorlu={scored} markets={mk}")
+    with open("aiscore_full.json", "w", encoding="utf-8") as f:
+        json.dump({m: odds_map[m] for m in odds_map}, f, ensure_ascii=False)
     con.close()
 
 if __name__ == "__main__":
