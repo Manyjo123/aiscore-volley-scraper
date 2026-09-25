@@ -18,8 +18,8 @@ jobs:
           python-version: "3.12"
       - name: Install deps
         run: pip install requests blackboxprotobuf
-      - name: Probe endpoints
-        run: python probe_future.py || true
+      - name: Upcoming matches
+        run: python upcoming.py
       - name: Run scraper
         run: python scrape.py
         timeout-minutes: 12
@@ -31,12 +31,13 @@ jobs:
             aiscore_full.db
             probe_future.json
             probe_today.json
+            upcoming.json
           retention-days: 30
       - name: Commit back
         run: |
           git config user.name "manyjo-bot"
           git config user.email "manyjo123@users.noreply.github.com"
-          git add -f aiscore_full.db
+          git add -f aiscore_full.db upcoming.json
           git diff --cached --quiet && echo "no changes" || git commit -m "data $(date -u +%Y%m%d_%H%M)"
           git push https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git main || echo "push failed"
         continue-on-error: true
