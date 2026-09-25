@@ -42,15 +42,27 @@ def clean(o):
     return b2s(o)
 
 
-def get_proto(path, timeout=20):
-    r = requests.get(API + path, headers=HEADERS, timeout=timeout)
+def get_proto(path, timeout=20, _dbg=False):
+    try:
+        r = requests.get(API + path, headers=HEADERS, timeout=timeout)
+    except Exception as e:
+        print("REQ ERR", path[:40], str(e)[:90])
+        return None
     if r.status_code != 200:
+        print("HTTP", r.status_code, path[:40])
         return None
     if len(r.content) < 40:
+        print("SHORT", len(r.content), path[:40])
         return None
     try:
-        return clean(resolve(blackboxprotobuf.decode_message(r.content)[0]))
-    except Exception:
+        msg = blackboxprotobuf.decode_message(r.content)[0]
+    except Exception as e:
+        print("DECODE ERR", path[:40], str(e)[:90])
+        return None
+    try:
+        return clean(resolve(msg))
+    except Exception as e:
+        print("RESOLVE ERR", path[:40], str(e)[:90])
         return None
 
 
