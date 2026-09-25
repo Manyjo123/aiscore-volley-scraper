@@ -24,13 +24,17 @@ def parse15(o):
     return o if isinstance(o, dict) else {}
 
 def score_worker(mid):
-    try:
-        r = requests.get(f"{API}/v1/web/api/match/data?lang=tr&match_id={mid}",
-                         headers=HEADERS, timeout=25)
-        if r.status_code != 200:
-            return mid, {"err": f"HTTP {r.status_code}"}
-        import blackboxprotobuf
-        msg, _ = blackboxprotobuf.decode_message(r.content)
+    import blackboxprotobuf
+    for attempt in range(4):
+        try:
+            r = requests.get(f"{API}/v1/web/api/match/data?lang=tr&match_id={mid}",
+                             headers=HEADERS, timeout=25)
+            if r.status_code == 429:
+                time.sleep(2 * (attempt + 1))
+                continue
+            if r.status_code != 200:
+                return mid, {"err": f"HTTP {r.status_code}"}
+            msg, _ = blackboxprotobuf.decode_message(r.content)
         f15 = parse15(msg.get("15", {}))
         mobj = f15.get("1", {})
         if not isinstance(mobj, dict):
@@ -84,7 +88,7 @@ def main():
     todo = [r[0] for r in con.execute("SELECT match_id FROM matches WHERE pt_home IS NULL")]
     log("skorsuz:", len(todo))
     got, errs, nop = 0, 0, 0
-    with ThreadPoolExecutor(max_workers=20) as ex:
+    with ThreadPoolExecutor(max_workers=8) as ex:
         futs = {ex.submit(score_worker, m): m for m in todo}
         for fut in as_completed(futs):
             mid, o = fut.result()
