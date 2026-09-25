@@ -22,6 +22,8 @@ jobs:
         run: python upcoming.py
       - name: Score API probe
         run: python probe_scores.py || true
+      - name: Data endpoint probe
+        run: python probe_data.py || true
       - name: Run scraper
         run: python scrape.py
         timeout-minutes: 12
