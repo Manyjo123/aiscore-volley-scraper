@@ -14,8 +14,7 @@ MARKET_NAMES = {"1": "AH", "2": "1X2", "3": "OU", "5": "OU2"}
 
 def b2s(v):
     if isinstance(v, bytes): return v.decode("utf-8", "replace")
-    s = str(v)
-    return s[2:-1] if s.startswith("b'") and s.endswith("'") else s
+    return v
 
 
 def fix(o, _top=True, _depth=0):
