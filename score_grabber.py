@@ -34,7 +34,7 @@ def score_worker(mid):
         f15 = parse15(msg.get("15", {}))
         mobj = f15.get("1", {})
         if not isinstance(mobj, dict):
-            return mid, {"err": "no mobj"}
+            return mid, {"err": "no mobj", "f15keys": list(f15.keys())[:8]}
         sets = []
         s6 = None
         vb = mobj.get("108", {})
@@ -50,12 +50,17 @@ def score_worker(mid):
         if sets:
             pt = [sum(s[0] for s in sets), sum(s[1] for s in sets)]
         def nm(d): return (d or {}).get("6")
+        probe = None
+        if not sets:
+            probe = {"has108": "108" in mobj, "has15": "15" in f15,
+                     "keys108": list(mobj.get("108", {}) or {}).keys() if isinstance(mobj.get("108"), dict) else "no108",
+                     "topkeys": list(f15.keys())[:10]}
         return mid, {
             "date": int_to_date(mobj.get("15")),
             "league": b2s(nm(mobj.get("4"))),
             "home": b2s(nm(mobj.get("6"))),
             "away": b2s(nm(mobj.get("7"))),
-            "sets": sets, "setw": s6, "pt": pt,
+            "sets": sets, "setw": s6, "pt": pt, "probe": probe,
         }
     except Exception as e:
         return mid, {"err": str(e)[:80]}
@@ -78,7 +83,7 @@ def main():
         con.execute("ALTER TABLE matches ADD COLUMN sets_json TEXT")
     todo = [r[0] for r in con.execute("SELECT match_id FROM matches WHERE pt_home IS NULL")]
     log("skorsuz:", len(todo))
-    got, errs, filled = 0, 0, 0
+    got, errs, nop = 0, 0, 0
     with ThreadPoolExecutor(max_workers=20) as ex:
         futs = {ex.submit(score_worker, m): m for m in todo}
         for fut in as_completed(futs):
@@ -87,6 +92,10 @@ def main():
                 errs += 1
                 if errs <= 5: log("hata", mid, o["err"])
                 continue
+            if o["probe"]:
+                nop += 1
+                if nop <= 8: log("probe", mid, json.dumps(o["probe"])[:170])
+                continue
             got += 1
             cur = con.execute("SELECT date, home FROM matches WHERE match_id=?", (mid,)).fetchone()
             fillN = lambda old, new: old if old else (new or "")
@@ -94,7 +103,7 @@ def main():
                         (fillN(cur[0], o["date"]), o["league"], fillN(cur[1], o["home"]), o["away"],
                          o["pt"][0], o["pt"][1], json.dumps(o["sets"]) if o["sets"] else None, mid))
     con.commit()
-    log(f"cekildi={got} hata={errs}")
+    log(f"cekildi={got} hata={errs} skorsuz-kalan={nop}")
     # bos meta'lari da doldur (tarih/lig/ev/dep)
     recs = []
     for r in con.execute("SELECT match_id,date,league,home,away,pt_home,pt_away,bet365_json,sets_json FROM matches"):
