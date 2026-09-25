@@ -3,7 +3,7 @@ name: scrape-volley
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 4 * * 1"   # haftada bir PAZARTESI
+    - cron: "0 4 * * *"   # HER GUN 04:00 UTC
 
 jobs:
   scrape:
