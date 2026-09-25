@@ -16,6 +16,8 @@ CANLI_STATUS = {"1", "2", "3", "432", "433", "434", "438"}
 
 
 def b2s(v):
+    if v is None:
+        return ""
     if isinstance(v, bytes): return v.decode("utf-8", "replace")
     s = str(v)
     return s[2:-1] if s.startswith("b'") and s.endswith("'") else s
@@ -120,7 +122,24 @@ def get_match_score(mid):
             "away": b2s((mobj.get("7") or {}).get("6"))}
 
 
+def row_odds(r):
+    """satır dict → oran string. r={"1": [kod, line, oran, 0]}."""
+    try:
+        d = r.get("1")
+        if isinstance(d, dict):
+            d = d.get("1")
+        if isinstance(d, list) and len(d) >= 3:
+            o = str(d[2])
+            if o.replace(".", "").replace(",", "").isdigit():
+                return o
+    except Exception:
+        pass
+    return None
+
+
 def extract_bet365(msg):
+    """15.{market}: {1: evSatır, 2: depSatır, 3: {'1': company}, 4: currentEv}.
+    market2=1X2. oran=[kod,line,oran,0] → [ev,"0",dep,"0"]."""
     out = {}
     try:
         f15 = msg.get("15")
@@ -129,24 +148,29 @@ def extract_bet365(msg):
     if not isinstance(f15, dict):
         return out
     for mkey, mname in MARKET_NAMES.items():
-        entries = f15.get(mkey, [])
-        if isinstance(entries, dict):
-            entries = [entries]
-        if not isinstance(entries, list):
+        m = f15.get(mkey)
+        if not isinstance(m, dict):
             continue
-        for e in entries:
-            try:
-                cid = int(e.get("3", {}).get("1", -1))
-            except Exception:
-                continue
-            if cid != BET365_ID:
-                continue
-            o = e.get("1", {}).get("1", []); c = e.get("2", {}).get("1", [])
-            cur = e.get("4", {}).get("1", [])
-            out[mname] = {"open": [b2s(x) for x in o] if isinstance(o, list) else [],
-                          "close": [b2s(x) for x in c] if isinstance(c, list) else [],
-                          "current": [b2s(x) for x in cur] if isinstance(cur, list) else [],
-                          "company": "bet365"}
+        try:
+            company = int((m.get("3") or {}).get("1", -1))
+        except Exception:
+            company = -1
+        if company != BET365_ID:
+            continue
+        row_home = m.get("1")
+        row_away = m.get("2")
+        cur_home = m.get("4") or row_home
+        if not (isinstance(row_home, dict) and isinstance(row_away, dict)):
+            continue
+        oev, ode, cev = row_odds(row_home), row_odds(row_away), row_odds(cur_home)
+        if not (oev and ode):
+            continue
+        if not cev:
+            cev = oev
+        out[mname] = {"open": [oev, "0", ode, "0"],
+                      "close": [oev, "0", ode, "0"],
+                      "current": [cev, "0", ode, "0"],
+                      "company": "bet365"}
     return out
 
 
@@ -205,8 +229,6 @@ def main():
         hname = (sc or {}).get("home") or teams.get(m.get("home_id"), "")
         aname = (sc or {}).get("away") or teams.get(m.get("away_id"), "")
         lleague = (sc or {}).get("league") or leagues.get(m.get("league_id"), "")
-        print("DBG st=%s sets=%s final=%s live=%s | %s vs %s" % (
-            m.get("status"), sets, final, is_live, hname[:14], aname[:14]))
         if not is_live:
             continue
         odds = odds_for(mid)
