@@ -64,6 +64,62 @@ def get_proto(path, timeout=20, _dbg=False):
         return None
 
 
+def parse15(o):
+    """15 field'i dict veya str(dict literal) olabilir."""
+    if isinstance(o, str):
+        s = o.strip()
+        if s.startswith("{") and s.endswith("}"):
+            try:
+                o = ast.literal_eval(s)
+            except Exception:
+                return {}
+    if isinstance(o, dict):
+        m = o.get("1", {})
+        if isinstance(m, dict):
+            return m
+    return {}
+
+
+def get_match_score(mid):
+    """score_grabber ile kanıtlanmış: match/data → mobj → 108 bytes set skorları.
+    canlı = set var ama final(setw=108.6) yok."""
+    try:
+        for attempt in range(3):
+            r = requests.get(f"{API}/v1/web/api/match/data?lang=tr&match_id={mid}",
+                             headers=HEADERS, timeout=20)
+            if r.status_code == 429:
+                import time as _t
+                _t.sleep(1.0 * (attempt + 1))
+                continue
+            if r.status_code != 200:
+                return None
+            msg, _ = blackboxprotobuf.decode_message(r.content)
+            break
+        else:
+            return None
+    except Exception as e:
+        return None
+    mobj = parse15(msg.get("15", {}))
+    if not mobj:
+        return None
+    vb = mobj.get("108", {})
+    if not isinstance(vb, dict):
+        return None
+    sets = []
+    for k in ("1", "2", "3", "4", "5"):
+        v = vb.get(k)
+        if isinstance(v, bytes) and len(v) >= 2:
+            sets.append([int(v[0]), int(v[1])])
+    s6 = None
+    v6 = vb.get("6")
+    if isinstance(v6, bytes) and len(v6) >= 2:
+        s6 = [int(v6[0]), int(v6[1])]
+    return {"sets": sets, "final": s6,
+            "league": b2s((mobj.get("4") or {}).get("6")),
+            "home": b2s((mobj.get("6") or {}).get("6")),
+            "away": b2s((mobj.get("7") or {}).get("6"))}
+
+
 def extract_bet365(f15):
     out = {}
     if not isinstance(f15, dict):
@@ -121,46 +177,32 @@ def main():
     matches = []
     for m in ml:
         mid = m["match_id"]
-        # 20sn'lik rahat — Actions hızı
-        data = get_proto("/v1/web/api/match/data?lang=tr&match_id=%s" % mid, timeout=15)
-        f = {}
-        if isinstance(data, dict):
-            o15 = data.get("15")
-            if isinstance(o15, dict):
-                f = o15.get("1", {}).get("108", {})
-        # set skorları (bytes listeleri)
-        sets = []
-        for k in ("1", "2", "3", "4", "5", "6"):
-            v = f.get(k)
-            if isinstance(v, list) and len(v) >= 2:
-                sets.append([int(x) for x in v[:2]])
+        sc = get_match_score(mid)
+        sets = sc["sets"] if sc else []
+        final = sc["final"] if sc else None
         sh = sa = 0
         for s in sets:
             if s[0] > s[1]: sh += 1
             elif s[1] > s[0]: sa += 1
-        # net skor alanı (set6 = final setler, ör [3,0])
-        final = None
-        f6 = f.get("6")
-        if isinstance(f6, list) and len(f6) >= 2:
-            final = [int(f6[0]), int(f6[1])]
         is_live = bool(sets) and final is None
         if m.get("status") in CANLI_STATUS and final is None and sets:
             is_live = True
+        hname = (sc or {}).get("home") or teams.get(m.get("home_id"), "")
+        aname = (sc or {}).get("away") or teams.get(m.get("away_id"), "")
+        lleague = (sc or {}).get("league") or leagues.get(m.get("league_id"), "")
         print("DBG st=%s sets=%s final=%s live=%s | %s vs %s" % (
-            m.get("status"), sets, final, is_live,
-            teams.get(m.get("home_id"), "")[:14], teams.get(m.get("away_id"), "")[:14]))
+            m.get("status"), sets, final, is_live, hname[:14], aname[:14]))
         if not is_live:
             continue
-        odds = extract_bet365(data.get("15", {}).get("1", {}) if isinstance(data.get("15"), dict) else {})
-        if not odds:
-            od = get_proto("/v1/m/api/match/odds/list?match_id=%s&code=&platform=1" % mid, timeout=15)
-            if isinstance(od, dict):
-                odds = extract_bet365(od.get("15", {}).get("1", {}) if isinstance(od.get("15"), dict) else {})
+        odds = {}
+        od = get_proto("/v1/m/api/match/odds/list?match_id=%s&code=&platform=1" % mid, timeout=15)
+        if isinstance(od, dict):
+            odds = extract_bet365(od.get("15", {}).get("1", {}) if isinstance(od.get("15"), dict) else {})
         matches.append({
             "match_id": mid,
-            "league": leagues.get(m.get("league_id"), ""),
-            "home": teams.get(m.get("home_id"), ""),
-            "away": teams.get(m.get("away_id"), ""),
+            "league": lleague,
+            "home": hname,
+            "away": aname,
             "start": m.get("start"),
             "status": m.get("status"),
             "set_home": sh, "set_away": sa,
@@ -168,8 +210,7 @@ def main():
             "pt_away": sum(s[1] for s in sets) if sets else 0,
             "odds": odds,
         })
-        print("LIVE", sh, "-", sa, teams.get(m.get("home_id"), "")[:18], "vs",
-              teams.get(m.get("away_id"), "")[:18],
+        print("LIVE", sh, "-", sa, hname[:18], "vs", aname[:18],
               "st=", m.get("status"), "1X2 cur:", odds.get("1X2", {}).get("current"))
         time.sleep(0.3)
 
