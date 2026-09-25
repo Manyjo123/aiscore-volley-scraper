@@ -58,7 +58,8 @@ def load_seeds():
     return seeds
 
 def load_cdx():
-    """cdx listelerinden (repo'ya kopyalanmis) mac id -> en guncel snapshot."""
+    """cdx listelerinden (repo'ya kopyalanmis) mac id -> en guncel snapshot.
+    www (desktop) snapshot'lari mobil (m.) olanlara tercih edilir."""
     best = {}
     for fn in ["cdx_all.json", "cdx_mobile.json"]:
         try:
@@ -70,9 +71,11 @@ def load_cdx():
             if "match-" not in u or u.rstrip("/").endswith("/odds"): continue
             mid = u.rstrip("/").split("/")[-1]
             if not re.fullmatch(r"[a-z0-9]{15}", mid): continue
-            if mid not in best or r[1] > best[mid][0]:
-                best[mid] = (r[1], u)
-    return best
+            cur = best.get(mid)
+            score = (1 if "www." in u else 0, r[1])  # once www, sonra en guncel
+            if cur is None or score > cur[0]:
+                best[mid] = (score, r[1], u)
+    return {m: (v[1], v[2]) for m, v in best.items()}
 
 def odds_worker(mid):
     try:
@@ -100,6 +103,12 @@ def parse_meta(html):
     m = re.search(r'"vbScores":\{[^}]*"pt":\[(\d+),(\d+)\]', html)
     if m:
         out["pt"] = [int(m.group(1)), int(m.group(2))]
+    else:
+        # mobil sayfa: set skorlari rendered HTML'de 'scoreText' divleri
+        pairs = re.findall(r'<div class="col flex-1"><div class="scoreText(?: colorMax)?">\s*(\d+|-)\s*</div> <div class="scoreText(?: colorMax)?">\s*(\d+|-)\s*</div>', html)
+        nums = [(int(a), int(b)) for a, b in pairs if a != '-' and b != '-']
+        if len(nums) >= 2:
+            out["pt"] = [sum(a for a, b in nums), sum(b for a, b in nums)]
     return out
 
 def arc_worker(mid, ts, u):
@@ -161,7 +170,7 @@ def main():
     need_meta = list(dict.fromkeys(need_meta))
     metas = {}
     t0 = time.time()
-    ARCH_BUDGET = 420   # saniye siniri
+    ARCH_BUDGET = 680   # saniye siniri (~11dk)
     if need_meta:
         import threading, queue
         q = queue.Queue()
