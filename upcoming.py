@@ -24,6 +24,10 @@ def clean(o):
     return b2s(o)
 
 
+import re
+MID_RE = re.compile(r"[a-z0-9]{15}")
+
+
 def get_json(name, path):
     url = API + path
     r = requests.get(url, headers=HEADERS, timeout=20)
@@ -31,8 +35,9 @@ def get_json(name, path):
         msg, _ = blackboxprotobuf.decode_message(r.content)
         return clean(msg)
     except Exception as e:
-        print(name, "DECODE ERR", str(e)[:150])
-        return None
+        mids = MID_RE.findall(r.content.decode("latin1", "replace"))
+        print(name, "DECODE ERR (fallback)", str(e)[:120], "| regex mids:", len(set(mids)))
+        return {"15": {"2": [{"1": m} for m in sorted(set(mids))]}}
 
 
 def extract_bet365(msg):
@@ -69,30 +74,45 @@ def main():
 
     teams, mlist = {}, {}
     for src in (today, future):
-        if not src:
+        if not isinstance(src, dict):
             continue
-        t15 = src.get("15", {})
-        for tc in t15.get("3", []):                       # 15.3 takim listesi
-            tid = tc.get("1")
-            if tid:
-                teams.setdefault(tid, tc.get("6") or tc.get("19") or "")
-        for m in t15.get("2", []):                        # 15.2 maclar
-            mid = m.get("1")
-            if not mid:
-                continue
-            mlist.setdefault(mid, {}).update({
-                "home_id": (m.get("6") or {}).get("1"),
-                "away_id": (m.get("7") or {}).get("1"),
-                "league_id": (m.get("4") or {}).get("1"),
-                "start": m.get("15"),
-                "status": m.get("16"),
-            })
+        t15 = src.get("15")
+        if not isinstance(t15, dict):
+            print("  t15 tipi:", type(t15).__name__, repr(t15)[:120])
+            continue
+        t3 = t15.get("3")
+        print("  t3 tipi:", type(t3).__name__, "keys:", list(t15.keys()))
+        if isinstance(t3, dict):
+            t3 = [t3]
+        if isinstance(t3, list):
+            for tc in t3:                       # 15.3 takim listesi
+                tid = tc.get("1") if isinstance(tc, dict) else None
+                if tid:
+                    teams.setdefault(tid, tc.get("6") or tc.get("19") or "")
+        t2 = t15.get("2")
+        if isinstance(t2, dict):
+            t2 = [t2]
+        if isinstance(t2, list):
+            for m in t2:                        # 15.2 maclar
+                mid = m.get("1") if isinstance(m, dict) else None
+                if not mid:
+                    continue
+                mlist.setdefault(mid, {}).update({
+                    "home_id": (m.get("6") or {}).get("1") if isinstance(m.get("6"), dict) else None,
+                    "away_id": (m.get("7") or {}).get("1") if isinstance(m.get("7"), dict) else None,
+                    "league_id": (m.get("4") or {}).get("1") if isinstance(m.get("4"), dict) else None,
+                    "start": m.get("15"),
+                    "status": m.get("16"),
+                })
 
     leagues = {}
-    if today:
-        for lc in today.get("15", {}).get("1", []):
-            if lc.get("1"):
-                leagues[lc["1"]] = lc.get("5", "")
+    if isinstance(today, dict):
+        _l = today.get("15", {}).get("1", []) if isinstance(today.get("15"), dict) else None
+        if isinstance(_l, dict): _l = [_l]
+        if isinstance(_l, list):
+            for lc in _l:
+                if isinstance(lc, dict) and lc.get("1"):
+                    leagues[lc["1"]] = lc.get("5", "")
 
     print(f"takim: {len(teams)} mac: {len(mlist)} lig: {len(leagues)}")
     matches = []
