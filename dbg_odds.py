@@ -4,6 +4,17 @@ import io, sys, requests, json, ast
 import blackboxprotobuf
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
+_log = open("dbg_odds.log", "w", encoding="utf-8")
+_orig_print = print
+
+
+def print(*a, **k):
+    _orig_print(*a, **k)
+    try:
+        _log.write(" ".join(str(x) for x in a) + "\n")
+        _log.flush()
+    except Exception:
+        pass
 API = "https://api.aiscore.com"
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36"}
 BET365_ID = 2
