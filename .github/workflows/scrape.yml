@@ -27,7 +27,10 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: aiscore_full_db
-          path: aiscore_full.db
+          path: |
+            aiscore_full.db
+            probe_future.json
+            probe_today.json
           retention-days: 30
       - name: Commit back
         run: |
