@@ -1,0 +1,28 @@
+name: live-probe
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install deps
+        run: pip install requests blackboxprotobuf
+      - name: Probe live structure
+        run: python probe_live.py || true
+      - name: Upload probe
+        uses: actions/upload-artifact@v4
+        with:
+          name: probe_live_struct
+          path: probe_live_struct.json
+          retention-days: 1
