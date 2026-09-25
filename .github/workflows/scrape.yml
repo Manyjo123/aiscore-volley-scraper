@@ -24,6 +24,9 @@ jobs:
         run: python probe_scores.py || true
       - name: Data endpoint probe
         run: python probe_data.py || true
+      - name: Grab all scores
+        run: python score_grabber.py
+        timeout-minutes: 10
       - name: Run scraper
         run: python scrape.py
         timeout-minutes: 12
@@ -38,6 +41,7 @@ jobs:
             upcoming.json
             dataset.json
             probe_scores.json
+            probe_data_out.json
           retention-days: 30
       - name: Commit back
         run: |
