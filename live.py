@@ -182,7 +182,7 @@ def odds_for(mid):
         if len(r.content) < 100:
             return {}
         msg = blackboxprotobuf.decode_message(r.content)[0]
-        return extract_bet365(clean(msg))
+        return extract_bet365(nested(msg))
     except Exception:
         return {}
 

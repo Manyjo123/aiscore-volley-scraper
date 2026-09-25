@@ -1,5 +1,5 @@
-#!/usr/bin/env python3
-"""Canlı odds extract debug: odds_for sonucunu ve ham dict'i bas."""
+﻿#!/usr/bin/env python3
+"""CanlÄ± odds extract debug: odds_for sonucunu ve ham dict'i bas."""
 import io, sys, requests, json, ast
 import blackboxprotobuf
 
@@ -29,10 +29,16 @@ def b2s(v):
     return s[2:-1] if s.startswith("b'") and s.endswith("'") else s
 
 
-def clean(o):
-    if isinstance(o, dict): return {k: clean(b2s(v)) for k, v in o.items()}
-    if isinstance(o, list): return [clean(b2s(v)) for v in o]
-    return b2s(o)
+def nested(o):
+    if isinstance(o, dict): return {k: nested(b2s(v)) for k, v in o.items()}
+    if isinstance(o, list): return [nested(b2s(v)) for v in o]
+    s = b2s(o)
+    if s.startswith("{") or s.startswith("["):
+        try:
+            return nested(ast.literal_eval(s))
+        except Exception:
+            return s
+    return s
 
 
 def row_odds(r):
@@ -57,7 +63,7 @@ def extract_bet365(msg):
         print("  f15 ERR", str(e)[:60])
         return out
     if not isinstance(f15, dict):
-        print("  f15 dict değil:", type(f15).__name__, "|", str(f15)[:120])
+        print("  f15 dict deÄŸil:", type(f15).__name__, "|", str(f15)[:120])
         return out
     print("  f15 keys:", list(f15.keys()))
     for mkey, mname in MARKET_NAMES.items():
@@ -90,13 +96,13 @@ for mid in ("vmqylio8meoigk9", "9gkldiwopy0amqx"):
     r = requests.get(f"{API}/v1/m/api/match/odds/list?match_id={mid}&code=&platform=1", headers=HEADERS, timeout=20)
     print("HTTP", r.status_code, "len", len(r.content))
     if len(r.content) < 100:
-        print("  çok kısa")
+        print("  Ã§ok kÄ±sa")
         continue
     try:
         msg = blackboxprotobuf.decode_message(r.content)[0]
     except Exception as e:
         print("  DECODE ERR", str(e)[:100])
         continue
-    print("  üst keys:", list(msg.keys()))
-    res = extract_bet365(clean(msg))
-    print("  SONUÇ:", json.dumps(res, ensure_ascii=False))
+    print("  Ã¼st keys:", list(msg.keys()))
+    res = extract_bet365(nested(msg))
+    print("  SONUÃ‡:", json.dumps(res, ensure_ascii=False))
