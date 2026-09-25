@@ -103,14 +103,23 @@ def parse_meta(html):
     return out
 
 def arc_worker(mid, ts, u):
-    try:
-        r = requests.get(f"{ARCH}/web/{ts}id_/{u}", headers=HEADERS, timeout=60)
-        if r.status_code == 200 and len(r.text) > 8000:
-            meta = parse_meta(r.text)
-            meta["_ok"] = True
-            return mid, meta
-    except Exception:
-        pass
+    url = f"{ARCH}/web/{ts}id_/{u}"
+    for attempt in range(6):
+        try:
+            r = requests.get(url, headers=HEADERS, timeout=50)
+            if r.status_code == 200 and len(r.text) > 8000:
+                meta = parse_meta(r.text)
+                meta["_ok"] = True
+                return mid, meta
+            if r.status_code == 429:
+                time.sleep(8 + attempt * 5)   # rate-limit backoff
+                continue
+            if r.status_code in (502, 503, 504):
+                time.sleep(4 + attempt * 3)
+                continue
+            return mid, {"_ok": False}
+        except Exception:
+            time.sleep(3 + attempt * 3)
     return mid, {"_ok": False}
 
 def main():
@@ -137,22 +146,38 @@ def main():
             if done % 400 == 0: log("odds", done, "oranli", len(odds_map))
     log("odds:", len(odds_map), "/", len(targets))
 
-    # 2) ARSIV HTML (sadece odds'lular)
-    have = set()
-    for mid in odds_map:
-        if mid in cdx: have.add(mid)
+    # 2) ARSIV HTML (sadece odds'lular, rate-limit'e hassas)
+    have = [m for m in odds_map if m in cdx]
     metas = {}
+    t0 = time.time()
+    ARCH_BUDGET = 540   # saniye siniri
     if have:
-        with ThreadPoolExecutor(max_workers=8) as ex:
-            futs = {ex.submit(arc_worker, m, cdx[m][0], cdx[m][1]): m for m in have}
-            done = 0
-            for fut in as_completed(futs):
-                mid, meta = fut.result()
-                if meta.get("_ok"):
-                    metas[mid] = meta
-                done += 1
-                if done % 100 == 0: log("arc", done, "meta'li", len(metas))
-    log("arsiv meta:", len(metas))
+        idx = 0
+        # round-robin is pencerelerini isaretle
+        import threading, queue
+        q = queue.Queue()
+        for m in have: q.put(m)
+        def wkr():
+            while True:
+                try: mid = q.get(timeout=2)
+                except queue.Empty: return
+                ts, u = cdx[mid]
+                r = arc_worker(mid, ts, u)
+                if r[1].get("_ok"): metas[r[0]] = r[1]
+        with ThreadPoolExecutor(max_workers=4) as ex:
+            fs = [ex.submit(wkr) for _ in range(4)]
+            while time.time() - t0 < ARCH_BUDGET:
+                time.sleep(5)
+                if q.empty():   # hepsi bitince dur
+                    break
+        # queue'y doldurup worker'lari bitir
+        try:
+            while True: q.get_nowait()
+        except queue.Empty:
+            pass
+        log("arsiv meta (budget):", len(metas), f"{time.time()-t0:.0f}s")
+    else:
+        log("arsiv yok")
 
     # 3) DB
     mk = {k: 0 for k in MARKET_NAMES.values()}
