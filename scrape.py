@@ -228,6 +228,17 @@ def main():
     log(f"DB: total={total} skorlu={scored} tarihli={dated} markets={mk}")
     with open("aiscore_full.json", "w", encoding="utf-8") as f:
         json.dump({m: odds_map[m] for m in odds_map}, f, ensure_ascii=False)
+    # app icin tam DB dump (gelistirme verisi)
+    recs = []
+    for r in con.execute("SELECT match_id,date,league,home,away,pt_home,pt_away,bet365_json FROM matches"):
+        odds = {}
+        try: odds = json.loads(r[7])
+        except Exception: pass
+        recs.append({"id": r[0], "date": r[1], "league": r[2], "home": r[3], "away": r[4],
+                     "pt": [r[5], r[6]] if r[5] is not None else None, "odds": odds})
+    with open("dataset.json", "w", encoding="utf-8") as f:
+        json.dump(recs, f, ensure_ascii=False)
+    log("dataset.json:", len(recs), "kayit")
     con.close()
 
 if __name__ == "__main__":
