@@ -16,9 +16,21 @@ jobs:
           python-version: "3.12"
       - name: Install deps
         run: pip install requests blackboxprotobuf
+      - name: Run copy cdx
+        run: |
+          cp -n /nonexistent 2>/dev/null || true
+      - name: Fetch archive HTML (rate-limit test)
+        run: |
+          python - <<'EOF'
+          import urllib.request
+          r = urllib.request.urlopen("https://web.archive.org/web/20250621id_/https://m.aiscore.com/volleyball/match-aras-kargo-women-sigorta-shop-kalecik-women/wv78givypjmfoqr", timeout=60)
+          b = r.read()
+          print("archive reach from actions:", len(b))
+          EOF
+        timeout-minutes: 3
       - name: Run scraper
         run: python scrape.py
-        timeout-minutes: 15
+        timeout-minutes: 12
       - name: Upload DB
         uses: actions/upload-artifact@v4
         with:
