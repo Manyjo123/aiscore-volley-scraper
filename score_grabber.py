@@ -25,8 +25,8 @@ def parse15(o):
 
 def score_worker(mid):
     import blackboxprotobuf
-    for attempt in range(4):
-        try:
+    try:
+        for attempt in range(4):
             r = requests.get(f"{API}/v1/web/api/match/data?lang=tr&match_id={mid}",
                              headers=HEADERS, timeout=25)
             if r.status_code == 429:
