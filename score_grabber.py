@@ -21,24 +21,31 @@ def parse15(o):
                 o = ast.literal_eval(s)
             except Exception:
                 return {}
-    return o if isinstance(o, dict) else {}
+    if isinstance(o, dict):
+        m = o.get("1", {})
+        if isinstance(m, dict):
+            return m
+    return {}
 
 def score_worker(mid):
     import blackboxprotobuf
     try:
-        for attempt in range(4):
+        msg = None
+        for attempt in range(5):
             r = requests.get(f"{API}/v1/web/api/match/data?lang=tr&match_id={mid}",
                              headers=HEADERS, timeout=25)
             if r.status_code == 429:
-                time.sleep(2 * (attempt + 1))
+                time.sleep(1.5 * (attempt + 1))
                 continue
             if r.status_code != 200:
                 return mid, {"err": f"HTTP {r.status_code}"}
             msg, _ = blackboxprotobuf.decode_message(r.content)
-        f15 = parse15(msg.get("15", {}))
-        mobj = f15.get("1", {})
-        if not isinstance(mobj, dict):
-            return mid, {"err": "no mobj", "f15keys": list(f15.keys())[:8]}
+            break
+        if msg is None:
+            return mid, {"err": "429 retry exhausted"}
+        mobj = parse15(msg.get("15", {}))
+        if not mobj:
+            return mid, {"err": "no mobj"}
         sets = []
         s6 = None
         vb = mobj.get("108", {})
@@ -56,9 +63,9 @@ def score_worker(mid):
         def nm(d): return (d or {}).get("6")
         probe = None
         if not sets:
-            probe = {"has108": "108" in mobj, "has15": "15" in f15,
-                     "keys108": list(mobj.get("108", {}) or {}).keys() if isinstance(mobj.get("108"), dict) else "no108",
-                     "topkeys": list(f15.keys())[:10]}
+            probe = {"has108": "108" in mobj, "keys108":
+                     list(mobj.get("108", {}).keys()) if isinstance(mobj.get("108"), dict) else "no108",
+                     "topkeys": list(mobj.keys())[:10]}
         return mid, {
             "date": int_to_date(mobj.get("15")),
             "league": b2s(nm(mobj.get("4"))),

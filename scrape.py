@@ -137,6 +137,9 @@ def main():
     con.execute("""CREATE TABLE IF NOT EXISTS matches(match_id TEXT PRIMARY KEY,
         date TEXT, league TEXT, home TEXT, away TEXT, pt_home INT, pt_away INT,
         bet365_json TEXT)""")
+    cols = [r[1] for r in con.execute("PRAGMA table_info(matches)")]
+    if "sets_json" not in cols:
+        con.execute("ALTER TABLE matches ADD COLUMN sets_json TEXT")
     existing = {}
     for r in con.execute("SELECT match_id, date, league, pt_home, bet365_json FROM matches"):
         existing[r[0]] = (r[1], r[2], r[4])
@@ -202,12 +205,13 @@ def main():
         for k in b: mk[k] += 1
         meta = metas.get(mid, {})
         pt = meta.get("pt") or [None, None]
-        con.execute("INSERT OR REPLACE INTO matches VALUES(?,?,?,?,?,?,?,?)",
+        con.execute("INSERT OR REPLACE INTO matches VALUES(?,?,?,?,?,?,?,?,?)",
                     (mid, meta.get("date", ""), meta.get("league", ""),
                      meta.get("home", ""), meta.get("away", ""),
                      pt[0] if len(pt) > 0 else None,
                      pt[1] if len(pt) > 1 else None,
-                     json.dumps(b, ensure_ascii=False)))
+                     json.dumps(b, ensure_ascii=False),
+                     None))
         n += 1
     # existing satirlar icin arsiv meta varsa guncelle
     if metas:
@@ -230,12 +234,16 @@ def main():
         json.dump({m: odds_map[m] for m in odds_map}, f, ensure_ascii=False)
     # app icin tam DB dump (gelistirme verisi)
     recs = []
-    for r in con.execute("SELECT match_id,date,league,home,away,pt_home,pt_away,bet365_json FROM matches"):
+    for r in con.execute("SELECT match_id,date,league,home,away,pt_home,pt_away,bet365_json,sets_json FROM matches"):
         odds = {}
         try: odds = json.loads(r[7])
         except Exception: pass
+        sets = []
+        if r[8]:
+            try: sets = json.loads(r[8])
+            except Exception: pass
         recs.append({"id": r[0], "date": r[1], "league": r[2], "home": r[3], "away": r[4],
-                     "pt": [r[5], r[6]] if r[5] is not None else None, "odds": odds})
+                     "pt": [r[5], r[6]] if r[5] is not None else None, "sets": sets, "odds": odds})
     with open("dataset.json", "w", encoding="utf-8") as f:
         json.dump(recs, f, ensure_ascii=False)
     log("dataset.json:", len(recs), "kayit")
