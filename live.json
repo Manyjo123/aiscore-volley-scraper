@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-25T23:49:29Z",
+ "generated": "2026-09-25T23:51:09Z",
  "matches": [
   {
    "match_id": "ezk95izy6y8t17n",
@@ -23,8 +23,8 @@
    "status": "434",
    "set_home": 2,
    "set_away": 0,
-   "pt_home": 45,
-   "pt_away": 38,
+   "pt_home": 48,
+   "pt_away": 39,
    "odds": {}
   },
   {
@@ -36,8 +36,8 @@
    "status": "434",
    "set_home": 0,
    "set_away": 1,
-   "pt_home": 23,
-   "pt_away": 25,
+   "pt_home": 33,
+   "pt_away": 35,
    "odds": {}
   }
  ]
