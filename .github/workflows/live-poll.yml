@@ -18,6 +18,8 @@ jobs:
         run: pip install requests blackboxprotobuf
       - name: Produce live.json
         run: python live.py
+      - name: Probe live odds
+        run: python probe_live_odds.py || true
       - name: Commit live.json
         run: |
           git config user.name "manyjo-bot"
