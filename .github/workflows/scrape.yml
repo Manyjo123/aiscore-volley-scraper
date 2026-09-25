@@ -20,6 +20,8 @@ jobs:
         run: pip install requests blackboxprotobuf
       - name: Upcoming matches
         run: python upcoming.py
+      - name: Score API probe
+        run: python probe_scores.py || true
       - name: Run scraper
         run: python scrape.py
         timeout-minutes: 12
@@ -33,6 +35,7 @@ jobs:
             probe_today.json
             upcoming.json
             dataset.json
+            probe_scores.json
           retention-days: 30
       - name: Commit back
         run: |
