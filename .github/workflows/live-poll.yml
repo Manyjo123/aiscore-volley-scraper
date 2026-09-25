@@ -1,0 +1,34 @@
+name: live-poll
+
+on:
+  workflow_dispatch:
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install deps
+        run: pip install requests blackboxprotobuf
+      - name: Produce live.json
+        run: python live.py
+      - name: Commit live.json
+        run: |
+          git config user.name "manyjo-bot"
+          git config user.email "manyjo123@users.noreply.github.com"
+          git add -f live.json
+          git diff --cached --quiet && echo "no changes" || git commit -m "live $(date -u +%Y%m%d_%H%M)"
+          git push https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git main || echo "push failed"
+        continue-on-error: true
+      - name: Upload probe output
+        uses: actions/upload-artifact@v4
+        with:
+          name: live_json
+          path: live.json
+          retention-days: 1
