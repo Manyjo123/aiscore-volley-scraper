@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-25T23:46:06Z",
+ "generated": "2026-09-25T23:47:47Z",
  "matches": [
   {
    "match_id": "ezk95izy6y8t17n",
@@ -21,10 +21,10 @@
    "away": "Dominican Republic U23",
    "start": "1790384400",
    "status": "434",
-   "set_home": 1,
+   "set_home": 2,
    "set_away": 0,
-   "pt_home": 40,
-   "pt_away": 37,
+   "pt_home": 43,
+   "pt_away": 38,
    "odds": {}
   },
   {
@@ -36,7 +36,7 @@
    "status": "434",
    "set_home": 0,
    "set_away": 2,
-   "pt_home": 27,
+   "pt_home": 29,
    "pt_away": 32,
    "odds": {}
   }
