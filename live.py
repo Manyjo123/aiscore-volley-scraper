@@ -146,6 +146,9 @@ def main():
         is_live = bool(sets) and final is None
         if m.get("status") in CANLI_STATUS and final is None and sets:
             is_live = True
+        print("DBG st=%s sets=%s final=%s live=%s | %s vs %s" % (
+            m.get("status"), sets, final, is_live,
+            teams.get(m.get("home_id"), "")[:14], teams.get(m.get("away_id"), "")[:14]))
         if not is_live:
             continue
         odds = extract_bet365(data.get("15", {}).get("1", {}) if isinstance(data.get("15"), dict) else {})
