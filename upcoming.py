@@ -2,7 +2,7 @@
 """Bugun + gelecek voleybol maclarinin bet365 acilis oranlarini
 /v1/web/api/today/matches (sid=10) ve /matches/future uzerinden ceker,
 upcoming.json uretir. App'in gunluk veri kaynagi."""
-import json, time, datetime
+import json, time, datetime, ast
 import requests
 import blackboxprotobuf
 
@@ -16,6 +16,22 @@ def b2s(v):
     if isinstance(v, bytes): return v.decode("utf-8", "replace")
     s = str(v)
     return s[2:-1] if s.startswith("b'") and s.endswith("'") else s
+
+
+def fix(o):
+    """blackbox her zaman tutarli decode etmiyor: bazi field'lar 'str(dict)' olarak
+    doner. Bunlari ast.literal_eval ile gercek objeye cevir."""
+    if isinstance(o, str):
+        s = o.strip()
+        if s.startswith("{") and s.endswith("}") and ("'" in s or '"' in s):
+            try:
+                return fix(ast.literal_eval(s))
+            except Exception:
+                pass
+        return o
+    if isinstance(o, list): return [fix(x) for x in o]
+    if isinstance(o, dict): return {k: fix(v) for k, v in o.items()}
+    return o
 
 
 def clean(o):
@@ -33,7 +49,7 @@ def get_json(name, path):
     r = requests.get(url, headers=HEADERS, timeout=20)
     try:
         msg, _ = blackboxprotobuf.decode_message(r.content)
-        return clean(msg)
+        return clean(fix(msg))
     except Exception as e:
         mids = MID_RE.findall(r.content.decode("latin1", "replace"))
         print(name, "DECODE ERR (fallback)", str(e)[:120], "| regex mids:", len(set(mids)))
@@ -78,10 +94,9 @@ def main():
             continue
         t15 = src.get("15")
         if not isinstance(t15, dict):
-            print("  t15 tipi:", type(t15).__name__, repr(t15)[:120])
+            print("  t15 dict degil:", type(t15).__name__)
             continue
         t3 = t15.get("3")
-        print("  t3 tipi:", type(t3).__name__, "keys:", list(t15.keys()))
         if isinstance(t3, dict):
             t3 = [t3]
         if isinstance(t3, list):
