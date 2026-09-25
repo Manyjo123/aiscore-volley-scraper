@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-25T23:55:39Z",
+ "generated": "2026-09-25T23:58:29Z",
  "matches": [
   {
    "match_id": "ezk95izy6y8t17n",
@@ -22,9 +22,9 @@
    "start": "1790377200",
    "status": "436",
    "set_home": 2,
-   "set_away": 0,
-   "pt_home": 50,
-   "pt_away": 39,
+   "set_away": 1,
+   "pt_home": 52,
+   "pt_away": 43,
    "odds": {}
   },
   {
@@ -34,10 +34,10 @@
    "away": "Praia Clube Women",
    "start": "1790377200",
    "status": "434",
-   "set_home": 1,
-   "set_away": 1,
+   "set_home": 0,
+   "set_away": 2,
    "pt_home": 36,
-   "pt_away": 36,
+   "pt_away": 39,
    "odds": {}
   }
  ]
