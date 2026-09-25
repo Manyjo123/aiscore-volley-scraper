@@ -18,8 +18,9 @@ jobs:
         run: pip install requests blackboxprotobuf
       - name: Run probe
         run: python probe.py || true
-      - name: Run scraper
-        run: python scrape.py
+      - name: Run probe2
+        run: python probe2.py || true
+        timeout-minutes: 5
       - name: Upload DB
         uses: actions/upload-artifact@v4
         with:
