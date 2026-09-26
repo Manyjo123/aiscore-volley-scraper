@@ -41,17 +41,17 @@ def nested(o):
     return s
 
 
-def row_odds(r):
+def row_val(r, idx):
     try:
         d = r.get("1")
         if isinstance(d, dict):
             d = d.get("1")
-        if isinstance(d, list) and len(d) >= 3:
-            o = str(d[2])
+        if isinstance(d, list) and len(d) > idx:
+            o = str(d[idx])
             if o.replace(".", "").replace(",", "").isdigit():
                 return o
     except Exception as e:
-        print("  row_odds ERR", str(e)[:60])
+        print("  row_val ERR", str(e)[:60])
     return None
 
 
@@ -78,15 +78,19 @@ def extract_bet365(msg):
         print("   company:", company, "beklenen:", BET365_ID)
         if company != BET365_ID:
             continue
-        row_home = m.get("1")
-        row_away = m.get("2")
-        cur_home = m.get("4") or row_home
-        print("   row_home:", json.dumps(row_home, ensure_ascii=False)[:100] if row_home else None)
-        oev, ode, cev = row_odds(row_home), row_odds(row_away), row_odds(cur_home)
-        print("   oev/ode/cev:", oev, ode, cev)
+        r_open = m.get("1")
+        r_cur = m.get("2") or m.get("4")
+        if not (isinstance(r_open, dict) and isinstance(r_cur, dict)):
+            print("   row yok")
+            continue
+        oev, ode = row_val(r_open, 0), row_val(r_open, 2)
+        cev, cde = row_val(r_cur, 0), row_val(r_cur, 2)
+        print("   r_open:", json.dumps(r_open, ensure_ascii=False)[:60],
+              "| r_cur:", json.dumps(r_cur, ensure_ascii=False)[:60])
+        print("   oev/ode/cev/cde:", oev, ode, cev, cde)
         out[mname] = {"open": [oev, "0", ode, "0"],
                       "close": [oev, "0", ode, "0"],
-                      "current": [cev, "0", ode, "0"],
+                      "current": [cev, "0", cde, "0"],
                       "company": "bet365"}
     return out
 

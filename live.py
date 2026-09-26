@@ -122,14 +122,14 @@ def get_match_score(mid):
             "away": b2s((mobj.get("7") or {}).get("6"))}
 
 
-def row_odds(r):
-    """satır dict → oran string. r={"1": [kod, line, oran, 0]}."""
+def row_val(r, idx):
+    """selection row → dizi[idx]. r={"1": [ev, line, dep, 0]}."""
     try:
         d = r.get("1")
         if isinstance(d, dict):
             d = d.get("1")
-        if isinstance(d, list) and len(d) >= 3:
-            o = str(d[2])
+        if isinstance(d, list) and len(d) > idx:
+            o = str(d[idx])
             if o.replace(".", "").replace(",", "").isdigit():
                 return o
     except Exception:
@@ -138,8 +138,8 @@ def row_odds(r):
 
 
 def extract_bet365(msg):
-    """15.{market}: {1: evSatır, 2: depSatır, 3: {'1': company}, 4: currentEv}.
-    market2=1X2. oran=[kod,line,oran,0] → [ev,"0",dep,"0"]."""
+    """15.{market}: {1: açılış row, 2: anlık row, 3:{'1':company}, 4: yedek}.
+    row=[ev_oran, line, dep_oran, 0]. market2=1X2."""
     out = {}
     try:
         f15 = msg.get("15")
@@ -157,19 +157,19 @@ def extract_bet365(msg):
             company = -1
         if company != BET365_ID:
             continue
-        row_home = m.get("1")
-        row_away = m.get("2")
-        cur_home = m.get("4") or row_home
-        if not (isinstance(row_home, dict) and isinstance(row_away, dict)):
+        r_open = m.get("1")
+        r_cur = m.get("2") or m.get("4")
+        if not (isinstance(r_open, dict) and isinstance(r_cur, dict)):
             continue
-        oev, ode, cev = row_odds(row_home), row_odds(row_away), row_odds(cur_home)
+        oev, ode = row_val(r_open, 0), row_val(r_open, 2)
+        cev, cde = row_val(r_cur, 0), row_val(r_cur, 2)
         if not (oev and ode):
             continue
         if not cev:
-            cev = oev
+            cev, cde = oev, ode
         out[mname] = {"open": [oev, "0", ode, "0"],
                       "close": [oev, "0", ode, "0"],
-                      "current": [cev, "0", ode, "0"],
+                      "current": [cev, "0", cde, "0"],
                       "company": "bet365"}
     return out
 
