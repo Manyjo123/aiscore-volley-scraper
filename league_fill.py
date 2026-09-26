@@ -152,6 +152,16 @@ def match_worker(mid):
 
 PREFIXES = ["Women", "Men", "Boys", "Girls"]
 
+# Bilinen takim gruplarindan el ile esleme (API dogrudan lig vermedigi kanitlananlar)
+OVERRIDES = {
+    "Elitserien": ["Hylte/Halmstad", "Hylte/Halmstad Women", "Floby", "Habo", "Vingaker", "Lunds"],
+    "Extraliga": ["Brno", "Kladno"],
+    "Chinese Super League": ["Henan Qingyuan", "Sichuan"],
+    "Israeli Premier League": ["Hapoel Kiryat Ata", "Aylabon"],
+    "Volleyligaen Women": ["Gentofte 2 Women", "Lyngby Women"],
+    "African Club Championship": ["FUS Rabat", "El-Wak Wings"],
+}
+
 
 def team_hint(meta):
     """Takim adlarindan kategori ipucu (avci yontem, lig adi degil)."""
@@ -160,6 +170,56 @@ def team_hint(meta):
         if p in gm:
             return p
     return ""
+
+
+def fill_by_team(con, todo_ids):
+    """DB'deki BILINEN ligli maclardan takim->lig haritasi kurup bos kalanlara uygula."""
+    tl = {}
+    for mid, league, home, away in con.execute(
+            "SELECT match_id, league, home, away FROM matches"):
+        l = (league or "").strip()
+        if not l or l in ("None", "") or l.startswith("{"):
+            continue
+        for t in (home or "", away or ""):
+            t = t.strip()
+            if not t:
+                continue
+            tl.setdefault(t, set()).add(l)
+    # override
+    for lg, teams in OVERRIDES.items():
+        for t in teams:
+            tl.setdefault(t, set()).add(lg)
+    lig_count = {}
+    for r in con.execute("SELECT league FROM matches"):
+        l = (r[0] or "").strip()
+        if l and l not in ("None", "") and not l.startswith("{"):
+            lig_count[l] = lig_count.get(l, 0) + 1
+
+    def guess(home, away):
+        lks = set()
+        for t in (home or "", away or ""):
+            lks |= tl.get(t.strip(), set())
+        if not lks:
+            return None
+        return max(lks, key=lambda l: lig_count.get(l, 0))
+
+    got = {}
+    for mid in todo_ids:
+        row = con.execute("SELECT home, away FROM matches WHERE match_id=?", (mid,)).fetchone()
+        if not row:
+            continue
+        g = guess(row[0], row[1])
+        if g:
+            got[mid] = g
+    return got
+
+
+def sanitize_team_name(t):
+    """Takim adi bazen protobuf dict olarak donmus olabilir -> temizle."""
+    t = (t or "").strip()
+    if t.startswith("{") and t.endswith("}"):
+        return "(bilinmiyor)"
+    return t
 
 
 def main():
@@ -218,6 +278,32 @@ def main():
             pass
     log("bulunamayan:", len(missed), "| kategori ipucu olan:", len(hints))
 
+    # TAKIM-BAZLI 2. TUR: API'den cikmayan veya bozuk lig adi olanlara takim eslestirmesi
+    cleanup_ids = [mid for mid, d in todo if mid not in all_found]
+    cleanup_ids += [r[0] for r in con.execute(
+        "SELECT match_id FROM matches WHERE league IS NULL OR league IN ('', 'None') OR league LIKE '{%'")]
+    cleanup_ids = list(dict.fromkeys(cleanup_ids))
+    team_got = fill_by_team(con, cleanup_ids)
+    for mid, ln in team_got.items():
+        con.execute("UPDATE matches SET league=? WHERE match_id=?", (ln, mid))
+        updated += 1
+    log("takim-bazli ek lig:", len(team_got))
+
+    # kalan bozuk dict lig adlarini standart etiket ile degistir
+    for r in con.execute("SELECT match_id, league, home, away FROM matches WHERE league LIKE '{%'"):
+        mid, lcur, h, a = r
+        cat = team_hint({"home": h, "away": a})
+        con.execute("UPDATE matches SET league=? WHERE match_id=?",
+                    (("Bilinmiyor " + cat).strip() if cat else "Bilinmiyor", mid))
+        updated += 1
+    con.commit()
+
+    # OVERRIDES icin özel: milli takim maci (takim adi dict bozuk)
+    con.execute("UPDATE matches SET league='Milli Takımlar', home='(bilinmiyor)' WHERE match_id='6975riz6lerhgk2'")
+    # African Club Championship (web dogrulandi: CAVB ligi)
+    con.execute("UPDATE matches SET league='African Club Championship' WHERE match_id='jr7oviyjywybgk0'")
+    con.commit()
+
     # dataset.json'i yeniden uret (tutarlilik)
     recs = []
     for r in con.execute("SELECT match_id,date,league,home,away,pt_home,pt_away,bet365_json,sets_json FROM matches"):
@@ -232,7 +318,8 @@ def main():
                 sets = json.loads(r[8])
             except Exception:
                 pass
-        recs.append({"id": r[0], "date": r[1], "league": r[2], "home": r[3], "away": r[4],
+        recs.append({"id": r[0], "date": r[1], "league": r[2],
+                     "home": sanitize_team_name(r[3]), "away": sanitize_team_name(r[4]),
                      "pt": [r[5], r[6]] if r[5] is not None else None,
                      "sets": sets, "odds": odds})
     json.dump(recs, open("dataset.json", "w", encoding="utf-8"), ensure_ascii=False)
