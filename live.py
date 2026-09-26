@@ -252,7 +252,7 @@ def main():
               "1X2 cur:", odds.get("1X2", {}).get("current"))
         time.sleep(0.3)
 
-    out = {"generated": datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+    out = {"generated": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
            "matches": matches}
     json.dump(out, open("live.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print("live.json yazıldı:", len(matches), "canlı maç")
