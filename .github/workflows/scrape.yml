@@ -30,6 +30,9 @@ jobs:
       - name: Run scraper
         run: python scrape.py
         timeout-minutes: 12
+      - name: Fill missing leagues
+        run: python league_fill.py
+        timeout-minutes: 15
       - name: Probe 1xbet (test)
         run: python probe_1xbet.py || true
       - name: Upload DB
