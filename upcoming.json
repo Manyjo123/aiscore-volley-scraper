@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-26T07:12:34Z",
+ "generated": "2026-09-26T08:51:21Z",
  "matches": [
   {
    "match_id": "63kvyiwj11dsxke",
@@ -1596,6 +1596,15 @@
    "home": "Polesie Zhytomyr Women",
    "away": "Ternopil Women",
    "start": 1790409600,
+   "status": 434,
+   "odds": {}
+  },
+  {
+   "match_id": "l6kexi0p6wrsvq5",
+   "league": "Club Friendly",
+   "home": "Slepsk Suwalki",
+   "away": "Arka Chelm",
+   "start": 1790418600,
    "status": 1,
    "odds": {}
   },
@@ -1682,6 +1691,15 @@
    "odds": {}
   },
   {
+   "match_id": "xvkj9i3xn01s879",
+   "league": "Club Friendly",
+   "home": "Stiinta Baia Mare",
+   "away": "Unirea Dej",
+   "start": 1790420400,
+   "status": 1,
+   "odds": {}
+  },
+  {
    "match_id": "g6768imwn9daoqr",
    "league": "Mizunodeild Women",
    "home": "Throttur Nes Women",
@@ -1711,6 +1729,15 @@
      "company": "bet365"
     }
    }
+  },
+  {
+   "match_id": "o07d9i80vw2umqn",
+   "league": "Club Friendly",
+   "home": "Menen",
+   "away": "Tourcoing",
+   "start": 1790427600,
+   "status": 1,
+   "odds": {}
   },
   {
    "match_id": "oj7xoi211g6u47g",
