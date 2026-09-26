@@ -225,7 +225,9 @@ def main():
         for s in sets:
             if s[0] > s[1]: sh += 1
             elif s[1] > s[0]: sa += 1
-        is_live = bool(sets) and sh < 3 and sa < 3
+        is_live = (bool(sets) and final is None
+                   and sh < 3 and sa < 3
+                   and str(m.get("status")) != "100")
         hname = (sc or {}).get("home") or teams.get(m.get("home_id"), "")
         aname = (sc or {}).get("away") or teams.get(m.get("away_id"), "")
         lleague = (sc or {}).get("league") or leagues.get(m.get("league_id"), "")
@@ -240,12 +242,14 @@ def main():
             "start": m.get("start"),
             "status": m.get("status"),
             "set_home": sh, "set_away": sa,
+            "sets": sets,
             "pt_home": sum(s[0] for s in sets) if sets else 0,
             "pt_away": sum(s[1] for s in sets) if sets else 0,
             "odds": odds,
         })
         print("LIVE", sh, "-", sa, hname[:18], "vs", aname[:18],
-              "st=", m.get("status"), "1X2 cur:", odds.get("1X2", {}).get("current"))
+              "st=", m.get("status"), "setler:", sets,
+              "1X2 cur:", odds.get("1X2", {}).get("current"))
         time.sleep(0.3)
 
     out = {"generated": datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
