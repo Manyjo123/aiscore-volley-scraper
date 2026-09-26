@@ -2,6 +2,8 @@ name: live-poll
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
 
 jobs:
   poll:
@@ -18,12 +20,6 @@ jobs:
         run: pip install requests blackboxprotobuf
       - name: Produce live.json
         run: python live.py
-      - name: DBG odds
-        run: python dbg_odds.py || true
-      - name: Probe live odds
-        run: python probe_live_odds.py || true
-      - name: Probe live odds2
-        run: python probe_live_odds2.py || true
       - name: Commit live.json
         run: |
           git config user.name "manyjo-bot"
@@ -32,11 +28,9 @@ jobs:
           git diff --cached --quiet && echo "no changes" || git commit -m "live $(date -u +%Y%m%d_%H%M)"
           git push https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git main || echo "push failed"
         continue-on-error: true
-      - name: Upload probe output
+      - name: Upload live.json
         uses: actions/upload-artifact@v4
         with:
           name: live_json
-          path: |
-            live.json
-            dbg_odds.log
+          path: live.json
           retention-days: 1
