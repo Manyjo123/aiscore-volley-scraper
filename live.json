@@ -1,23 +1,23 @@
 {
- "generated": "2026-09-27T08:43:52Z",
+ "generated": "2026-09-27T14:18:37Z",
  "matches": [
   {
-   "match_id": "6975rid5621fgk2",
-   "league": "Superleague Women",
-   "home": "Bilozgar Meduniversitet Women",
-   "away": "Truskavets Women",
-   "start": "1790496000",
-   "status": "434",
-   "set_home": 0,
-   "set_away": 1,
+   "match_id": "g6768imnydrioqr",
+   "league": "Russia Cup",
+   "home": "VC Kuzbass Kemerovo",
+   "away": "Surgut Region",
+   "start": "1790517600",
+   "status": "432",
+   "set_home": 1,
+   "set_away": 0,
    "sets": [
     [
      18,
-     25
+     16
     ]
    ],
    "pt_home": 18,
-   "pt_away": 25,
+   "pt_away": 16,
    "odds": {}
   }
  ]
