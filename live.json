@@ -1,24 +1,50 @@
 {
- "generated": "2026-09-27T14:18:37Z",
+ "generated": "2026-09-27T18:33:16Z",
  "matches": [
   {
-   "match_id": "g6768imnydrioqr",
-   "league": "Russia Cup",
-   "home": "VC Kuzbass Kemerovo",
-   "away": "Surgut Region",
-   "start": "1790517600",
-   "status": "432",
-   "set_home": 1,
-   "set_away": 0,
+   "match_id": "jek3linogdjs9ko",
+   "league": "Pan-American Cup U23",
+   "home": "El Salvador U23",
+   "away": "Dominican Republic U23",
+   "start": "1790532000",
+   "status": "434",
+   "set_home": 0,
+   "set_away": 2,
    "sets": [
     [
-     18,
-     16
+     15,
+     25
+    ],
+    [
+     9,
+     15
     ]
    ],
-   "pt_home": 18,
-   "pt_away": 16,
-   "odds": {}
+   "pt_home": 24,
+   "pt_away": 40,
+   "odds": {
+    "1X2": {
+     "open": [
+      "4.33",
+      "0",
+      "1.2",
+      "0"
+     ],
+     "close": [
+      "4.33",
+      "0",
+      "1.2",
+      "0"
+     ],
+     "current": [
+      "10.5",
+      "0",
+      "1.02",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
   }
  ]
 }
