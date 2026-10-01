@@ -1,101 +1,38 @@
 {
- "generated": "2026-09-30T10:01:48Z",
+ "generated": "2026-10-01T10:29:58Z",
  "matches": [
   {
-   "match_id": "m2q1pidn3lraeq6",
+   "match_id": "jr7oviwd542ugk0",
    "league": "",
-   "home": "Kazakhstan",
-   "away": "Hong Kong",
+   "home": "Hong Kong",
+   "away": "Kyrgyzstan",
    "start": null,
    "status": null,
    "odds": {}
   },
   {
-   "match_id": "oj7xoi23lpxa47g",
+   "match_id": "9gkldiwozd9fmqx",
    "league": "",
    "home": "India",
-   "away": "Pakistan",
+   "away": "South Korea",
    "start": null,
    "status": null,
    "odds": {}
   },
   {
-   "match_id": "ndkzzivo0p0bxk3",
+   "match_id": "8lk2oiw1jy1fzq3",
    "league": "",
-   "home": "Kyrgyzstan",
+   "home": "Kazakhstan",
    "away": "Chinese Taipei",
    "start": null,
    "status": null,
    "odds": {}
   },
   {
-   "match_id": "edq0yie0zr3te7x",
+   "match_id": "edq0yie0vomie7x",
    "league": "",
-   "home": "South Korea",
+   "home": "Pakistan",
    "away": "Iran",
-   "start": null,
-   "status": null,
-   "odds": {}
-  },
-  {
-   "match_id": "zrkn9i8nw6vtwql",
-   "league": "",
-   "home": "Vietnam",
-   "away": "Uzbekistan",
-   "start": null,
-   "status": null,
-   "odds": {}
-  },
-  {
-   "match_id": "34kgxi5p6lrae7o",
-   "league": "",
-   "home": "Thailand",
-   "away": "China",
-   "start": null,
-   "status": null,
-   "odds": {}
-  },
-  {
-   "match_id": "527r6i5yzd2f47e",
-   "league": "",
-   "home": "Philippines",
-   "away": "Indonesia",
-   "start": null,
-   "status": null,
-   "odds": {}
-  },
-  {
-   "match_id": "vmqylio853ycgk9",
-   "league": "",
-   "home": "Japan",
-   "away": "Qatar",
-   "start": null,
-   "status": null,
-   "odds": {}
-  },
-  {
-   "match_id": "vrqwpimn1jva4kn",
-   "league": "",
-   "home": "Mckis Jaworzno",
-   "away": "Lechia Tomaszow Mazowiecki",
-   "start": null,
-   "status": null,
-   "odds": {}
-  },
-  {
-   "match_id": "o17pvi8pm4piy7j",
-   "league": "",
-   "home": "Nova KBM Branik Women",
-   "away": "Zeleznicar Women",
-   "start": null,
-   "status": null,
-   "odds": {}
-  },
-  {
-   "match_id": "o17pvi8p8r3fy7j",
-   "league": "",
-   "home": "Tallin University",
-   "away": "Kiili",
    "start": null,
    "status": null,
    "odds": {}
@@ -182,372 +119,395 @@
    "odds": {}
   },
   {
-   "match_id": "o07d9i82629imqn",
+   "match_id": "o17pvil5x8yiy7j",
    "league": "",
-   "home": "Beşiktaş Women",
-   "away": "",
-   "start": 1790697600,
-   "status": 100,
-   "odds": {
-    "1X2": {
-     "open": [
-      "1.16",
-      "0",
-      "4.5",
-      "0"
-     ],
-     "close": [
-      "1.16",
-      "0",
-      "4.5",
-      "0"
-     ],
-     "current": [
-      "1.16",
-      "0",
-      "4.5",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "vrqwpimn8ndt4kn",
-   "league": "",
-   "home": "Goztepe Women",
-   "away": "",
-   "start": 1790697600,
-   "status": 100,
+   "home": "TJ Sokol Dobrichcvice",
+   "away": "CZU Prague",
+   "start": null,
+   "status": null,
    "odds": {}
   },
   {
-   "match_id": "oj7xoi23jmwh47g",
+   "match_id": "9gkldijg8w1tmqx",
    "league": "",
-   "home": "Nova KBM Branik Women",
-   "away": "Ujpest Women",
-   "start": 1790697600,
+   "home": "Lvi Prague B",
+   "away": "Kolin",
+   "start": null,
+   "status": null,
+   "odds": {}
+  },
+  {
+   "match_id": "ndkzzid5wv2hxk3",
+   "league": "",
+   "home": "MFF Prague",
+   "away": "Ceske Budejovice 2",
+   "start": null,
+   "status": null,
+   "odds": {}
+  },
+  {
+   "match_id": "527r6ir8g5rf47e",
+   "league": "",
+   "home": "Bucovice",
+   "away": "VK Brno",
+   "start": null,
+   "status": null,
+   "odds": {}
+  },
+  {
+   "match_id": "wv78giyolggaoqr",
+   "league": "",
+   "home": "Hradec Kralove",
+   "away": "Kometa Brno",
+   "start": null,
+   "status": null,
+   "odds": {}
+  },
+  {
+   "match_id": "jr7ovioe0g8sgk0",
+   "league": "",
+   "home": "Hronov Women",
+   "away": "Orion Prague Women",
+   "start": null,
+   "status": null,
+   "odds": {}
+  },
+  {
+   "match_id": "527r6ir8gddb47e",
+   "league": "",
+   "home": "Rudolfov Women",
+   "away": "VK Liberec B Women",
+   "start": null,
+   "status": null,
+   "odds": {}
+  },
+  {
+   "match_id": "xvkj9i3rdz3f879",
+   "league": "I. Liga Women",
+   "home": "SMS PZPS Szczyrk Women",
+   "away": "Solna Wieliczka Women",
+   "start": 1790784000,
    "status": 100,
    "odds": {
     "AH": {
      "open": [
-      "1.83",
+      "1.72",
       "-1.5",
-      "1.83",
+      "2",
       "0"
      ],
      "close": [
-      "1.83",
-      "-1.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "-1.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "2.75",
-      "0",
       "1.4",
-      "0"
-     ],
-     "close": [
-      "2.75",
-      "0",
-      "1.4",
-      "0"
-     ],
-     "current": [
-      "2.75",
-      "0",
-      "1.4",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "175.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "175.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "175.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "o07d9i80z0oamqn",
-   "league": "",
-   "home": "",
-   "away": "H. Kfar Saba",
-   "start": 1790700900,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "1.61",
-      "2.5",
-      "2.2",
-      "0"
-     ],
-     "close": [
-      "1.61",
-      "2.5",
-      "2.2",
-      "0"
-     ],
-     "current": [
-      "1.61",
-      "2.5",
-      "2.2",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "1.08",
-      "0",
-      "7",
-      "0"
-     ],
-     "close": [
-      "1.08",
-      "0",
-      "7",
-      "0"
-     ],
-     "current": [
-      "1.08",
-      "0",
-      "7",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "138.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "138.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "138.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "o07d9i80px6bmqn",
-   "league": "",
-   "home": "Vakifbank Women",
-   "away": "Panionios Women",
-   "start": 1790701200,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "1.72",
-      "2.5",
-      "2",
-      "0"
-     ],
-     "close": [
-      "1.72",
-      "2.5",
-      "2",
-      "0"
-     ],
-     "current": [
-      "1.72",
-      "2.5",
-      "2",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "1.11",
-      "0",
-      "6",
-      "0"
-     ],
-     "close": [
-      "1.11",
-      "0",
-      "6",
-      "0"
-     ],
-     "current": [
-      "1.11",
-      "0",
-      "6",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "137.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "137.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "137.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "9gkldiw3l44tmqx",
-   "league": "",
-   "home": "",
-   "away": "",
-   "start": 1790704800,
-   "status": 100,
-   "odds": {
-    "1X2": {
-     "open": [
-      "1.72",
-      "0",
-      "2",
-      "0"
-     ],
-     "close": [
-      "2",
-      "0",
-      "1.72",
-      "0"
-     ],
-     "current": [
-      "2",
-      "0",
-      "1.72",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "ezk95iz50w5u17n",
-   "league": "",
-   "home": "",
-   "away": "",
-   "start": 1790712900,
-   "status": 100,
-   "odds": {
-    "1X2": {
-     "open": [
-      "1.16",
-      "0",
-      "4.5",
-      "0"
-     ],
-     "close": [
-      "1.16",
-      "0",
-      "4.5",
-      "0"
-     ],
-     "current": [
-      "1.16",
-      "0",
-      "4.5",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "ndkzzivo404axk3",
-   "league": "",
-   "home": "",
-   "away": "Gebze",
-   "start": 1790758200,
-   "status": 436,
-   "odds": {
-    "AH": {
-     "open": [
-      "1.66",
       "-1.5",
-      "2.1",
+      "2.75",
       "0"
      ],
-     "close": [
-      "2.2",
+     "current": [
+      "1.4",
+      "-1.5",
+      "2.75",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "2.5",
+      "0",
       "1.5",
-      "1.61",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "0",
+      "1.83",
       "0"
      ],
      "current": [
-      "1.66",
-      "-1.5",
-      "2.1",
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "177.5",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "180.5",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.83",
+      "180.5",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "o07d9i82yz2tmqn",
+   "league": "TAURON I. Liga",
+   "home": "Anioly Torun",
+   "away": "Plock",
+   "start": 1790787600,
+   "status": 100,
+   "odds": {
+    "AH": {
+     "open": [
+      "1.57",
+      "1.5",
+      "2.25",
+      "0"
+     ],
+     "close": [
+      "1.57",
+      "1.5",
+      "2.25",
+      "0"
+     ],
+     "current": [
+      "1.57",
+      "1.5",
+      "2.25",
       "0"
      ],
      "company": "bet365"
     },
     "1X2": {
      "open": [
-      "2.37",
+      "1.25",
       "0",
-      "1.53",
+      "3.75",
       "0"
      ],
      "close": [
-      "1.44",
+      "1.25",
       "0",
-      "2.62",
+      "3.75",
       "0"
      ],
      "current": [
-      "2.37",
+      "1.25",
       "0",
-      "1.53",
+      "3.75",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "178.5",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "178.5",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.83",
+      "178.5",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "o07d9i4jl8jimqn",
+   "league": "1. liga",
+   "home": "VK Brno",
+   "away": "Kometa Brno",
+   "start": 1790789400,
+   "status": 100,
+   "odds": {
+    "1X2": {
+     "open": [
+      "1.33",
+      "0",
+      "3.25",
+      "0"
+     ],
+     "close": [
+      "1.33",
+      "0",
+      "3.25",
+      "0"
+     ],
+     "current": [
+      "1.33",
+      "0",
+      "3.25",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "ndqm9imp6r3trkv",
+   "league": "Club Friendly Women",
+   "home": "Novara Women",
+   "away": "Chieri '76 Women",
+   "start": 1790791200,
+   "status": 100,
+   "odds": {
+    "AH": {
+     "open": [
+      "1.72",
+      "1.5",
+      "2",
+      "0"
+     ],
+     "close": [
+      "1.72",
+      "1.5",
+      "2",
+      "0"
+     ],
+     "current": [
+      "1.72",
+      "1.5",
+      "2",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "1.57",
+      "0",
+      "2.25",
+      "0"
+     ],
+     "close": [
+      "1.36",
+      "0",
+      "3",
+      "0"
+     ],
+     "current": [
+      "1.36",
+      "0",
+      "3",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "175.5",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "175.5",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.83",
+      "175.5",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "m2q1pidn3lraeq6",
+   "league": "Asian Games",
+   "home": "Kazakhstan",
+   "away": "Hong Kong",
+   "start": 1790816400,
+   "status": 100,
+   "odds": {
+    "1X2": {
+     "open": [
+      "1.2",
+      "0",
+      "4.33",
+      "0"
+     ],
+     "close": [
+      "1.2",
+      "0",
+      "4.33",
+      "0"
+     ],
+     "current": [
+      "1.2",
+      "0",
+      "4.33",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "oj7xoi23lpxa47g",
+   "league": "Asian Games",
+   "home": "India",
+   "away": "Pakistan",
+   "start": 1790816400,
+   "status": 100,
+   "odds": {
+    "AH": {
+     "open": [
+      "1.61",
+      "-1.5",
+      "2.2",
+      "0"
+     ],
+     "close": [
+      "1.61",
+      "-1.5",
+      "2.2",
+      "0"
+     ],
+     "current": [
+      "1.61",
+      "-1.5",
+      "2.2",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "2.25",
+      "0",
+      "1.57",
+      "0"
+     ],
+     "close": [
+      "2.25",
+      "0",
+      "1.57",
+      "0"
+     ],
+     "current": [
+      "2.25",
+      "0",
+      "1.57",
       "0"
      ],
      "company": "bet365"
@@ -561,7 +521,7 @@
      ],
      "close": [
       "1.83",
-      "199.5",
+      "182.5",
       "1.83",
       "0"
      ],
@@ -576,30 +536,165 @@
    }
   },
   {
-   "match_id": "vmqylio89ypsgk9",
-   "league": "",
-   "home": "Ujpest Women",
-   "away": "Zeleznicar Women",
-   "start": 1790758800,
-   "status": 436,
+   "match_id": "ndkzzivo0p0bxk3",
+   "league": "Asian Games",
+   "home": "Kyrgyzstan",
+   "away": "Chinese Taipei",
+   "start": 1790827200,
+   "status": 100,
+   "odds": {
+    "1X2": {
+     "open": [
+      "9",
+      "0",
+      "1.04",
+      "0"
+     ],
+     "close": [
+      "9",
+      "0",
+      "1.04",
+      "0"
+     ],
+     "current": [
+      "9",
+      "0",
+      "1.04",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "edq0yie0zr3te7x",
+   "league": "Asian Games",
+   "home": "South Korea",
+   "away": "Iran",
+   "start": 1790827200,
+   "status": 100,
    "odds": {
     "AH": {
      "open": [
-      "1.61",
+      "1.53",
       "-2.5",
-      "2.2",
+      "2.37",
+      "0"
+     ],
+     "close": [
+      "1.57",
+      "-2.5",
+      "2.25",
+      "0"
+     ],
+     "current": [
+      "1.57",
+      "-2.5",
+      "2.25",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "4",
+      "0",
+      "1.22",
+      "0"
+     ],
+     "close": [
+      "4.33",
+      "0",
+      "1.2",
+      "0"
+     ],
+     "current": [
+      "4.33",
+      "0",
+      "1.2",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "175.5",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "173.5",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.83",
+      "173.5",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "zrkn9i8nw6vtwql",
+   "league": "Asian Games",
+   "home": "Vietnam",
+   "away": "Uzbekistan",
+   "start": 1790838000,
+   "status": 100,
+   "odds": {
+    "1X2": {
+     "open": [
+      "1.16",
+      "0",
+      "4.5",
+      "0"
+     ],
+     "close": [
+      "1.16",
+      "0",
+      "4.5",
+      "0"
+     ],
+     "current": [
+      "1.16",
+      "0",
+      "4.5",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "34kgxi5p6lrae7o",
+   "league": "Asian Games",
+   "home": "Thailand",
+   "away": "China",
+   "start": 1790838000,
+   "status": 100,
+   "odds": {
+    "AH": {
+     "open": [
+      "2.37",
+      "-1.5",
+      "1.53",
       "0"
      ],
      "close": [
       "1.72",
-      "-1.5",
+      "-2.5",
       "2",
       "0"
      ],
      "current": [
-      "1.61",
+      "1.72",
       "-2.5",
-      "2.2",
+      "2",
       "0"
      ],
      "company": "bet365"
@@ -609,6 +704,233 @@
       "3.75",
       "0",
       "1.25",
+      "0"
+     ],
+     "close": [
+      "5",
+      "0",
+      "1.14",
+      "0"
+     ],
+     "current": [
+      "5",
+      "0",
+      "1.14",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "176.5",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "159.5",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.83",
+      "159.5",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "527r6i5yzd2f47e",
+   "league": "Asian Games",
+   "home": "Philippines",
+   "away": "Indonesia",
+   "start": 1790848800,
+   "status": 434,
+   "odds": {
+    "1X2": {
+     "open": [
+      "6",
+      "0",
+      "1.11",
+      "0"
+     ],
+     "close": [
+      "6",
+      "0",
+      "1.11",
+      "0"
+     ],
+     "current": [
+      "6",
+      "0",
+      "1.11",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "vmqylio853ycgk9",
+   "league": "Asian Games",
+   "home": "Japan",
+   "away": "Qatar",
+   "start": 1790850000,
+   "status": 432,
+   "odds": {
+    "AH": {
+     "open": [
+      "1.5",
+      "2.5",
+      "2.5",
+      "0"
+     ],
+     "close": [
+      "1.2",
+      "2.5",
+      "4.33",
+      "0"
+     ],
+     "current": [
+      "1.5",
+      "2.5",
+      "2.5",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "1.06",
+      "0",
+      "8",
+      "0"
+     ],
+     "close": [
+      "1.01",
+      "0",
+      "12",
+      "0"
+     ],
+     "current": [
+      "1.06",
+      "0",
+      "8",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "135.5",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.8",
+      "129.5",
+      "1.9",
+      "0"
+     ],
+     "current": [
+      "1.83",
+      "135.5",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "l6kexi0pjw5tvq5",
+   "league": "Club Friendly",
+   "home": "Komarno",
+   "away": "VKP Bratislava",
+   "start": 1790859600,
+   "status": 1,
+   "odds": {
+    "1X2": {
+     "open": [
+      "1.72",
+      "0",
+      "2",
+      "0"
+     ],
+     "close": [
+      "1.72",
+      "0",
+      "2",
+      "0"
+     ],
+     "current": [
+      "1.72",
+      "0",
+      "2",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "jr7oviwd503hgk0",
+   "league": "Club Friendly",
+   "home": "Krasnoyarsk",
+   "away": "Belgorod",
+   "start": 1790859600,
+   "status": 1,
+   "odds": {}
+  },
+  {
+   "match_id": "xvkj9i3xe0js879",
+   "league": "Club Friendly",
+   "home": "Craiova",
+   "away": "Stiinta Baia Mare",
+   "start": 1790861400,
+   "status": 1,
+   "odds": {
+    "1X2": {
+     "open": [
+      "1.36",
+      "0",
+      "3",
+      "0"
+     ],
+     "close": [
+      "1.36",
+      "0",
+      "3",
+      "0"
+     ],
+     "current": [
+      "1.36",
+      "0",
+      "3",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "m2q1pidnjpyfeq6",
+   "league": "Club Friendly",
+   "home": "Slepsk Suwalki",
+   "away": "Kedzierzyn-Kozle",
+   "start": 1790866800,
+   "status": 1,
+   "odds": {
+    "1X2": {
+     "open": [
+      "3.25",
+      "0",
+      "1.33",
       "0"
      ],
      "close": [
@@ -618,9 +940,61 @@
       "0"
      ],
      "current": [
-      "3.75",
+      "3.25",
       "0",
-      "1.25",
+      "1.33",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "vrqwpimn1jva4kn",
+   "league": "TAURON I. Liga",
+   "home": "Mckis Jaworzno",
+   "away": "Lechia Tomaszow Mazowiecki",
+   "start": 1790868600,
+   "status": 1,
+   "odds": {
+    "AH": {
+     "open": [
+      "2.1",
+      "1.5",
+      "1.66",
+      "0"
+     ],
+     "close": [
+      "2.1",
+      "1.5",
+      "1.66",
+      "0"
+     ],
+     "current": [
+      "2.1",
+      "1.5",
+      "1.66",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "1.53",
+      "0",
+      "2.37",
+      "0"
+     ],
+     "close": [
+      "1.53",
+      "0",
+      "2.37",
+      "0"
+     ],
+     "current": [
+      "1.53",
+      "0",
+      "2.37",
       "0"
      ],
      "company": "bet365"
@@ -628,19 +1002,19 @@
     "OU": {
      "open": [
       "1.83",
-      "163.5",
+      "183.5",
       "1.83",
       "0"
      ],
      "close": [
       "1.83",
-      "190.5",
+      "183.5",
       "1.83",
       "0"
      ],
      "current": [
       "1.83",
-      "163.5",
+      "183.5",
       "1.83",
       "0"
      ],
@@ -649,22 +1023,35 @@
    }
   },
   {
-   "match_id": "6975rid54yvfgk2",
-   "league": "",
-   "home": "VC Dinamo Krasnodar Women",
-   "away": "",
-   "start": 1790758800,
-   "status": 436,
-   "odds": {}
-  },
-  {
-   "match_id": "o17pvi8pgm8iy7j",
-   "league": "",
-   "home": "",
-   "away": "Ziraat Bankasi",
-   "start": 1790769600,
+   "match_id": "vrqwpimvxjwu4kn",
+   "league": "Club Friendly",
+   "home": "Zalau",
+   "away": "Unirea Dej",
+   "start": 1790868600,
    "status": 1,
-   "odds": {}
+   "odds": {
+    "1X2": {
+     "open": [
+      "1.16",
+      "0",
+      "4.5",
+      "0"
+     ],
+     "close": [
+      "1.16",
+      "0",
+      "4.5",
+      "0"
+     ],
+     "current": [
+      "1.16",
+      "0",
+      "4.5",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
   }
  ]
 }
