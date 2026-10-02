@@ -1,4 +1,115 @@
 {
- "generated": "2026-10-02T08:27:10Z",
- "matches": []
+ "generated": "2026-10-02T14:51:56Z",
+ "matches": [
+  {
+   "match_id": "wv78gig6op4ioqr",
+   "league": "Superleague Women",
+   "home": "Bukovynka Women",
+   "away": "Balta Women",
+   "start": "1790949600",
+   "status": "434",
+   "set_home": 0,
+   "set_away": 1,
+   "sets": [
+    [
+     15,
+     25
+    ],
+    [
+     20,
+     20
+    ]
+   ],
+   "pt_home": 35,
+   "pt_away": 45,
+   "odds": {}
+  },
+  {
+   "match_id": "o07d9i81yjvamqn",
+   "league": "Club Friendly",
+   "home": "Ceske Budejovice",
+   "away": "Odolena Voda",
+   "start": "1790949600",
+   "status": "436",
+   "set_home": 2,
+   "set_away": 0,
+   "sets": [
+    [
+     25,
+     17
+    ],
+    [
+     25,
+     22
+    ]
+   ],
+   "pt_home": 50,
+   "pt_away": 39,
+   "odds": {
+    "AH": {
+     "open": [
+      "2.5",
+      "0",
+      "1.5",
+      "0"
+     ],
+     "close": [
+      "2.5",
+      "0",
+      "1.5",
+      "0"
+     ],
+     "current": [
+      "1.72",
+      "0",
+      "2",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "1.72",
+      "0",
+      "2",
+      "0"
+     ],
+     "close": [
+      "1.72",
+      "0",
+      "2",
+      "0"
+     ],
+     "current": [
+      "1.08",
+      "0",
+      "7",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  }
+ ]
 }
