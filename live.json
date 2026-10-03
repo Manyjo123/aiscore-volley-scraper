@@ -1,66 +1,253 @@
 {
- "generated": "2026-10-03T08:03:47Z",
+ "generated": "2026-10-03T13:20:59Z",
  "matches": [
   {
-   "match_id": "527r6i5j9j4a47e",
-   "league": "Asian Games",
-   "home": "China",
-   "away": "Pakistan",
-   "start": "1791010800",
+   "match_id": "vrqwpim8wwlf4kn",
+   "league": "",
+   "home": "",
+   "away": "Evreux Women",
+   "start": "1791028800",
    "status": "436",
-   "set_home": 0,
+   "set_home": 1,
    "set_away": 2,
    "sets": [
+    [
+     10,
+     25
+    ],
     [
      18,
      25
     ],
     [
-     7,
-     10
+     20,
+     19
     ]
    ],
-   "pt_home": 25,
-   "pt_away": 35,
+   "pt_home": 48,
+   "pt_away": 69,
+   "odds": {}
+  },
+  {
+   "match_id": "zrkn9i89jg6awql",
+   "league": "",
+   "home": "Berel VKO Women",
+   "away": "Burevestnik Women",
+   "start": "1791028800",
+   "status": "432",
+   "set_home": 1,
+   "set_away": 0,
+   "sets": [
+    [
+     22,
+     14
+    ]
+   ],
+   "pt_home": 22,
+   "pt_away": 14,
    "odds": {
-    "AH": {
+    "1X2": {
      "open": [
-      "1.83",
+      "1.2",
       "0",
-      "1.83",
+      "4.33",
       "0"
      ],
      "close": [
-      "1.83",
+      "1.2",
       "0",
-      "1.83",
+      "4.33",
       "0"
      ],
      "current": [
-      "1.53",
+      "1.08",
       "0",
-      "2.37",
+      "7",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "vmqyliop294igk9",
+   "league": "",
+   "home": "Zhetysu Women",
+   "away": "Pavlodar Women",
+   "start": "1791028800",
+   "status": "432",
+   "set_home": 1,
+   "set_away": 0,
+   "sets": [
+    [
+     22,
+     9
+    ]
+   ],
+   "pt_home": 22,
+   "pt_away": 9,
+   "odds": {
+    "1X2": {
+     "open": [
+      "1.03",
+      "0",
+      "10",
+      "0"
+     ],
+     "close": [
+      "1.03",
+      "0",
+      "10",
+      "0"
+     ],
+     "current": [
+      "1.01",
+      "0",
+      "15",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "o17pvi8z5m2iy7j",
+   "league": "",
+   "home": "Turan Women",
+   "away": "Aktobe Women",
+   "start": "1791028800",
+   "status": "432",
+   "set_home": 1,
+   "set_away": 0,
+   "sets": [
+    [
+     22,
+     13
+    ]
+   ],
+   "pt_home": 22,
+   "pt_away": 13,
+   "odds": {
+    "1X2": {
+     "open": [
+      "1.22",
+      "0",
+      "4",
+      "0"
+     ],
+     "close": [
+      "1.22",
+      "0",
+      "4",
+      "0"
+     ],
+     "current": [
+      "1.08",
+      "0",
+      "7",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "wv78gig2wgpboqr",
+   "league": "",
+   "home": "NTNUI",
+   "away": "Randaberg",
+   "start": "1791032400",
+   "status": "432",
+   "set_home": 1,
+   "set_away": 0,
+   "sets": [
+    [
+     15,
+     13
+    ]
+   ],
+   "pt_home": 15,
+   "pt_away": 13,
+   "odds": {
+    "1X2": {
+     "open": [
+      "1.72",
+      "0",
+      "2",
+      "0"
+     ],
+     "close": [
+      "1.72",
+      "0",
+      "2",
+      "0"
+     ],
+     "current": [
+      "1.3",
+      "0",
+      "3.4",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "vrqwpim16eea4kn",
+   "league": "",
+   "home": "Bydgoszcz Women",
+   "away": "Bielsko-Biala Women",
+   "start": "1791032400",
+   "status": "432",
+   "set_home": 0,
+   "set_away": 1,
+   "sets": [
+    [
+     17,
+     18
+    ]
+   ],
+   "pt_home": 17,
+   "pt_away": 18,
+   "odds": {
+    "AH": {
+     "open": [
+      "2",
+      "0",
+      "1.72",
+      "0"
+     ],
+     "close": [
+      "2",
+      "0",
+      "1.72",
+      "0"
+     ],
+     "current": [
+      "1.66",
+      "0",
+      "2.1",
       "0"
      ],
      "company": "bet365"
     },
     "1X2": {
      "open": [
-      "1.12",
+      "7",
       "0",
-      "5.5",
+      "1.08",
       "0"
      ],
      "close": [
-      "1.12",
+      "7",
       "0",
-      "5.5",
+      "1.08",
       "0"
      ],
      "current": [
-      "5.5",
+      "6",
       "0",
-      "1.12",
+      "1.11",
       "0"
      ],
      "company": "bet365"
@@ -79,9 +266,9 @@
       "0"
      ],
      "current": [
-      "1.9",
+      "1.83",
       "0",
-      "1.8",
+      "1.83",
       "0"
      ],
      "company": "bet365"
@@ -89,22 +276,124 @@
    }
   },
   {
-   "match_id": "ndkzzivo5z0axk3",
-   "league": "Superleague Women",
-   "home": "Bukovynka Women",
-   "away": "Balta Women",
-   "start": "1791014400",
+   "match_id": "m2q1pid01e8ieq6",
+   "league": "",
+   "home": "Tulitsa Women",
+   "away": "St. Petersburg Women",
+   "start": "1791032400",
    "status": "432",
    "set_home": 0,
    "set_away": 0,
    "sets": [
     [
-     1,
-     1
+     17,
+     17
     ]
    ],
-   "pt_home": 1,
-   "pt_away": 1,
+   "pt_home": 17,
+   "pt_away": 17,
+   "odds": {}
+  },
+  {
+   "match_id": "527r6i5v9vws47e",
+   "league": "",
+   "home": "Nilufer Bld. Women",
+   "away": "Eczacibasi Women",
+   "start": "1791032400",
+   "status": "432",
+   "set_home": 1,
+   "set_away": 0,
+   "sets": [
+    [
+     19,
+     15
+    ]
+   ],
+   "pt_home": 19,
+   "pt_away": 15,
+   "odds": {
+    "AH": {
+     "open": [
+      "3.4",
+      "0",
+      "1.3",
+      "0"
+     ],
+     "close": [
+      "3.4",
+      "0",
+      "1.3",
+      "0"
+     ],
+     "current": [
+      "2.5",
+      "0",
+      "1.5",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "11",
+      "0",
+      "1.02",
+      "0"
+     ],
+     "close": [
+      "11",
+      "0",
+      "1.02",
+      "0"
+     ],
+     "current": [
+      "5",
+      "0",
+      "1.14",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "l6kexi0eomlhvq5",
+   "league": "",
+   "home": "Bodrum Dogus Women",
+   "away": "Karsiyaka Women",
+   "start": "1791032400",
+   "status": "432",
+   "set_home": 0,
+   "set_away": 1,
+   "sets": [
+    [
+     12,
+     20
+    ]
+   ],
+   "pt_home": 12,
+   "pt_away": 20,
    "odds": {}
   }
  ]
