@@ -1,4 +1,46 @@
 {
- "generated": "2026-10-15T01:50:14Z",
- "matches": []
+ "generated": "2026-10-15T06:44:48Z",
+ "matches": [
+  {
+   "match_id": "63kvyiw4m5jbxke",
+   "league": "KOVO Cup Women",
+   "home": "AI Peppers Women",
+   "away": "Incheon Heungkuk Pink Spiders Women",
+   "start": "1792045800",
+   "status": "432",
+   "set_home": 0,
+   "set_away": 1,
+   "sets": [
+    [
+     5,
+     19
+    ]
+   ],
+   "pt_home": 5,
+   "pt_away": 19,
+   "odds": {
+    "1X2": {
+     "open": [
+      "4.33",
+      "0",
+      "1.2",
+      "0"
+     ],
+     "close": [
+      "4.33",
+      "0",
+      "1.2",
+      "0"
+     ],
+     "current": [
+      "8",
+      "0",
+      "1.06",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  }
+ ]
 }
