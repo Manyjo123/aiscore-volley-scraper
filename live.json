@@ -1,41 +1,87 @@
 {
- "generated": "2026-10-18T00:18:50Z",
+ "generated": "2026-10-18T04:52:15Z",
  "matches": [
   {
-   "match_id": "9gkldiw91eysmqx",
+   "match_id": "m2q1pid0502ieq6",
    "league": "",
-   "home": "San Martin de Porres Women",
-   "away": "Circolo Women",
-   "start": "1792281600",
-   "status": "432",
+   "home": "Ageo Women",
+   "away": "Denso Airybees Women",
+   "start": "1792296300",
+   "status": "434",
    "set_home": 1,
-   "set_away": 0,
+   "set_away": 1,
    "sets": [
     [
-     5,
-     4
+     21,
+     25
+    ],
+    [
+     17,
+     11
     ]
    ],
-   "pt_home": 5,
-   "pt_away": 4,
+   "pt_home": 38,
+   "pt_away": 36,
    "odds": {
-    "1X2": {
+    "AH": {
      "open": [
-      "1.04",
+      "1.5",
       "0",
-      "9",
+      "2.5",
       "0"
      ],
      "close": [
-      "1.04",
+      "1.5",
       "0",
-      "9",
+      "2.5",
       "0"
      ],
      "current": [
-      "1.04",
+      "1.33",
       "0",
-      "9",
+      "3.25",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.83",
+      "0",
+      "1.83",
       "0"
      ],
      "company": "bet365"
