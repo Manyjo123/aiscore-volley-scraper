@@ -1,189 +1,23 @@
 {
- "generated": "2026-10-18T16:39:18Z",
+ "generated": "2026-10-18T18:55:41Z",
  "matches": [
   {
-   "match_id": "l6kexi4ldrncvq5",
-   "league": "Volley League",
-   "home": "Guibertin",
-   "away": "Lindemans Aalst",
-   "start": "1792339200",
-   "status": "434",
-   "set_home": 0,
-   "set_away": 1,
-   "sets": [
-    [
-     21,
-     25
-    ]
-   ],
-   "pt_home": 21,
-   "pt_away": 25,
-   "odds": {
-    "AH": {
-     "open": [
-      "1.72",
-      "0",
-      "2",
-      "0"
-     ],
-     "close": [
-      "1.72",
-      "0",
-      "2",
-      "0"
-     ],
-     "current": [
-      "2.25",
-      "0",
-      "1.57",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "5",
-      "0",
-      "1.14",
-      "0"
-     ],
-     "close": [
-      "5",
-      "0",
-      "1.14",
-      "0"
-     ],
-     "current": [
-      "8",
-      "0",
-      "1.06",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "0",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "0",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "0",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "o17pvi861xecy7j",
-   "league": "TAURON Liga",
-   "home": "Slepsk Suwalki",
-   "away": "Barkom",
-   "start": "1792339200",
-   "status": "434",
-   "set_home": 0,
-   "set_away": 1,
-   "sets": [
-    [
-     23,
-     25
-    ]
-   ],
-   "pt_home": 23,
-   "pt_away": 25,
-   "odds": {
-    "AH": {
-     "open": [
-      "1.8",
-      "0",
-      "1.9",
-      "0"
-     ],
-     "close": [
-      "1.8",
-      "0",
-      "1.9",
-      "0"
-     ],
-     "current": [
-      "1.53",
-      "0",
-      "2.37",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "1.36",
-      "0",
-      "3",
-      "0"
-     ],
-     "close": [
-      "1.36",
-      "0",
-      "3",
-      "0"
-     ],
-     "current": [
-      "2.05",
-      "0",
-      "1.7",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "0",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "0",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "0",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "jr7oviwngd4tgk0",
-   "league": "Supercup",
-   "home": "Levski Sofia",
-   "away": "Neftohimic Burgas",
-   "start": "1792341000",
+   "match_id": "527r6i50pjdh47e",
+   "league": "",
+   "home": "Opole Women",
+   "away": "Budowlani Lodz Women",
+   "start": "1792348200",
    "status": "432",
    "set_home": 1,
    "set_away": 0,
    "sets": [
     [
-     6,
-     3
+     23,
+     21
     ]
    ],
-   "pt_home": 6,
-   "pt_away": 3,
+   "pt_home": 23,
+   "pt_away": 21,
    "odds": {
     "AH": {
      "open": [
@@ -199,30 +33,30 @@
       "0"
      ],
      "current": [
-      "2.37",
+      "2.5",
       "0",
-      "1.53",
+      "1.5",
       "0"
      ],
      "company": "bet365"
     },
     "1X2": {
      "open": [
-      "1.36",
+      "2.62",
       "0",
-      "3",
+      "1.44",
       "0"
      ],
      "close": [
-      "1.36",
+      "2.62",
       "0",
-      "3",
+      "1.44",
       "0"
      ],
      "current": [
-      "1.22",
+      "1.72",
       "0",
-      "4",
+      "2",
       "0"
      ],
      "company": "bet365"
