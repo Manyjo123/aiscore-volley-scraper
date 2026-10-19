@@ -1,4 +1,28 @@
 {
- "generated": "2026-10-19T13:09:26Z",
- "matches": []
+ "generated": "2026-10-19T19:18:17Z",
+ "matches": [
+  {
+   "match_id": "ndkzzivmrx4bxk3",
+   "league": "TAURON Liga Women",
+   "home": "Mogilno Women",
+   "away": "Bielsko-Biala Women",
+   "start": "1792434600",
+   "status": "434",
+   "set_home": 0,
+   "set_away": 2,
+   "sets": [
+    [
+     19,
+     25
+    ],
+    [
+     7,
+     11
+    ]
+   ],
+   "pt_home": 26,
+   "pt_away": 36,
+   "odds": {}
+  }
+ ]
 }
