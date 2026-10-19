@@ -1,28 +1,179 @@
 {
- "generated": "2026-10-19T19:18:17Z",
+ "generated": "2026-10-19T22:58:15Z",
  "matches": [
   {
-   "match_id": "ndkzzivmrx4bxk3",
-   "league": "TAURON Liga Women",
-   "home": "Mogilno Women",
-   "away": "Bielsko-Biala Women",
-   "start": "1792434600",
-   "status": "434",
+   "match_id": "527r6i5989oa47e",
+   "league": "Superliga Women",
+   "home": "Brasilia Volei Women",
+   "away": "Osasco Women",
+   "start": "1792445400",
+   "status": "436",
    "set_home": 0,
    "set_away": 2,
    "sets": [
     [
-     19,
+     23,
      25
     ],
     [
-     7,
-     11
+     2,
+     8
     ]
    ],
-   "pt_home": 26,
-   "pt_away": 36,
-   "odds": {}
+   "pt_home": 25,
+   "pt_away": 33,
+   "odds": {
+    "AH": {
+     "open": [
+      "2.1",
+      "0",
+      "1.66",
+      "0"
+     ],
+     "close": [
+      "2.1",
+      "0",
+      "1.66",
+      "0"
+     ],
+     "current": [
+      "2.75",
+      "0",
+      "1.4",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "7.5",
+      "0",
+      "1.07",
+      "0"
+     ],
+     "close": [
+      "7.5",
+      "0",
+      "1.07",
+      "0"
+     ],
+     "current": [
+      "26",
+      "0",
+      "1",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.8",
+      "0",
+      "1.9",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "wv78gigdodouoqr",
+   "league": "Superliga Women",
+   "home": "Sesi Bauru Women",
+   "away": "Mackenzie Women",
+   "start": "1792445400",
+   "status": "436",
+   "set_home": 2,
+   "set_away": 0,
+   "sets": [
+    [
+     25,
+     22
+    ],
+    [
+     25,
+     22
+    ]
+   ],
+   "pt_home": 50,
+   "pt_away": 44,
+   "odds": {
+    "AH": {
+     "open": [
+      "2.2",
+      "0",
+      "1.61",
+      "0"
+     ],
+     "close": [
+      "2.2",
+      "0",
+      "1.61",
+      "0"
+     ],
+     "current": [
+      "1.5",
+      "0",
+      "2.5",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "1.16",
+      "0",
+      "4.5",
+      "0"
+     ],
+     "close": [
+      "1.16",
+      "0",
+      "4.5",
+      "0"
+     ],
+     "current": [
+      "1",
+      "0",
+      "17",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "2",
+      "0",
+      "1.72",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
   }
  ]
 }
