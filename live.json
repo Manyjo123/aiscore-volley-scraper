@@ -1,4 +1,54 @@
 {
- "generated": "2026-10-20T06:35:53Z",
- "matches": []
+ "generated": "2026-10-20T12:14:52Z",
+ "matches": [
+  {
+   "match_id": "527r6i5vg43s47e",
+   "league": "1. Ligi Women",
+   "home": "Kuzey Boru Genclik 2 Women",
+   "away": "Kolejliler Women",
+   "start": "1792494000",
+   "status": "436",
+   "set_home": 1,
+   "set_away": 2,
+   "sets": [
+    [
+     23,
+     25
+    ],
+    [
+     19,
+     25
+    ],
+    [
+     10,
+     9
+    ]
+   ],
+   "pt_home": 52,
+   "pt_away": 59,
+   "odds": {
+    "1X2": {
+     "open": [
+      "1.66",
+      "0",
+      "2.1",
+      "0"
+     ],
+     "close": [
+      "1.66",
+      "0",
+      "2.1",
+      "0"
+     ],
+     "current": [
+      "5.5",
+      "0",
+      "1.12",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  }
+ ]
 }
