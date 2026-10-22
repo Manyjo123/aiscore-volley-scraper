@@ -1,4 +1,91 @@
 {
- "generated": "2026-10-22T07:57:21Z",
- "matches": []
+ "generated": "2026-10-22T13:24:12Z",
+ "matches": [
+  {
+   "match_id": "8lk2oiw15o9tzq3",
+   "league": "National League",
+   "home": "Berel",
+   "away": "Okzhetpes",
+   "start": "1792674000",
+   "status": "434",
+   "set_home": 0,
+   "set_away": 2,
+   "sets": [
+    [
+     11,
+     25
+    ],
+    [
+     2,
+     4
+    ]
+   ],
+   "pt_home": 13,
+   "pt_away": 29,
+   "odds": {
+    "1X2": {
+     "open": [
+      "3.5",
+      "0",
+      "1.28",
+      "0"
+     ],
+     "close": [
+      "3.5",
+      "0",
+      "1.28",
+      "0"
+     ],
+     "current": [
+      "8.5",
+      "0",
+      "1.05",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "o07d9i8026gumqn",
+   "league": "National League",
+   "home": "Zhetyssu Zhastar",
+   "away": "Aktobe",
+   "start": "1792674000",
+   "status": "432",
+   "set_home": 0,
+   "set_away": 1,
+   "sets": [
+    [
+     23,
+     24
+    ]
+   ],
+   "pt_home": 23,
+   "pt_away": 24,
+   "odds": {
+    "1X2": {
+     "open": [
+      "1.36",
+      "0",
+      "3",
+      "0"
+     ],
+     "close": [
+      "1.36",
+      "0",
+      "3",
+      "0"
+     ],
+     "current": [
+      "2.25",
+      "0",
+      "1.57",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  }
+ ]
 }
