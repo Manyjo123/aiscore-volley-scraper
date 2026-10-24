@@ -1,51 +1,136 @@
 {
- "generated": "2026-10-24T03:59:27Z",
+ "generated": "2026-10-24T08:42:56Z",
  "matches": [
   {
-   "match_id": "527r6i50j06t47e",
-   "league": "SV.League Women",
-   "home": "Himeji Victorina Women",
-   "away": "PFU Blue Cats Women",
-   "start": "1792811100",
-   "status": "434",
-   "set_home": 0,
-   "set_away": 2,
+   "match_id": "ndkzzivmolyixk3",
+   "league": "SV.League",
+   "home": "Nagoya",
+   "away": "FC Tokyo",
+   "start": "1792827300",
+   "status": "436",
+   "set_home": 2,
+   "set_away": 0,
    "sets": [
     [
-     18,
-     25
+     25,
+     18
     ],
     [
-     19,
+     25,
      21
     ]
    ],
-   "pt_home": 37,
-   "pt_away": 46,
+   "pt_home": 50,
+   "pt_away": 39,
    "odds": {
     "AH": {
      "open": [
-      "2.37",
+      "2",
       "0",
-      "1.53",
+      "1.72",
       "0"
      ],
      "close": [
-      "2.37",
+      "2",
       "0",
-      "1.53",
+      "1.72",
       "0"
      ],
      "current": [
-      "1.57",
+      "1.5",
       "0",
-      "2.25",
+      "2.5",
       "0"
      ],
      "company": "bet365"
     },
     "1X2": {
      "open": [
+      "1.5",
+      "0",
+      "2.5",
+      "0"
+     ],
+     "close": [
+      "1.5",
+      "0",
+      "2.5",
+      "0"
+     ],
+     "current": [
+      "1.06",
+      "0",
+      "8",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.72",
+      "0",
+      "2",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "jek3linx3mmh9ko",
+   "league": "Vysshaya Liga А",
+   "home": "Makhachkala",
+   "away": "Lokomotiv Izumrud",
+   "start": "1792828800",
+   "status": "434",
+   "set_home": 0,
+   "set_away": 1,
+   "sets": [
+    [
+     23,
+     25
+    ],
+    [
+     11,
+     11
+    ]
+   ],
+   "pt_home": 34,
+   "pt_away": 36,
+   "odds": {}
+  },
+  {
+   "match_id": "oj7xoi213nnc47g",
+   "league": "SV.League",
+   "home": "Shinshu Matsumoto Tridents",
+   "away": "JT Thunders",
+   "start": "1792829100",
+   "status": "434",
+   "set_home": 1,
+   "set_away": 0,
+   "sets": [
+    [
+     4,
+     3
+    ]
+   ],
+   "pt_home": 4,
+   "pt_away": 3,
+   "odds": {
+    "AH": {
+     "open": [
       "1.66",
       "0",
       "2.1",
@@ -58,9 +143,117 @@
       "0"
      ],
      "current": [
-      "4",
+      "2.2",
       "0",
-      "1.22",
+      "1.61",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "2.37",
+      "0",
+      "1.53",
+      "0"
+     ],
+     "close": [
+      "2.37",
+      "0",
+      "1.53",
+      "0"
+     ],
+     "current": [
+      "3.5",
+      "0",
+      "1.28",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "63kvyiwz8z5uxke",
+   "league": "SV.League Women",
+   "home": "Denso Airybees Women",
+   "away": "Hisamitsu Springs Women",
+   "start": "1792829100",
+   "status": "434",
+   "set_home": 1,
+   "set_away": 1,
+   "sets": [
+    [
+     18,
+     25
+    ],
+    [
+     11,
+     7
+    ]
+   ],
+   "pt_home": 29,
+   "pt_away": 32,
+   "odds": {
+    "AH": {
+     "open": [
+      "1.4",
+      "0",
+      "2.75",
+      "0"
+     ],
+     "close": [
+      "1.4",
+      "0",
+      "2.75",
+      "0"
+     ],
+     "current": [
+      "1.5",
+      "0",
+      "2.5",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "2.25",
+      "0",
+      "1.57",
       "0"
      ],
      "company": "bet365"
