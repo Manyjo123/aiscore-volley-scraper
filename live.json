@@ -1,46 +1,4 @@
 {
- "generated": "2026-10-26T01:26:13Z",
- "matches": [
-  {
-   "match_id": "527r6i51j1oa47e",
-   "league": "LNSV Women",
-   "home": "Universitario de Deportes Women",
-   "away": "Wanka Women",
-   "start": "1792971000",
-   "status": "432",
-   "set_home": 1,
-   "set_away": 0,
-   "sets": [
-    [
-     10,
-     7
-    ]
-   ],
-   "pt_home": 10,
-   "pt_away": 7,
-   "odds": {
-    "1X2": {
-     "open": [
-      "1.01",
-      "0",
-      "15",
-      "0"
-     ],
-     "close": [
-      "1.01",
-      "0",
-      "15",
-      "0"
-     ],
-     "current": [
-      "1",
-      "0",
-      "17",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  }
- ]
+ "generated": "2026-10-26T06:37:27Z",
+ "matches": []
 }
