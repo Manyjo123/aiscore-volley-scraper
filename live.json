@@ -1,49 +1,41 @@
 {
- "generated": "2026-10-25T23:16:40Z",
+ "generated": "2026-10-26T01:26:13Z",
  "matches": [
   {
-   "match_id": "ndkzziv1x1whxk3",
+   "match_id": "527r6i51j1oa47e",
    "league": "LNSV Women",
-   "home": "Circolo Women",
-   "away": "Geminis Women",
-   "start": "1792963800",
-   "status": "436",
-   "set_home": 2,
+   "home": "Universitario de Deportes Women",
+   "away": "Wanka Women",
+   "start": "1792971000",
+   "status": "432",
+   "set_home": 1,
    "set_away": 0,
    "sets": [
     [
-     25,
-     23
-    ],
-    [
-     25,
-     23
-    ],
-    [
-     1,
-     1
+     10,
+     7
     ]
    ],
-   "pt_home": 51,
-   "pt_away": 47,
+   "pt_home": 10,
+   "pt_away": 7,
    "odds": {
     "1X2": {
      "open": [
-      "1.66",
+      "1.01",
       "0",
-      "2.1",
+      "15",
       "0"
      ],
      "close": [
-      "1.66",
+      "1.01",
       "0",
-      "2.1",
+      "15",
       "0"
      ],
      "current": [
-      "1.12",
+      "1",
       "0",
-      "5.5",
+      "17",
       "0"
      ],
      "company": "bet365"
