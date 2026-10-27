@@ -1,4 +1,220 @@
 {
- "generated": "2026-10-27T07:51:44Z",
- "matches": []
+ "generated": "2026-10-27T13:47:11Z",
+ "matches": [
+  {
+   "match_id": "l6kexi0p5lrhvq5",
+   "league": "Efeler Ligi",
+   "home": "Sultanbeyli",
+   "away": "Gebze",
+   "start": "1793106000",
+   "status": "434",
+   "set_home": 0,
+   "set_away": 2,
+   "sets": [
+    [
+     17,
+     25
+    ],
+    [
+     14,
+     19
+    ]
+   ],
+   "pt_home": 31,
+   "pt_away": 44,
+   "odds": {
+    "AH": {
+     "open": [
+      "2",
+      "0",
+      "1.72",
+      "0"
+     ],
+     "close": [
+      "2",
+      "0",
+      "1.72",
+      "0"
+     ],
+     "current": [
+      "3.25",
+      "0",
+      "1.33",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "3.25",
+      "0",
+      "1.33",
+      "0"
+     ],
+     "close": [
+      "3.25",
+      "0",
+      "1.33",
+      "0"
+     ],
+     "current": [
+      "10",
+      "0",
+      "1.04",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.9",
+      "0",
+      "1.8",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "o17pvi81yllty7j",
+   "league": "Superliga Women",
+   "home": "Deya Volley Women",
+   "away": "CPVC Volley Women",
+   "start": "1793106000",
+   "status": "434",
+   "set_home": 0,
+   "set_away": 2,
+   "sets": [
+    [
+     22,
+     25
+    ],
+    [
+     12,
+     17
+    ]
+   ],
+   "pt_home": 34,
+   "pt_away": 42,
+   "odds": {
+    "1X2": {
+     "open": [
+      "8.5",
+      "0",
+      "1.05",
+      "0"
+     ],
+     "close": [
+      "8.5",
+      "0",
+      "1.05",
+      "0"
+     ],
+     "current": [
+      "12",
+      "0",
+      "1.01",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "oj7xoi2e1zgh47g",
+   "league": "Efeler Ligi",
+   "home": "Sungurlu",
+   "away": "Galatasaray",
+   "start": "1793107800",
+   "status": "432",
+   "set_home": 0,
+   "set_away": 0,
+   "sets": [
+    [
+     11,
+     11
+    ]
+   ],
+   "pt_home": 11,
+   "pt_away": 11,
+   "odds": {
+    "AH": {
+     "open": [
+      "1.57",
+      "0",
+      "2.25",
+      "0"
+     ],
+     "close": [
+      "1.57",
+      "0",
+      "2.25",
+      "0"
+     ],
+     "current": [
+      "2.5",
+      "0",
+      "1.5",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "4.33",
+      "0",
+      "1.2",
+      "0"
+     ],
+     "close": [
+      "4.33",
+      "0",
+      "1.2",
+      "0"
+     ],
+     "current": [
+      "4",
+      "0",
+      "1.22",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  }
+ ]
 }
