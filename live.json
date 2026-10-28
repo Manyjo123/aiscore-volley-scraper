@@ -1,4 +1,96 @@
 {
- "generated": "2026-10-28T07:52:46Z",
- "matches": []
+ "generated": "2026-10-28T14:42:43Z",
+ "matches": [
+  {
+   "match_id": "jr7oviwj61rtgk0",
+   "league": "Divizia A1 Women",
+   "home": "Rapid Bucuresti Women",
+   "away": "CSM Constanta Women",
+   "start": "1793194200",
+   "status": "436",
+   "set_home": 2,
+   "set_away": 1,
+   "sets": [
+    [
+     25,
+     16
+    ],
+    [
+     25,
+     19
+    ],
+    [
+     15,
+     20
+    ]
+   ],
+   "pt_home": 65,
+   "pt_away": 55,
+   "odds": {
+    "AH": {
+     "open": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "2",
+      "0",
+      "1.72",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "2.62",
+      "0",
+      "1.44",
+      "0"
+     ],
+     "close": [
+      "2.62",
+      "0",
+      "1.44",
+      "0"
+     ],
+     "current": [
+      "1.4",
+      "0",
+      "2.75",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  }
+ ]
 }
