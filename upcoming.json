@@ -1,53 +1,53 @@
 {
- "generated": "2026-11-02T11:44:20Z",
+ "generated": "2026-11-03T11:25:43Z",
  "matches": [
   {
-   "match_id": "zrkn9i8nen2fwql",
+   "match_id": "527r6i50mygt47e",
    "league": "",
-   "home": "Galeries Tower Highrisers Women",
-   "away": "Akari Chargers Women",
+   "home": "VC Kuzbass Kemerovo",
+   "away": "Yaroslavl",
    "start": null,
    "status": null,
    "odds": {}
   },
   {
-   "match_id": "63kvyiwzg3rixke",
+   "match_id": "jek3linx83db9ko",
    "league": "",
-   "home": "Suwon KEPCO Vixtorm",
-   "away": "Woori",
+   "home": "KB Stars",
+   "away": "Rush & Cash",
    "start": null,
    "status": null,
    "odds": {}
   },
   {
-   "match_id": "jek3linx8vnf9ko",
+   "match_id": "o07d9i8y5wpsmqn",
    "league": "",
-   "home": "IBK Women",
-   "away": "Hyundai E&C Hillstate Women",
+   "home": "Incheon Heungkuk Pink Spiders Women",
+   "away": "Daejeon KGC Women",
    "start": null,
    "status": null,
    "odds": {}
   },
   {
-   "match_id": "oj7xoi2303eh47g",
+   "match_id": "wv78gig2360soqr",
    "league": "",
-   "home": "Nxled Chameleons Women",
-   "away": "Choco Mucho Flying Titans Women",
+   "home": "Krasnoyarsk",
+   "away": "Zenit Kazan",
    "start": null,
    "status": null,
    "odds": {}
   },
   {
-   "match_id": "ndqm9impopmirkv",
+   "match_id": "edq0yie5m08ie7x",
    "league": "",
-   "home": "Taraz Jambil",
-   "away": "Zhetyssu Zhastar",
+   "home": "Craiova",
+   "away": "Rapid Bucuresti",
    "start": null,
    "status": null,
    "odds": {}
   },
   {
-   "match_id": "o07d9i8020nbmqn",
+   "match_id": "g6768im2w28uoqr",
    "league": "",
    "home": "Atyrau",
    "away": "Okzhetpes",
@@ -56,7 +56,106 @@
    "odds": {}
   },
   {
-   "match_id": "vrqwpimvnv2t4kn",
+   "match_id": "l6kexi0pep2avq5",
+   "league": "",
+   "home": "Taraz Jambil",
+   "away": "Zhetyssu Zhastar",
+   "start": null,
+   "status": null,
+   "odds": {}
+  },
+  {
+   "match_id": "o07d9i82l0wtmqn",
+   "league": "",
+   "home": "Bisheh Chamestan",
+   "away": "Mehregan Noor",
+   "start": null,
+   "status": null,
+   "odds": {}
+  },
+  {
+   "match_id": "vrqwpimnyv4c4kn",
+   "league": "",
+   "home": "Chadormalu",
+   "away": "Sepahan",
+   "start": null,
+   "status": null,
+   "odds": {}
+  },
+  {
+   "match_id": "ndqm9imolp9arkv",
+   "league": "",
+   "home": "Esteghlal Gonbad",
+   "away": "PAS Gorgan",
+   "start": null,
+   "status": null,
+   "odds": {}
+  },
+  {
+   "match_id": "g6768imwx2mtoqr",
+   "league": "",
+   "home": "Sanatgaran Omid",
+   "away": "Moghaddam Qazvin",
+   "start": null,
+   "status": null,
+   "odds": {}
+  },
+  {
+   "match_id": "ezk95iz58yrb17n",
+   "league": "",
+   "home": "Shahdab Yazd",
+   "away": "Rafsanjan",
+   "start": null,
+   "status": null,
+   "odds": {}
+  },
+  {
+   "match_id": "l6kexi0eop5ivq5",
+   "league": "",
+   "home": "Shahrdari Urmia",
+   "away": "Paykan",
+   "start": null,
+   "status": null,
+   "odds": {}
+  },
+  {
+   "match_id": "xvkj9i3o4xjc879",
+   "league": "",
+   "home": "Sirjan",
+   "away": "Razin Polymer",
+   "start": null,
+   "status": null,
+   "odds": {}
+  },
+  {
+   "match_id": "m2q1pidgvnyieq6",
+   "league": "",
+   "home": "Tabiat Eslamshahr",
+   "away": "Mes Sungun Tabriz",
+   "start": null,
+   "status": null,
+   "odds": {}
+  },
+  {
+   "match_id": "edq0yiex806se7x",
+   "league": "",
+   "home": "Novyi Urengoy",
+   "away": "Orenburg",
+   "start": null,
+   "status": null,
+   "odds": {}
+  },
+  {
+   "match_id": "8lk2oiw5g14izq3",
+   "league": "",
+   "home": "U. Cluj",
+   "away": "Stiinta Bucuresti",
+   "start": null,
+   "status": null,
+   "odds": {}
+  },
+  {
+   "match_id": "ezk95izy5y9f17n",
    "league": "",
    "home": "Burevestnik Almaty",
    "away": "Berel",
@@ -65,1522 +164,29 @@
    "odds": {}
   },
   {
-   "match_id": "9gkldiwlpp4tmqx",
+   "match_id": "8lk2oiwv2j1azq3",
    "league": "",
-   "home": "Khilasedichi Baku",
-   "away": "Sporting CP",
+   "home": "Manisa BB Women",
+   "away": "Galatasaray Women",
    "start": null,
    "status": null,
    "odds": {}
   },
   {
-   "match_id": "jek3lin9jjwt9ko",
+   "match_id": "34kgxi5v0xvue7o",
    "league": "",
-   "home": "Istanbul GSK",
-   "away": "Gaziantep Genclik",
+   "home": "Surgut Region",
+   "away": "Zenit St. Petersburg",
    "start": null,
    "status": null,
    "odds": {}
   },
   {
-   "match_id": "j374zirw8njigko",
-   "league": "",
-   "home": "Olympiacos",
-   "away": "Rethymno",
-   "start": null,
-   "status": null,
-   "odds": {}
-  },
-  {
-   "match_id": "j374zi6pjz9agko",
-   "league": "",
-   "home": "Kladno",
-   "away": "VK Lvi Prague",
-   "start": null,
-   "status": null,
-   "odds": {
-    "AH": {
-     "open": [
-      "1.44",
-      "-1.5",
-      "2.62",
-      "0"
-     ],
-     "close": [
-      "1.44",
-      "-1.5",
-      "2.62",
-      "0"
-     ],
-     "current": [
-      "1.44",
-      "-1.5",
-      "2.62",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "1.9",
-      "0",
-      "1.8",
-      "0"
-     ],
-     "close": [
-      "1.9",
-      "0",
-      "1.8",
-      "0"
-     ],
-     "current": [
-      "1.9",
-      "0",
-      "1.8",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "182.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "182.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "182.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "oj7xoi21dglt47g",
-   "league": "",
-   "home": "Dinamo Zagreb Women",
-   "away": "Olympiada Neapolis Women",
-   "start": null,
-   "status": null,
-   "odds": {}
-  },
-  {
-   "match_id": "o17pvi83xwgay7j",
-   "league": "",
-   "home": "Ziraat Bankasi",
-   "away": "Sungurlu",
-   "start": null,
-   "status": null,
-   "odds": {}
-  },
-  {
-   "match_id": "6975rix225nfgk2",
-   "league": "",
-   "home": "Kokkolan Tiikerit",
-   "away": "AC Oulu",
-   "start": null,
-   "status": null,
-   "odds": {
-    "AH": {
-     "open": [
-      "2",
-      "-1.5",
-      "1.72",
-      "0"
-     ],
-     "close": [
-      "2",
-      "-1.5",
-      "1.72",
-      "0"
-     ],
-     "current": [
-      "2",
-      "-1.5",
-      "1.72",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "3.25",
-      "0",
-      "1.33",
-      "0"
-     ],
-     "close": [
-      "3.25",
-      "0",
-      "1.33",
-      "0"
-     ],
-     "current": [
-      "3.25",
-      "0",
-      "1.33",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "179.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "179.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "179.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "zrkn9i8roz9twql",
-   "league": "",
-   "home": "Gdansk",
-   "away": "Cuprum",
-   "start": null,
-   "status": null,
-   "odds": {}
-  },
-  {
-   "match_id": "vrqwpimzogot4kn",
-   "league": "",
-   "home": "Maritsa Plovdiv Women",
-   "away": "Tovuz Women",
-   "start": null,
-   "status": null,
-   "odds": {}
-  },
-  {
-   "match_id": "m2q1pid0ex1ieq6",
-   "league": "",
-   "home": "H. Kfar Saba",
-   "away": "Hapoel Nazareth",
-   "start": null,
-   "status": null,
-   "odds": {}
-  },
-  {
-   "match_id": "m2q1pi6oynwseq6",
-   "league": "",
-   "home": "Beroe",
-   "away": "CSKA Sofia",
-   "start": null,
-   "status": null,
-   "odds": {}
-  },
-  {
-   "match_id": "zrkn9ipjyn5cwql",
-   "league": "",
-   "home": "Pernik",
-   "away": "Dunav",
-   "start": null,
-   "status": null,
-   "odds": {}
-  },
-  {
-   "match_id": "oj7xoi211ync47g",
-   "league": "",
-   "home": "VCO Berlin",
-   "away": "VfB Friedrichshafen",
-   "start": null,
-   "status": null,
-   "odds": {}
-  },
-  {
-   "match_id": "vrqwpi2wj29h4kn",
-   "league": "AVL",
-   "home": "VBK Klagenfurt",
-   "away": "Waldviertel",
-   "start": 1793548800,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "1.8",
-      "-2.5",
-      "1.9",
-      "0"
-     ],
-     "close": [
-      "1.8",
-      "-2.5",
-      "1.9",
-      "0"
-     ],
-     "current": [
-      "1.8",
-      "-2.5",
-      "1.9",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "5",
-      "0",
-      "1.14",
-      "0"
-     ],
-     "close": [
-      "5",
-      "0",
-      "1.14",
-      "0"
-     ],
-     "current": [
-      "5",
-      "0",
-      "1.14",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "149.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "149.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "149.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "vrqwpi2wdg4a4kn",
-   "league": "Superliga",
-   "home": "Mok Rovinj",
-   "away": "Rijeka",
-   "start": 1793548800,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "1.83",
-      "1.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "1.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "1.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "1.44",
-      "0",
-      "2.62",
-      "0"
-     ],
-     "close": [
-      "1.44",
-      "0",
-      "2.62",
-      "0"
-     ],
-     "current": [
-      "1.44",
-      "0",
-      "2.62",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "180.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "180.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "180.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "vrqwpi2wwomf4kn",
-   "league": "Super League Women",
-   "home": "Polonia London Women",
-   "away": "Nottingham Women",
-   "start": 1793548800,
-   "status": 100,
-   "odds": {}
-  },
-  {
-   "match_id": "oj7xoi21w5vt47g",
-   "league": "SuperLega",
-   "home": "Modena",
-   "away": "Verona",
-   "start": 1793548800,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "1.44",
-      "-1.5",
-      "2.62",
-      "0"
-     ],
-     "close": [
-      "1.44",
-      "-1.5",
-      "2.62",
-      "0"
-     ],
-     "current": [
-      "1.44",
-      "-1.5",
-      "2.62",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "1.9",
-      "0",
-      "1.8",
-      "0"
-     ],
-     "close": [
-      "1.9",
-      "0",
-      "1.8",
-      "0"
-     ],
-     "current": [
-      "1.9",
-      "0",
-      "1.8",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "186.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "186.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "186.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "vrqwpim1nprt4kn",
-   "league": "Serie A1 Women",
-   "home": "Vallefoglia Women",
-   "away": "Talmassons Women",
-   "start": 1793548800,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "1.8",
-      "1.5",
-      "1.9",
-      "0"
-     ],
-     "close": [
-      "1.66",
-      "1.5",
-      "2.1",
-      "0"
-     ],
-     "current": [
-      "1.66",
-      "1.5",
-      "2.1",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "1.36",
-      "0",
-      "3",
-      "0"
-     ],
-     "close": [
-      "1.3",
-      "0",
-      "3.4",
-      "0"
-     ],
-     "current": [
-      "1.3",
-      "0",
-      "3.4",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "179.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "178.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "178.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "ndqm9im4o6jirkv",
-   "league": "Serie A1 Women",
-   "home": "Numia Vero Volley Milano Women",
-   "away": "San Giovanni Women",
-   "start": 1793548800,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "1.4",
-      "2.5",
-      "2.75",
-      "0"
-     ],
-     "close": [
-      "1.4",
-      "2.5",
-      "2.75",
-      "0"
-     ],
-     "current": [
-      "1.4",
-      "2.5",
-      "2.75",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "1.04",
-      "0",
-      "9",
-      "0"
-     ],
-     "close": [
-      "1.04",
-      "0",
-      "9",
-      "0"
-     ],
-     "current": [
-      "1.04",
-      "0",
-      "9",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "133.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "133.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "133.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "l6kexi09pxjhvq5",
-   "league": "Serie A2 Women",
-   "home": "Casalmaggiore Women",
-   "away": "Imola Women",
-   "start": 1793548800,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "2.37",
-      "1.5",
-      "1.53",
-      "0"
-     ],
-     "close": [
-      "2.37",
-      "1.5",
-      "1.53",
-      "0"
-     ],
-     "current": [
-      "2.37",
-      "1.5",
-      "1.53",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "1.66",
-      "0",
-      "2.1",
-      "0"
-     ],
-     "close": [
-      "1.66",
-      "0",
-      "2.1",
-      "0"
-     ],
-     "current": [
-      "1.66",
-      "0",
-      "2.1",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "181.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "181.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "181.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "xvkj9i3rxm6f879",
-   "league": "Serie A2 Women",
-   "home": "Fasano Women",
-   "away": "Messina Women",
-   "start": 1793548800,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "2",
-      "1.5",
-      "1.72",
-      "0"
-     ],
-     "close": [
-      "2",
-      "1.5",
-      "1.72",
-      "0"
-     ],
-     "current": [
-      "2",
-      "1.5",
-      "1.72",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "1.5",
-      "0",
-      "2.5",
-      "0"
-     ],
-     "close": [
-      "1.5",
-      "0",
-      "2.5",
-      "0"
-     ],
-     "current": [
-      "1.5",
-      "0",
-      "2.5",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "180.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "180.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "180.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "zrkn9i8rn9miwql",
-   "league": "Serie A2 Women",
-   "home": "Melendugno Women",
-   "away": "Trentino Women",
-   "start": 1793548800,
-   "status": 100,
-   "odds": {
-    "1X2": {
-     "open": [
-      "2.2",
-      "0",
-      "1.61",
-      "0"
-     ],
-     "close": [
-      "2.2",
-      "0",
-      "1.61",
-      "0"
-     ],
-     "current": [
-      "2.2",
-      "0",
-      "1.61",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "oj7xoi2136ws47g",
-   "league": "Serie A2 Women",
-   "home": "Pinerolo Women",
-   "away": "Club Italia Women",
-   "start": 1793548800,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "1.8",
-      "1.5",
-      "1.9",
-      "0"
-     ],
-     "close": [
-      "1.8",
-      "1.5",
-      "1.9",
-      "0"
-     ],
-     "current": [
-      "1.8",
-      "1.5",
-      "1.9",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "1.4",
-      "0",
-      "2.75",
-      "0"
-     ],
-     "close": [
-      "1.4",
-      "0",
-      "2.75",
-      "0"
-     ],
-     "current": [
-      "1.4",
-      "0",
-      "2.75",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "178.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "178.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "178.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "vmqylioe8ppigk9",
-   "league": "Serie A2 Women",
-   "home": "Offanengo Women",
-   "away": "Perugia Women",
-   "start": 1793548800,
-   "status": 100,
-   "odds": {}
-  },
-  {
-   "match_id": "o17pvi86pzpfy7j",
-   "league": "Serie A2 Women",
-   "home": "Padova Women",
-   "away": "Roma Women",
-   "start": 1793548800,
-   "status": 100,
-   "odds": {
-    "1X2": {
-     "open": [
-      "1.44",
-      "0",
-      "2.62",
-      "0"
-     ],
-     "close": [
-      "1.44",
-      "0",
-      "2.62",
-      "0"
-     ],
-     "current": [
-      "1.44",
-      "0",
-      "2.62",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "wv78gig2n0zaoqr",
-   "league": "1. Divisao Women",
-   "home": "Castelo Maia Women",
-   "away": "Fiaes Women",
-   "start": 1793548800,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "2.37",
-      "2.5",
-      "1.53",
-      "0"
-     ],
-     "close": [
-      "2.37",
-      "2.5",
-      "1.53",
-      "0"
-     ],
-     "current": [
-      "2.37",
-      "2.5",
-      "1.53",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "1.22",
-      "0",
-      "4",
-      "0"
-     ],
-     "close": [
-      "1.22",
-      "0",
-      "4",
-      "0"
-     ],
-     "current": [
-      "1.22",
-      "0",
-      "4",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "172.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "172.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "172.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "34kgxi5vmr8ae7o",
-   "league": "1. Divisao Women",
-   "home": "LeixõesSC Women",
-   "away": "Benfica Women",
-   "start": 1793548800,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "2",
-      "-2.5",
-      "1.72",
-      "0"
-     ],
-     "close": [
-      "2",
-      "-2.5",
-      "1.72",
-      "0"
-     ],
-     "current": [
-      "2",
-      "-2.5",
-      "1.72",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "6.5",
-      "0",
-      "1.1",
-      "0"
-     ],
-     "close": [
-      "6.5",
-      "0",
-      "1.1",
-      "0"
-     ],
-     "current": [
-      "6.5",
-      "0",
-      "1.1",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "138.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "138.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "138.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "m2q1pid01glieq6",
-   "league": "Superleague Women",
-   "home": "Dynamo Kazan Women",
-   "away": "Uralochka-NTMK Women",
-   "start": 1793548800,
-   "status": 100,
-   "odds": {}
-  },
-  {
-   "match_id": "o07d9i8y3mltmqn",
-   "league": "Extraliga",
-   "home": "Presov",
-   "away": "Nitra",
-   "start": 1793548800,
-   "status": 100,
-   "odds": {}
-  },
-  {
-   "match_id": "g6768imd11eaoqr",
-   "league": "LVA",
-   "home": "San Lorenzo de Almagro",
-   "away": "Ciudad Voley",
-   "start": 1793548800,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "2.25",
-      "-2.5",
-      "1.57",
-      "1"
-     ],
-     "close": [
-      "2.25",
-      "-2.5",
-      "1.57",
-      "1"
-     ],
-     "current": [
-      "2.25",
-      "-2.5",
-      "1.57",
-      "1"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "6.5",
-      "0",
-      "1.1",
-      "0"
-     ],
-     "close": [
-      "6.5",
-      "0",
-      "1.1",
-      "0"
-     ],
-     "current": [
-      "6.5",
-      "0",
-      "1.1",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "137.5",
-      "1.83",
-      "1"
-     ],
-     "close": [
-      "1.83",
-      "137.5",
-      "1.83",
-      "1"
-     ],
-     "current": [
-      "1.83",
-      "137.5",
-      "1.83",
-      "1"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "34kgxi5n2e6ce7o",
-   "league": "Divizia A1 Women",
-   "home": "Lugoj Women",
-   "away": "Voluntari Women",
-   "start": 1793548800,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "2.25",
-      "-1.5",
-      "1.57",
-      "0"
-     ],
-     "close": [
-      "2.25",
-      "-1.5",
-      "1.57",
-      "0"
-     ],
-     "current": [
-      "2.25",
-      "-1.5",
-      "1.57",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "3.5",
-      "0",
-      "1.28",
-      "0"
-     ],
-     "close": [
-      "3.5",
-      "0",
-      "1.28",
-      "0"
-     ],
-     "current": [
-      "3.5",
-      "0",
-      "1.28",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "175.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "175.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "175.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "ndkzzivo92dtxk3",
-   "league": "Baltic League",
-   "home": "Pärnu VC",
-   "away": "RTU",
-   "start": 1793548800,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "1.83",
-      "1.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "1.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "1.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "1.4",
-      "0",
-      "2.75",
-      "0"
-     ],
-     "close": [
-      "1.4",
-      "0",
-      "2.75",
-      "0"
-     ],
-     "current": [
-      "1.4",
-      "0",
-      "2.75",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "181.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "181.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "181.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "527r6i5yv35i47e",
-   "league": "Baltic League",
-   "home": "Daugavpils",
-   "away": "Dubysa",
-   "start": 1793548800,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "1.83",
-      "-1.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "-1.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "-1.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "2.62",
-      "0",
-      "1.44",
-      "0"
-     ],
-     "close": [
-      "2.62",
-      "0",
-      "1.44",
-      "0"
-     ],
-     "current": [
-      "2.62",
-      "0",
-      "1.44",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "181.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "181.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "181.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "6975rid1movagk2",
-   "league": "Sultanlar Ligi Women",
-   "home": "Galatasaray Women",
-   "away": "Fenerbahce Women",
-   "start": 1793548800,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "1.9",
-      "-2.5",
-      "1.8",
-      "0"
-     ],
-     "close": [
-      "1.8",
-      "-2.5",
-      "1.9",
-      "0"
-     ],
-     "current": [
-      "1.8",
-      "-2.5",
-      "1.9",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "6.5",
-      "0",
-      "1.1",
-      "0"
-     ],
-     "close": [
-      "5.5",
-      "0",
-      "1.12",
-      "0"
-     ],
-     "current": [
-      "5.5",
-      "0",
-      "1.12",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "143.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "151.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "151.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "6975rix24pnfgk2",
-   "league": "2. Bundesliga",
-   "home": "Hausmannstatten",
-   "away": "UVC Graz 2",
-   "start": 1793550600,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "2.2",
-      "1.5",
-      "1.61",
-      "0"
-     ],
-     "close": [
-      "2.2",
-      "1.5",
-      "1.61",
-      "0"
-     ],
-     "current": [
-      "2.2",
-      "1.5",
-      "1.61",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "1.61",
-      "0",
-      "2.2",
-      "0"
-     ],
-     "close": [
-      "1.61",
-      "0",
-      "2.2",
-      "0"
-     ],
-     "current": [
-      "1.61",
-      "0",
-      "2.2",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "180.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "180.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "180.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "9gkldijg29jbmqx",
-   "league": "2. Bundesliga Women",
-   "home": "Bisamberg 2 Women",
-   "away": "SG SVS hotVolleys Women",
-   "start": 1793550600,
+   "match_id": "ezk95iw44pou17n",
+   "league": "Mestaruusliiga Women",
+   "home": "Nurmon Jymy Women",
+   "away": "Kangasala Women",
+   "start": 1793637000,
    "status": 100,
    "odds": {
     "AH": {
@@ -1612,15 +218,15 @@
       "0"
      ],
      "close": [
-      "4.33",
+      "4.5",
       "0",
-      "1.2",
+      "1.16",
       "0"
      ],
      "current": [
-      "4.33",
+      "4.5",
       "0",
-      "1.2",
+      "1.16",
       "0"
      ],
      "company": "bet365"
@@ -1628,19 +234,19 @@
     "OU": {
      "open": [
       "1.83",
-      "142.5",
+      "162.5",
       "1.83",
       "0"
      ],
      "close": [
       "1.83",
-      "142.5",
+      "162.5",
       "1.83",
       "0"
      ],
      "current": [
       "1.83",
-      "142.5",
+      "162.5",
       "1.83",
       "0"
      ],
@@ -1649,60 +255,60 @@
    }
   },
   {
-   "match_id": "ndkzzid5pzybxk3",
-   "league": "Belgian Cup Women",
-   "home": "Roeselare Women",
-   "away": "Tchalou Women",
-   "start": 1793550600,
+   "match_id": "6975rix2pp4agk2",
+   "league": "Superliga Women",
+   "home": "Mladost Women",
+   "away": "Croatia U20 Women",
+   "start": 1793638800,
    "status": 100,
    "odds": {}
   },
   {
-   "match_id": "6975ridwvv8igk2",
-   "league": "Serie A2",
-   "home": "Virtus Volley Fano",
-   "away": "Pineto",
-   "start": 1793550600,
+   "match_id": "6975ridvw92fgk2",
+   "league": "TAURON I. Liga",
+   "home": "Mckis Jaworzno",
+   "away": "BKS Visła Bydgoszcz",
+   "start": 1793640600,
    "status": 100,
    "odds": {
     "AH": {
      "open": [
-      "1.83",
+      "2.2",
       "1.5",
-      "1.83",
+      "1.61",
       "0"
      ],
      "close": [
-      "1.83",
+      "2.2",
       "1.5",
-      "1.83",
+      "1.61",
       "0"
      ],
      "current": [
-      "1.83",
+      "2.2",
       "1.5",
-      "1.83",
+      "1.61",
       "0"
      ],
      "company": "bet365"
     },
     "1X2": {
      "open": [
-      "1.53",
+      "1.57",
       "0",
-      "2.37",
+      "2.25",
       "0"
      ],
      "close": [
-      "1.4",
+      "1.57",
       "0",
-      "2.75",
+      "2.25",
       "0"
      ],
      "current": [
-      "1.4",
+      "1.57",
       "0",
-      "2.75",
+      "2.25",
       "0"
      ],
      "company": "bet365"
@@ -1731,11 +337,84 @@
    }
   },
   {
-   "match_id": "34kgxi5vwxzce7o",
-   "league": "NLA Women",
-   "home": "NUC Volleyball Women",
-   "away": "Schaffhausen Women",
-   "start": 1793550600,
+   "match_id": "jr7ovioe9jmsgk0",
+   "league": "AVL Women",
+   "home": "Hartberg Women",
+   "away": "UVC Graz Women",
+   "start": 1793642400,
+   "status": 100,
+   "odds": {
+    "AH": {
+     "open": [
+      "2.2",
+      "-1.5",
+      "1.61",
+      "0"
+     ],
+     "close": [
+      "2",
+      "-1.5",
+      "1.72",
+      "0"
+     ],
+     "current": [
+      "2",
+      "-1.5",
+      "1.72",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "3.75",
+      "0",
+      "1.25",
+      "0"
+     ],
+     "close": [
+      "3.25",
+      "0",
+      "1.33",
+      "0"
+     ],
+     "current": [
+      "3.25",
+      "0",
+      "1.33",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "175.5",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "176.5",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.83",
+      "176.5",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "jek3lino6j6f9ko",
+   "league": "SuperLiga",
+   "home": "America Volei",
+   "away": "Norde Volei",
+   "start": 1793646000,
    "status": 100,
    "odds": {
     "AH": {
@@ -1746,36 +425,36 @@
       "0"
      ],
      "close": [
-      "1.9",
-      "2.5",
-      "1.8",
+      "1.66",
+      "1.5",
+      "2.1",
       "0"
      ],
      "current": [
-      "1.9",
-      "2.5",
-      "1.8",
+      "1.66",
+      "1.5",
+      "2.1",
       "0"
      ],
      "company": "bet365"
     },
     "1X2": {
      "open": [
-      "1.33",
+      "1.3",
       "0",
-      "3.25",
+      "3.4",
       "0"
      ],
      "close": [
-      "1.2",
+      "1.3",
       "0",
-      "4.33",
+      "3.4",
       "0"
      ],
      "current": [
-      "1.2",
+      "1.3",
       "0",
-      "4.33",
+      "3.4",
       "0"
      ],
      "company": "bet365"
@@ -1783,19 +462,19 @@
     "OU": {
      "open": [
       "1.83",
-      "171.5",
+      "182.5",
       "1.83",
       "0"
      ],
      "close": [
       "1.83",
-      "139.5",
+      "182.5",
       "1.83",
       "0"
      ],
      "current": [
       "1.83",
-      "139.5",
+      "182.5",
       "1.83",
       "0"
      ],
@@ -1804,1131 +483,60 @@
    }
   },
   {
-   "match_id": "xvkj9i16w9vt879",
-   "league": "Belgian Cup Women",
-   "home": "Asterix Avo Women",
-   "away": "Charleroi Women",
-   "start": 1793552400,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "1.57",
-      "1.5",
-      "2.25",
-      "0"
-     ],
-     "close": [
-      "1.57",
-      "1.5",
-      "2.25",
-      "0"
-     ],
-     "current": [
-      "1.57",
-      "1.5",
-      "2.25",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "1.28",
-      "0",
-      "3.5",
-      "0"
-     ],
-     "close": [
-      "1.28",
-      "0",
-      "3.5",
-      "0"
-     ],
-     "current": [
-      "1.28",
-      "0",
-      "3.5",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "171.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "171.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "171.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "o07d9i4jx8yamqn",
-   "league": "1. Division West Women",
-   "home": "Ikast 2 Women",
-   "away": "Esbjerg Women",
-   "start": 1793552400,
+   "match_id": "34kgxi5domeie7o",
+   "league": "Landspokal Cup Women",
+   "home": "Odense Volleyball 2 Women",
+   "away": "Brondby Women",
+   "start": 1793646000,
    "status": 100,
    "odds": {}
   },
   {
-   "match_id": "g6768imnvm1ioqr",
-   "league": "2. Bundesliga North Women",
-   "home": "Sorpesee Women",
-   "away": "Osnabruck Women",
-   "start": 1793552400,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "1.83",
-      "1.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "1.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "1.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "1.44",
-      "0",
-      "2.62",
-      "0"
-     ],
-     "close": [
-      "1.44",
-      "0",
-      "2.62",
-      "0"
-     ],
-     "current": [
-      "1.44",
-      "0",
-      "2.62",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "176.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "176.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "176.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "xvkj9i3rmd3b879",
-   "league": "A1 Women",
-   "home": "PAOK Women",
-   "away": "ZAON Kifissia Women",
-   "start": 1793552400,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "1.72",
-      "1.5",
-      "2",
-      "0"
-     ],
-     "close": [
-      "1.53",
-      "1.5",
-      "2.37",
-      "0"
-     ],
-     "current": [
-      "1.53",
-      "1.5",
-      "2.37",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "1.33",
-      "0",
-      "3.25",
-      "0"
-     ],
-     "close": [
-      "1.25",
-      "0",
-      "3.75",
-      "0"
-     ],
-     "current": [
-      "1.25",
-      "0",
-      "3.75",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "176.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "172.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "172.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "zrkn9i8rl5jswql",
-   "league": "Extraliga",
-   "home": "MAV Elore SC",
-   "away": "Miskolc",
-   "start": 1793552400,
-   "status": 100,
-   "odds": {}
-  },
-  {
-   "match_id": "xvkj9i3rm40t879",
-   "league": "SuperLega",
-   "home": "Cisterna",
-   "away": "Piacenza",
-   "start": 1793552400,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "2.1",
-      "-1.5",
-      "1.66",
-      "0"
-     ],
-     "close": [
-      "2.1",
-      "-1.5",
-      "1.66",
-      "0"
-     ],
-     "current": [
-      "2.1",
-      "-1.5",
-      "1.66",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "3.4",
-      "0",
-      "1.3",
-      "0"
-     ],
-     "close": [
-      "3.4",
-      "0",
-      "1.3",
-      "0"
-     ],
-     "current": [
-      "3.4",
-      "0",
-      "1.3",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "182.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "182.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "182.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "m2q1pid0evzieq6",
-   "league": "SuperLega",
-   "home": "Cuneo Volley",
-   "away": "Lube Civitanova",
-   "start": 1793552400,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "1.83",
-      "-2.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "-2.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "-2.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "6.5",
-      "0",
-      "1.1",
-      "0"
-     ],
-     "close": [
-      "6.5",
-      "0",
-      "1.1",
-      "0"
-     ],
-     "current": [
-      "6.5",
-      "0",
-      "1.1",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "152.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "152.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "152.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "zrkn9i8rlx1hwql",
-   "league": "SuperLega",
-   "home": "Milano",
-   "away": "Padova",
-   "start": 1793552400,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "1.8",
-      "1.5",
-      "1.9",
-      "0"
-     ],
-     "close": [
-      "1.8",
-      "1.5",
-      "1.9",
-      "0"
-     ],
-     "current": [
-      "1.8",
-      "1.5",
-      "1.9",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "1.33",
-      "0",
-      "3.25",
-      "0"
-     ],
-     "close": [
-      "1.33",
-      "0",
-      "3.25",
-      "0"
-     ],
-     "current": [
-      "1.33",
-      "0",
-      "3.25",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "183.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "183.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "183.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "o17pvi86rxmby7j",
-   "league": "SuperLega",
-   "home": "Pordenone",
-   "away": "Trentino",
-   "start": 1793552400,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "2.2",
-      "-2.5",
-      "1.61",
-      "0"
-     ],
-     "close": [
-      "2.2",
-      "-2.5",
-      "1.61",
-      "0"
-     ],
-     "current": [
-      "2.2",
-      "-2.5",
-      "1.61",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "8",
-      "0",
-      "1.06",
-      "0"
-     ],
-     "close": [
-      "8",
-      "0",
-      "1.06",
-      "0"
-     ],
-     "current": [
-      "8",
-      "0",
-      "1.06",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "140.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "140.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "140.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "527r6i50vv9s47e",
-   "league": "Serie A2",
-   "home": "Grottazzolina",
-   "away": "Reggio Calabria",
-   "start": 1793552400,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "2.37",
-      "2.5",
-      "1.53",
-      "0"
-     ],
-     "close": [
-      "2.37",
-      "2.5",
-      "1.53",
-      "0"
-     ],
-     "current": [
-      "2.37",
-      "2.5",
-      "1.53",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "1.2",
-      "0",
-      "4.33",
-      "0"
-     ],
-     "close": [
-      "1.2",
-      "0",
-      "4.33",
-      "0"
-     ],
-     "current": [
-      "1.2",
-      "0",
-      "4.33",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "175.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "175.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "175.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "wv78gig2jjjsoqr",
-   "league": "Serie A2",
-   "home": "Macerata",
-   "away": "Porto Viro",
-   "start": 1793552400,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "1.44",
-      "-1.5",
-      "2.62",
-      "0"
-     ],
-     "close": [
-      "2.5",
-      "1.5",
-      "1.5",
-      "0"
-     ],
-     "current": [
-      "2.5",
-      "1.5",
-      "1.5",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "1.9",
-      "0",
-      "1.8",
-      "0"
-     ],
-     "close": [
-      "1.72",
-      "0",
-      "2",
-      "0"
-     ],
-     "current": [
-      "1.72",
-      "0",
-      "2",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "184.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "184.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "184.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "6975ridwv9yfgk2",
-   "league": "Serie A1 Women",
-   "home": "Bergamo Women",
-   "away": "Scandicci Women",
-   "start": 1793552400,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "2.37",
-      "-1.5",
-      "1.53",
-      "0"
-     ],
-     "close": [
-      "2.1",
-      "-1.5",
-      "1.66",
-      "0"
-     ],
-     "current": [
-      "2.1",
-      "-1.5",
-      "1.66",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "3.75",
-      "0",
-      "1.25",
-      "0"
-     ],
-     "close": [
-      "3.4",
-      "0",
-      "1.3",
-      "0"
-     ],
-     "current": [
-      "3.4",
-      "0",
-      "1.3",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "176.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "178.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "178.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "ezk95iz0oo6c17n",
+   "match_id": "j374zir8vv5fgko",
    "league": "TAURON Liga Women",
-   "home": "Rzeszow Women",
-   "away": "Bielsko-Biala Women",
-   "start": 1793552400,
+   "home": "Mogilno Women",
+   "away": "MKS Kalisz Women",
+   "start": 1793647800,
    "status": 100,
    "odds": {
     "AH": {
      "open": [
-      "2",
-      "2.5",
-      "1.72",
+      "1.83",
+      "1.5",
+      "1.83",
       "0"
      ],
      "close": [
       "1.72",
-      "2.5",
-      "2",
-      "0"
-     ],
-     "current": [
-      "1.72",
-      "2.5",
+      "1.5",
       "2",
       "0"
      ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "1.16",
-      "0",
-      "4.5",
-      "0"
-     ],
-     "close": [
-      "1.08",
-      "0",
-      "7",
-      "0"
-     ],
      "current": [
-      "1.08",
-      "0",
-      "7",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "151.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "139.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "139.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "o07d9i82yewcmqn",
-   "league": "A1",
-   "home": "Panionios",
-   "away": "AO Kalamata",
-   "start": 1793552400,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "2.5",
+      "1.72",
       "1.5",
-      "1.5",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "1.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "1.5",
-      "1.83",
+      "2",
       "0"
      ],
      "company": "bet365"
     },
     "1X2": {
      "open": [
-      "1.83",
-      "0",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.4",
-      "0",
-      "2.75",
-      "0"
-     ],
-     "current": [
-      "1.4",
-      "0",
-      "2.75",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "182.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "179.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "179.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "m2q1pid0erjieq6",
-   "league": "Extraliga",
-   "home": "Debrecen",
-   "away": "Fino Kaposvar SE",
-   "start": 1793554200,
-   "status": 100,
-   "odds": {}
-  },
-  {
-   "match_id": "63kvyi5d1j3ixke",
-   "league": "Volleyligaen",
-   "home": "Middelfart",
-   "away": "Holte",
-   "start": 1793556000,
-   "status": 100,
-   "odds": {
-    "1X2": {
-     "open": [
-      "1.01",
-      "0",
-      "15",
-      "0"
-     ],
-     "close": [
-      "1.01",
-      "0",
-      "15",
-      "0"
-     ],
-     "current": [
-      "1.01",
-      "0",
-      "15",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "zrkn9i8ole5swql",
-   "league": "Superliga Women",
-   "home": "Tent Women",
-   "away": "Zeleznicar Women",
-   "start": 1793556000,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "1.66",
-      "1.5",
-      "2.1",
-      "0"
-     ],
-     "close": [
-      "1.66",
-      "1.5",
-      "2.1",
-      "0"
-     ],
-     "current": [
-      "1.66",
-      "1.5",
-      "2.1",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "1.3",
-      "0",
-      "3.4",
-      "0"
-     ],
-     "close": [
-      "1.3",
-      "0",
-      "3.4",
-      "0"
-     ],
-     "current": [
-      "1.3",
-      "0",
-      "3.4",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "176.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "176.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "176.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "527r6i5jm62i47e",
-   "league": "Superliga Women",
-   "home": "Galeb Women",
-   "away": "Budva Women",
-   "start": 1793556000,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "3.75",
-      "-2.5",
-      "1.25",
-      "0"
-     ],
-     "close": [
-      "3.75",
-      "-2.5",
-      "1.25",
-      "0"
-     ],
-     "current": [
-      "3.75",
-      "-2.5",
-      "1.25",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "9",
-      "0",
-      "1.04",
-      "0"
-     ],
-     "close": [
-      "9",
-      "0",
-      "1.04",
-      "0"
-     ],
-     "current": [
-      "9",
-      "0",
-      "1.04",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "124.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "124.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "124.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "8lk2oidelzxhzq3",
-   "league": "2. Bundesliga",
-   "home": "VBK Klagenfurt 2",
-   "away": "Aich/Dob 2",
-   "start": 1793557800,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "1.66",
-      "-1.5",
-      "2.1",
-      "0"
-     ],
-     "close": [
-      "1.66",
-      "-1.5",
-      "2.1",
-      "0"
-     ],
-     "current": [
-      "1.66",
-      "-1.5",
-      "2.1",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "3",
-      "0",
       "1.36",
+      "0",
+      "3",
       "0"
      ],
      "close": [
-      "2.25",
+      "1.36",
       "0",
-      "1.57",
+      "3",
       "0"
      ],
      "current": [
-      "2.25",
+      "1.36",
       "0",
-      "1.57",
+      "3",
       "0"
      ],
      "company": "bet365"
@@ -2942,13 +550,13 @@
      ],
      "close": [
       "1.83",
-      "180.5",
+      "179.5",
       "1.83",
       "0"
      ],
      "current": [
       "1.83",
-      "180.5",
+      "179.5",
       "1.83",
       "0"
      ],
@@ -2957,267 +565,39 @@
    }
   },
   {
-   "match_id": "edq0yiex9vzte7x",
-   "league": "1. Divisao Women",
-   "home": "AJM/FC Porto Women",
-   "away": "Clube Kairos Women",
-   "start": 1793559600,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "1.2",
-      "2.5",
-      "4.33",
-      "0"
-     ],
-     "close": [
-      "1.28",
-      "2.5",
-      "3.5",
-      "0"
-     ],
-     "current": [
-      "1.28",
-      "2.5",
-      "3.5",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "1.02",
-      "0",
-      "11",
-      "0"
-     ],
-     "close": [
-      "1.03",
-      "0",
-      "10",
-      "0"
-     ],
-     "current": [
-      "1.03",
-      "0",
-      "10",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "125.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "128.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "128.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "8lk2oiwnpzjfzq3",
-   "league": "LNSV Women",
-   "home": "Peru Women",
-   "away": "Rebaza Acosta Women",
-   "start": 1793560500,
+   "match_id": "vrqwpiml46mb4kn",
+   "league": "Landspokal Cup Women",
+   "home": "VLI Women",
+   "away": "Gentofte Women",
+   "start": 1793647800,
    "status": 100,
    "odds": {}
   },
   {
-   "match_id": "l6kexi0vyvpfvq5",
-   "league": "Superliga",
-   "home": "Sutjeska",
-   "away": "Jedinstvo",
-   "start": 1793561400,
-   "status": 100,
-   "odds": {}
-  },
-  {
-   "match_id": "ezk95izdvvot17n",
-   "league": "LVA",
-   "home": "Boca Juniors",
-   "away": "Ferro Carril Oeste",
-   "start": 1793566800,
+   "match_id": "jek3linx90eh9ko",
+   "league": "Serie A1 Women",
+   "home": "Novara Women",
+   "away": "Brescia Women",
+   "start": 1793648400,
    "status": 100,
    "odds": {
     "AH": {
      "open": [
-      "1.57",
-      "1.5",
-      "2.25",
-      "0"
-     ],
-     "close": [
-      "1.57",
-      "1.5",
-      "2.25",
-      "0"
-     ],
-     "current": [
-      "1.57",
-      "1.5",
-      "2.25",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "1.25",
-      "0",
-      "3.75",
-      "0"
-     ],
-     "close": [
-      "1.25",
-      "0",
-      "3.75",
-      "0"
-     ],
-     "current": [
-      "1.25",
-      "0",
-      "3.75",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "178.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "178.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "178.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "63kvyiwvepdhxke",
-   "league": "LNSV Women",
-   "home": "Regatas Lima Women",
-   "away": "Atenea Women",
-   "start": 1793568600,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "1.9",
-      "1.5",
-      "1.8",
-      "0"
-     ],
-     "close": [
-      "1.9",
-      "1.5",
-      "1.8",
-      "0"
-     ],
-     "current": [
-      "1.9",
-      "1.5",
-      "1.8",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "1.44",
-      "0",
-      "2.62",
-      "0"
-     ],
-     "close": [
-      "1.44",
-      "0",
-      "2.62",
-      "0"
-     ],
-     "current": [
-      "1.44",
-      "0",
-      "2.62",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "177.5",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "177.5",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "177.5",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "jek3lin5rzxt9ko",
-   "league": "LNSV Women",
-   "home": "Circolo Women",
-   "away": "Alianza Lima Women",
-   "start": 1793575800,
-   "status": 100,
-   "odds": {
-    "AH": {
-     "open": [
-      "1.22",
+      "1.33",
       "2.5",
-      "4",
+      "3.25",
       "0"
      ],
      "close": [
-      "1.5",
+      "1.33",
       "2.5",
-      "2.5",
+      "3.25",
       "0"
      ],
      "current": [
-      "1.5",
+      "1.33",
       "2.5",
-      "2.5",
+      "3.25",
       "0"
      ],
      "company": "bet365"
@@ -3230,15 +610,15 @@
       "0"
      ],
      "close": [
-      "1.07",
+      "1.02",
       "0",
-      "7.5",
+      "10.5",
       "0"
      ],
      "current": [
-      "1.07",
+      "1.02",
       "0",
-      "7.5",
+      "10.5",
       "0"
      ],
      "company": "bet365"
@@ -3246,7 +626,7 @@
     "OU": {
      "open": [
       "1.83",
-      "126.5",
+      "131.5",
       "1.83",
       "0"
      ],
@@ -3267,51 +647,51 @@
    }
   },
   {
-   "match_id": "l6kexi0xjjyuvq5",
-   "league": "LVA",
-   "home": "River Plate",
-   "away": "Monteros",
-   "start": 1793577600,
+   "match_id": "o07d9i80d66smqn",
+   "league": "SuperLiga",
+   "home": "SESI-SP",
+   "away": "Praia Clube",
+   "start": 1793655000,
    "status": 100,
    "odds": {
     "AH": {
      "open": [
-      "1.66",
-      "1.5",
-      "2.1",
+      "1.53",
+      "-1.5",
+      "2.37",
       "0"
      ],
      "close": [
-      "1.9",
-      "1.5",
-      "1.8",
+      "1.53",
+      "-1.5",
+      "2.37",
       "0"
      ],
      "current": [
-      "1.9",
-      "1.5",
-      "1.8",
+      "1.53",
+      "-1.5",
+      "2.37",
       "0"
      ],
      "company": "bet365"
     },
     "1X2": {
      "open": [
-      "1.3",
+      "2.1",
       "0",
-      "3.4",
+      "1.66",
       "0"
      ],
      "close": [
-      "1.44",
+      "2.1",
       "0",
-      "2.62",
+      "1.66",
       "0"
      ],
      "current": [
-      "1.44",
+      "2.1",
       "0",
-      "2.62",
+      "1.66",
       "0"
      ],
      "company": "bet365"
@@ -3319,19 +699,19 @@
     "OU": {
      "open": [
       "1.83",
-      "179.5",
+      "186.5",
       "1.83",
       "0"
      ],
      "close": [
       "1.83",
-      "182.5",
+      "186.5",
       "1.83",
       "0"
      ],
      "current": [
       "1.83",
-      "182.5",
+      "186.5",
       "1.83",
       "0"
      ],
@@ -3340,29 +720,551 @@
    }
   },
   {
-   "match_id": "vmqyliod928tgk9",
+   "match_id": "vrqwpimvo8na4kn",
+   "league": "SuperLiga",
+   "home": "Guarulhos",
+   "away": "Sada Cruzeiro",
+   "start": 1793664000,
+   "status": 100,
+   "odds": {
+    "AH": {
+     "open": [
+      "2.2",
+      "-2.5",
+      "1.61",
+      "0"
+     ],
+     "close": [
+      "2.2",
+      "-2.5",
+      "1.61",
+      "0"
+     ],
+     "current": [
+      "2.2",
+      "-2.5",
+      "1.61",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "8",
+      "0",
+      "1.06",
+      "0"
+     ],
+     "close": [
+      "8",
+      "0",
+      "1.06",
+      "0"
+     ],
+     "current": [
+      "8",
+      "0",
+      "1.06",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "140.5",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "140.5",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.83",
+      "140.5",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "zrkn9i8nen2fwql",
+   "league": "Premier Volleyball League",
+   "home": "Galeries Tower Highrisers Women",
+   "away": "Akari Chargers Women",
+   "start": 1793682000,
+   "status": 100,
+   "odds": {
+    "AH": {
+     "open": [
+      "1.66",
+      "-2.5",
+      "2.1",
+      "0"
+     ],
+     "close": [
+      "1.66",
+      "-2.5",
+      "2.1",
+      "0"
+     ],
+     "current": [
+      "1.66",
+      "-2.5",
+      "2.1",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "5",
+      "0",
+      "1.14",
+      "0"
+     ],
+     "close": [
+      "5",
+      "0",
+      "1.14",
+      "0"
+     ],
+     "current": [
+      "5",
+      "0",
+      "1.14",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "166.5",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "166.5",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.83",
+      "166.5",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "63kvyiwzg3rixke",
    "league": "Volleyball League",
-   "home": "Police Club",
-   "away": "Al-Ahli",
-   "start": 1793624400,
+   "home": "Suwon KEPCO Vixtorm",
+   "away": "Woori",
+   "start": 1793700000,
+   "status": 436,
+   "odds": {
+    "AH": {
+     "open": [
+      "2.5",
+      "1.5",
+      "1.5",
+      "0"
+     ],
+     "close": [
+      "1.72",
+      "-2.5",
+      "2",
+      "1"
+     ],
+     "current": [
+      "2.5",
+      "1.5",
+      "1.5",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "1.72",
+      "0",
+      "2",
+      "0"
+     ],
+     "close": [
+      "12",
+      "0",
+      "1.01",
+      "0"
+     ],
+     "current": [
+      "1.72",
+      "0",
+      "2",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "186.5",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "136.5",
+      "1.83",
+      "1"
+     ],
+     "current": [
+      "1.83",
+      "186.5",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "jek3linx8vnf9ko",
+   "league": "Volleyball League Women",
+   "home": "IBK Women",
+   "away": "Hyundai E&C Hillstate Women",
+   "start": 1793700000,
+   "status": 436,
+   "odds": {
+    "AH": {
+     "open": [
+      "2.2",
+      "1.5",
+      "1.61",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "2.5",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.83",
+      "1.5",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "1.53",
+      "0",
+      "2.37",
+      "0"
+     ],
+     "close": [
+      "1.03",
+      "0",
+      "10",
+      "0"
+     ],
+     "current": [
+      "1.4",
+      "0",
+      "2.75",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "183.5",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "142.5",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.83",
+      "181.5",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "oj7xoi2303eh47g",
+   "league": "Premier Volleyball League",
+   "home": "Nxled Chameleons Women",
+   "away": "Choco Mucho Flying Titans Women",
+   "start": 1793703600,
+   "status": 1,
+   "odds": {
+    "AH": {
+     "open": [
+      "2.1",
+      "1.5",
+      "1.66",
+      "0"
+     ],
+     "close": [
+      "2.1",
+      "1.5",
+      "1.66",
+      "0"
+     ],
+     "current": [
+      "2.1",
+      "1.5",
+      "1.66",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "1.57",
+      "0",
+      "2.25",
+      "0"
+     ],
+     "close": [
+      "1.57",
+      "0",
+      "2.25",
+      "0"
+     ],
+     "current": [
+      "1.57",
+      "0",
+      "2.25",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "180.5",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "180.5",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.83",
+      "180.5",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "ndqm9impopmirkv",
+   "league": "National League",
+   "home": "Taraz Jambil",
+   "away": "Zhetyssu Zhastar",
+   "start": 1793707200,
+   "status": 1,
+   "odds": {
+    "1X2": {
+     "open": [
+      "5",
+      "0",
+      "1.14",
+      "0"
+     ],
+     "close": [
+      "5",
+      "0",
+      "1.14",
+      "0"
+     ],
+     "current": [
+      "5",
+      "0",
+      "1.14",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "o07d9i8020nbmqn",
+   "league": "National League",
+   "home": "Atyrau",
+   "away": "Okzhetpes",
+   "start": 1793710800,
+   "status": 1,
+   "odds": {
+    "1X2": {
+     "open": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "vrqwpimvnv2t4kn",
+   "league": "National League",
+   "home": "Burevestnik Almaty",
+   "away": "Berel",
+   "start": 1793710800,
    "status": 1,
    "odds": {}
   },
   {
-   "match_id": "6975rix2pdgtgk2",
-   "league": "Prva Liga",
-   "home": "Mok Mursa II",
-   "away": "Mladost Ribola Kastela II",
-   "start": 1793628000,
+   "match_id": "9gkldiwlpp4tmqx",
+   "league": "Champions League",
+   "home": "Khilasedichi Baku",
+   "away": "Sporting CP",
+   "start": 1793714400,
    "status": 1,
-   "odds": {}
+   "odds": {
+    "1X2": {
+     "open": [
+      "3.4",
+      "0",
+      "1.3",
+      "0"
+     ],
+     "close": [
+      "3.4",
+      "0",
+      "1.3",
+      "0"
+     ],
+     "current": [
+      "3.4",
+      "0",
+      "1.3",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
   },
   {
-   "match_id": "o17pvi83m51sy7j",
-   "league": "Volleyball League",
-   "home": "Al-Rayyan",
-   "away": "Qatar Sports",
-   "start": 1793631600,
+   "match_id": "jek3lin9jjwt9ko",
+   "league": "Efeler Ligi",
+   "home": "Istanbul GSK",
+   "away": "Gaziantep Genclik",
+   "start": 1793714400,
+   "status": 1,
+   "odds": {
+    "AH": {
+     "open": [
+      "2.37",
+      "2.5",
+      "1.53",
+      "0"
+     ],
+     "close": [
+      "1.57",
+      "1.5",
+      "2.25",
+      "0"
+     ],
+     "current": [
+      "1.57",
+      "1.5",
+      "2.25",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "1.16",
+      "0",
+      "4.5",
+      "0"
+     ],
+     "close": [
+      "1.25",
+      "0",
+      "3.75",
+      "0"
+     ],
+     "current": [
+      "1.25",
+      "0",
+      "3.75",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "177.5",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "181.5",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.83",
+      "181.5",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "j374zirw8njigko",
+   "league": "League Cup",
+   "home": "Olympiacos",
+   "away": "Rethymno",
+   "start": 1793719800,
    "status": 1,
    "odds": {}
   }
