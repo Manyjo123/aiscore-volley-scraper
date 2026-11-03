@@ -1,228 +1,145 @@
 {
- "generated": "2026-11-03T16:11:36Z",
+ "generated": "2026-11-03T21:45:27Z",
  "matches": [
   {
-   "match_id": "j374zi6pjz9agko",
-   "league": "Extraliga",
-   "home": "Kladno",
-   "away": "VK Lvi Prague",
-   "start": "1793721600",
+   "match_id": "m2q1pideog8aeq6",
+   "league": "Superliga Women",
+   "home": "Barueri Women",
+   "away": "Sesi Bauru Women",
+   "start": "1793741400",
+   "status": "432",
+   "set_home": 0,
+   "set_away": 1,
+   "sets": [
+    [
+     9,
+     15
+    ]
+   ],
+   "pt_home": 9,
+   "pt_away": 15,
+   "odds": {
+    "AH": {
+     "open": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "2.5",
+      "0",
+      "1.5",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "4.5",
+      "0",
+      "1.16",
+      "0"
+     ],
+     "close": [
+      "4.5",
+      "0",
+      "1.16",
+      "0"
+     ],
+     "current": [
+      "8.5",
+      "0",
+      "1.05",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "ndqm9impxzpbrkv",
+   "league": "SuperLiga",
+   "home": "Goias",
+   "away": "{'9': 1935765097}",
+   "start": "1793741400",
    "status": "432",
    "set_home": 1,
    "set_away": 0,
    "sets": [
     [
      12,
-     10
+     11
     ]
    ],
    "pt_home": 12,
-   "pt_away": 10,
+   "pt_away": 11,
    "odds": {
     "AH": {
      "open": [
-      "1.44",
-      "0",
-      "2.62",
-      "0"
-     ],
-     "close": [
-      "1.44",
-      "0",
-      "2.62",
-      "0"
-     ],
-     "current": [
       "2",
       "0",
       "1.72",
       "0"
      ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "1.9",
-      "0",
-      "1.8",
-      "0"
-     ],
      "close": [
-      "1.9",
+      "2",
       "0",
-      "1.8",
+      "1.72",
       "0"
      ],
      "current": [
-      "1.5",
+      "1.53",
       "0",
-      "2.5",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "0",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "0",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "0",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "oj7xoi21dglt47g",
-   "league": "Challenge Cup Women",
-   "home": "Dinamo Zagreb Women",
-   "away": "Olympiada Neapolis Women",
-   "start": "1793721600",
-   "status": "432",
-   "set_home": 1,
-   "set_away": 0,
-   "sets": [
-    [
-     9,
-     4
-    ]
-   ],
-   "pt_home": 9,
-   "pt_away": 4,
-   "odds": {
-    "AH": {
-     "open": [
-      "2.75",
-      "0",
-      "1.4",
-      "0"
-     ],
-     "close": [
-      "2.75",
-      "0",
-      "1.4",
-      "0"
-     ],
-     "current": [
-      "2.2",
-      "0",
-      "1.61",
+      "2.37",
       "0"
      ],
      "company": "bet365"
     },
     "1X2": {
      "open": [
-      "1.83",
+      "7.5",
       "0",
-      "1.83",
+      "1.07",
       "0"
      ],
      "close": [
-      "1.83",
+      "7.5",
       "0",
-      "1.83",
+      "1.07",
       "0"
      ],
      "current": [
-      "1.2",
+      "5",
       "0",
-      "4.33",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "0",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "0",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "0",
-      "1.83",
-      "0"
-     ],
-     "company": "bet365"
-    }
-   }
-  },
-  {
-   "match_id": "o17pvi83xwgay7j",
-   "league": "Efeler Ligi",
-   "home": "Ziraat Bankasi",
-   "away": "Sungurlu",
-   "start": "1793721600",
-   "status": "432",
-   "set_home": 0,
-   "set_away": 0,
-   "sets": [
-    [
-     11,
-     11
-    ]
-   ],
-   "pt_home": 11,
-   "pt_away": 11,
-   "odds": {
-    "AH": {
-     "open": [
-      "1.9",
-      "0",
-      "1.8",
-      "0"
-     ],
-     "close": [
-      "1.9",
-      "0",
-      "1.8",
-      "0"
-     ],
-     "current": [
-      "1.66",
-      "0",
-      "2.1",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "1X2": {
-     "open": [
-      "1.11",
-      "0",
-      "6",
-      "0"
-     ],
-     "close": [
-      "1.11",
-      "0",
-      "6",
-      "0"
-     ],
-     "current": [
-      "1.05",
-      "0",
-      "8.5",
+      "1.14",
       "0"
      ],
      "company": "bet365"
