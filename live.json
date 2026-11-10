@@ -1,66 +1,66 @@
 {
- "generated": "2026-11-10T11:45:18Z",
+ "generated": "2026-11-10T18:52:11Z",
  "matches": [
   {
-   "match_id": "6975rid5zj4igk2",
-   "league": "Premier Volleyball League",
-   "home": "Zus Coffee Thunderbelles Women",
-   "away": "Galeries Tower Highrisers Women",
-   "start": "1794308400",
-   "status": "434",
+   "match_id": "l6kexi0pjl3ivq5",
+   "league": "Czech Cup",
+   "home": "TJ Sokol Dobrichcvice",
+   "away": "Pribram",
+   "start": "1794333600",
+   "status": "436",
    "set_home": 0,
-   "set_away": 1,
+   "set_away": 2,
    "sets": [
     [
-     17,
+     14,
      25
     ],
     [
-     2,
-     2
+     20,
+     25
     ]
    ],
-   "pt_home": 19,
-   "pt_away": 27,
+   "pt_home": 34,
+   "pt_away": 50,
    "odds": {
     "AH": {
      "open": [
-      "2.2",
+      "1.44",
       "0",
-      "1.61",
+      "2.62",
       "0"
      ],
      "close": [
-      "2.2",
+      "1.44",
       "0",
-      "1.61",
+      "2.62",
       "0"
      ],
      "current": [
-      "1.8",
+      "2.2",
       "0",
-      "1.9",
+      "1.61",
       "0"
      ],
      "company": "bet365"
     },
     "1X2": {
      "open": [
-      "1.57",
+      "1.9",
       "0",
-      "2.25",
+      "1.8",
       "0"
      ],
      "close": [
-      "1.57",
+      "1.9",
       "0",
-      "2.25",
+      "1.8",
       "0"
      ],
      "current": [
-      "2.62",
+      "8.5",
       "0",
-      "1.44",
+      "1.05",
       "0"
      ],
      "company": "bet365"
@@ -89,28 +89,157 @@
    }
   },
   {
-   "match_id": "j374zirw0rybgko",
-   "league": "CVL Women",
-   "home": "Fujian Anxi Tiekuanyin",
-   "away": "Beijing Arctic Ocean",
-   "start": "1794308400",
+   "match_id": "xvkj9i3xe6nc879",
+   "league": "Czech Cup",
+   "home": "Hradec Kralove",
+   "away": "Benatky",
+   "start": "1794333600",
    "status": "434",
    "set_home": 0,
    "set_away": 2,
    "sets": [
     [
-     19,
+     12,
      25
     ],
     [
-     11,
-     16
+     13,
+     24
     ]
    ],
-   "pt_home": 30,
-   "pt_away": 41,
+   "pt_home": 25,
+   "pt_away": 49,
    "odds": {
     "AH": {
+     "open": [
+      "1.72",
+      "0",
+      "2",
+      "0"
+     ],
+     "close": [
+      "1.72",
+      "0",
+      "2",
+      "0"
+     ],
+     "current": [
+      "5",
+      "0",
+      "1.14",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "5",
+      "0",
+      "1.14",
+      "0"
+     ],
+     "close": [
+      "5",
+      "0",
+      "1.14",
+      "0"
+     ],
+     "current": [
+      "15",
+      "0",
+      "1.01",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.9",
+      "0",
+      "1.8",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "zrkn9i80j6vtwql",
+   "league": "Champions League",
+   "home": "TSV Hartberg",
+   "away": "Fino Kaposvar SE",
+   "start": "1794333600",
+   "status": "434",
+   "set_home": 0,
+   "set_away": 1,
+   "sets": [
+    [
+     17,
+     25
+    ],
+    [
+     22,
+     22
+    ]
+   ],
+   "pt_home": 39,
+   "pt_away": 47,
+   "odds": {
+    "AH": {
+     "open": [
+      "2",
+      "0",
+      "1.72",
+      "0"
+     ],
+     "close": [
+      "2",
+      "0",
+      "1.72",
+      "0"
+     ],
+     "current": [
+      "2.1",
+      "0",
+      "1.66",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "3",
+      "0",
+      "1.36",
+      "0"
+     ],
+     "close": [
+      "3",
+      "0",
+      "1.36",
+      "0"
+     ],
+     "current": [
+      "7",
+      "0",
+      "1.08",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
      "open": [
       "1.83",
       "0",
@@ -130,24 +259,84 @@
       "0"
      ],
      "company": "bet365"
-    },
-    "1X2": {
+    }
+   }
+  },
+  {
+   "match_id": "o07d9i8yg93smqn",
+   "league": "Challenge Cup",
+   "home": "Lorentzweiler",
+   "away": "Tromso",
+   "start": "1794335400",
+   "status": "432",
+   "set_home": 1,
+   "set_away": 0,
+   "sets": [
+    [
+     20,
+     15
+    ]
+   ],
+   "pt_home": 20,
+   "pt_away": 15,
+   "odds": {}
+  },
+  {
+   "match_id": "ndqm9im4g68frkv",
+   "league": "Challenge Cup",
+   "home": "Nafels",
+   "away": "Pere Leib Tartu",
+   "start": "1794335400",
+   "status": "432",
+   "set_home": 0,
+   "set_away": 1,
+   "sets": [
+    [
+     13,
+     23
+    ]
+   ],
+   "pt_home": 13,
+   "pt_away": 23,
+   "odds": {
+    "AH": {
      "open": [
-      "6.5",
+      "1.83",
       "0",
-      "1.1",
+      "1.83",
       "0"
      ],
      "close": [
-      "6.5",
+      "1.83",
       "0",
-      "1.1",
+      "1.83",
       "0"
      ],
      "current": [
-      "5.5",
+      "1.66",
       "0",
-      "1.12",
+      "2.1",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "3",
+      "0",
+      "1.36",
+      "0"
+     ],
+     "close": [
+      "3",
+      "0",
+      "1.36",
+      "0"
+     ],
+     "current": [
+      "4.5",
+      "0",
+      "1.16",
       "0"
      ],
      "company": "bet365"
