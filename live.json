@@ -1,4 +1,179 @@
 {
- "generated": "2026-11-11T03:50:42Z",
- "matches": []
+ "generated": "2026-11-11T11:35:59Z",
+ "matches": [
+  {
+   "match_id": "ezk95iz63z9i17n",
+   "league": "CVL Women",
+   "home": "Zhejiang Xitang Yaozhuang",
+   "away": "Shandong Rizhao Steel ",
+   "start": "1794394800",
+   "status": "434",
+   "set_home": 0,
+   "set_away": 2,
+   "sets": [
+    [
+     21,
+     25
+    ],
+    [
+     3,
+     5
+    ]
+   ],
+   "pt_home": 24,
+   "pt_away": 30,
+   "odds": {
+    "AH": {
+     "open": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "2.62",
+      "0",
+      "1.44",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "5",
+      "0",
+      "1.14",
+      "0"
+     ],
+     "close": [
+      "5",
+      "0",
+      "1.14",
+      "0"
+     ],
+     "current": [
+      "8.5",
+      "0",
+      "1.05",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "l6kexi03802tvq5",
+   "league": "CVL Women",
+   "home": "Shanghai Bright Ubest",
+   "away": "Jiangsu Zenith Steel",
+   "start": "1794394800",
+   "status": "434",
+   "set_home": 0,
+   "set_away": 2,
+   "sets": [
+    [
+     21,
+     25
+    ],
+    [
+     2,
+     4
+    ]
+   ],
+   "pt_home": 23,
+   "pt_away": 29,
+   "odds": {
+    "AH": {
+     "open": [
+      "2.5",
+      "0",
+      "1.5",
+      "0"
+     ],
+     "close": [
+      "2.5",
+      "0",
+      "1.5",
+      "0"
+     ],
+     "current": [
+      "1.53",
+      "0",
+      "2.37",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "1.8",
+      "0",
+      "1.9",
+      "0"
+     ],
+     "close": [
+      "1.8",
+      "0",
+      "1.9",
+      "0"
+     ],
+     "current": [
+      "3.75",
+      "0",
+      "1.25",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  }
+ ]
 }
