@@ -1,66 +1,62 @@
 {
- "generated": "2026-11-14T20:57:24Z",
+ "generated": "2026-11-15T00:37:06Z",
  "matches": [
   {
-   "match_id": "xvkj9i3rl69f879",
-   "league": "PlusLiga",
-   "home": "Zawiercie",
-   "away": "Cuprum",
-   "start": "1794684600",
-   "status": "436",
-   "set_home": 2,
+   "match_id": "wv78gigd00rcoqr",
+   "league": "LVA",
+   "home": "Ciudad Voley",
+   "away": "Monteros",
+   "start": "1794700800",
+   "status": "432",
+   "set_home": 1,
    "set_away": 0,
    "sets": [
     [
-     25,
+     23,
      20
-    ],
-    [
-     25,
-     17
     ]
    ],
-   "pt_home": 50,
-   "pt_away": 37,
+   "pt_home": 23,
+   "pt_away": 20,
    "odds": {
     "AH": {
      "open": [
-      "1.72",
-      "0",
       "2",
+      "0",
+      "1.72",
       "0"
      ],
      "close": [
-      "1.72",
-      "0",
       "2",
+      "0",
+      "1.72",
       "0"
      ],
      "current": [
-      "1.14",
+      "1.66",
       "0",
-      "5",
+      "2.1",
       "0"
      ],
      "company": "bet365"
     },
     "1X2": {
      "open": [
-      "1.08",
+      "1.14",
       "0",
-      "7",
+      "5",
       "0"
      ],
      "close": [
-      "1.08",
+      "1.14",
       "0",
-      "7",
+      "5",
       "0"
      ],
      "current": [
-      "1",
+      "1.08",
       "0",
-      "41",
+      "7",
       "0"
      ],
      "company": "bet365"
@@ -79,9 +75,9 @@
       "0"
      ],
      "current": [
-      "1.9",
+      "1.83",
       "0",
-      "1.8",
+      "1.83",
       "0"
      ],
      "company": "bet365"
@@ -89,27 +85,170 @@
    }
   },
   {
-   "match_id": "ndkzziv6m5mixk3",
+   "match_id": "6975ridy25yigk2",
+   "league": "Superliga Women",
+   "home": "ABEL Moda Volei Women",
+   "away": "Brasilia Volei Women",
+   "start": "1794700800",
+   "status": "434",
+   "set_home": 0,
+   "set_away": 1,
+   "sets": [
+    [
+     23,
+     25
+    ]
+   ],
+   "pt_home": 23,
+   "pt_away": 25,
+   "odds": {
+    "AH": {
+     "open": [
+      "1.72",
+      "0",
+      "2",
+      "0"
+     ],
+     "close": [
+      "1.72",
+      "0",
+      "2",
+      "0"
+     ],
+     "current": [
+      "3.4",
+      "0",
+      "1.3",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "1.33",
+      "0",
+      "3.25",
+      "0"
+     ],
+     "close": [
+      "1.33",
+      "0",
+      "3.25",
+      "0"
+     ],
+     "current": [
+      "1.8",
+      "0",
+      "1.9",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "wv78gige2odioqr",
    "league": "LNSV Women",
-   "home": "Circolo Women",
-   "away": "Peru Women",
-   "start": "1794685500",
-   "status": "436",
-   "set_home": 2,
+   "home": "San Martin de Porres Women",
+   "away": "{'8': 5485491524603046252, '13': 7954884641790386541}",
+   "start": "1794700800",
+   "status": "432",
+   "set_home": 1,
    "set_away": 0,
    "sets": [
     [
-     25,
-     12
-    ],
-    [
-     25,
-     13
+     13,
+     10
     ]
    ],
-   "pt_home": 50,
-   "pt_away": 25,
-   "odds": {}
+   "pt_home": 13,
+   "pt_away": 10,
+   "odds": {
+    "AH": {
+     "open": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.53",
+      "0",
+      "2.37",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "1.4",
+      "0",
+      "2.75",
+      "0"
+     ],
+     "close": [
+      "1.4",
+      "0",
+      "2.75",
+      "0"
+     ],
+     "current": [
+      "1.25",
+      "0",
+      "3.75",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
   }
  ]
 }
