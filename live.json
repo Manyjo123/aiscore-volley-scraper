@@ -1,4 +1,336 @@
 {
- "generated": "2026-11-20T07:06:14Z",
- "matches": []
+ "generated": "2026-11-20T16:06:12Z",
+ "matches": [
+  {
+   "match_id": "j374zi6pgv3fgko",
+   "league": "SuperLiga",
+   "home": "Montana",
+   "away": "Dunav",
+   "start": "1795190400",
+   "status": "432",
+   "set_home": 1,
+   "set_away": 0,
+   "sets": [
+    [
+     1,
+     0
+    ]
+   ],
+   "pt_home": 1,
+   "pt_away": 0,
+   "odds": {
+    "AH": {
+     "open": [
+      "1.66",
+      "0",
+      "2.1",
+      "0"
+     ],
+     "close": [
+      "1.66",
+      "0",
+      "2.1",
+      "0"
+     ],
+     "current": [
+      "2.1",
+      "0",
+      "1.66",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "1.33",
+      "0",
+      "3.25",
+      "0"
+     ],
+     "close": [
+      "1.33",
+      "0",
+      "3.25",
+      "0"
+     ],
+     "current": [
+      "1.22",
+      "0",
+      "4",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "9gkldiw3061amqx",
+   "league": "Divizia A1 Women",
+   "home": "CSM Constanta Women",
+   "away": "CSM Bucuresti Women",
+   "start": "1795190400",
+   "status": "432",
+   "set_home": 1,
+   "set_away": 0,
+   "sets": [
+    [
+     5,
+     4
+    ]
+   ],
+   "pt_home": 5,
+   "pt_away": 4,
+   "odds": {
+    "AH": {
+     "open": [
+      "2.2",
+      "0",
+      "1.61",
+      "0"
+     ],
+     "close": [
+      "2.2",
+      "0",
+      "1.61",
+      "0"
+     ],
+     "current": [
+      "2.1",
+      "0",
+      "1.66",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "1.61",
+      "0",
+      "2.2",
+      "0"
+     ],
+     "close": [
+      "1.61",
+      "0",
+      "2.2",
+      "0"
+     ],
+     "current": [
+      "1.53",
+      "0",
+      "2.37",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "vmqyliop4n8igk9",
+   "league": "1. Ligi",
+   "home": "Galatasaray 2",
+   "away": "Karapinar Anadolu",
+   "start": "1795190400",
+   "status": "432",
+   "set_home": 0,
+   "set_away": 1,
+   "sets": [
+    [
+     6,
+     7
+    ]
+   ],
+   "pt_home": 6,
+   "pt_away": 7,
+   "odds": {
+    "1X2": {
+     "open": [
+      "4.33",
+      "0",
+      "1.2",
+      "0"
+     ],
+     "close": [
+      "4.33",
+      "0",
+      "1.2",
+      "0"
+     ],
+     "current": [
+      "4.33",
+      "0",
+      "1.2",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "vmqylio6noyfgk9",
+   "league": "Superliga Women",
+   "home": "Slaviya Sofia Women",
+   "away": "CPVC Volley Women",
+   "start": "1795190400",
+   "status": "432",
+   "set_home": 1,
+   "set_away": 0,
+   "sets": [
+    [
+     6,
+     2
+    ]
+   ],
+   "pt_home": 6,
+   "pt_away": 2,
+   "odds": {
+    "1X2": {
+     "open": [
+      "1.33",
+      "0",
+      "3.25",
+      "0"
+     ],
+     "close": [
+      "1.33",
+      "0",
+      "3.25",
+      "0"
+     ],
+     "current": [
+      "1.16",
+      "0",
+      "4.5",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  },
+  {
+   "match_id": "o07d9i8ojngcmqn",
+   "league": "Superliga",
+   "home": "Radnicki",
+   "away": "VGSK Veliko Gradiste",
+   "start": "1795194000",
+   "status": "432",
+   "set_home": 1,
+   "set_away": 0,
+   "sets": [
+    [
+     5,
+     4
+    ]
+   ],
+   "pt_home": 5,
+   "pt_away": 4,
+   "odds": {
+    "AH": {
+     "open": [
+      "2.25",
+      "0",
+      "1.57",
+      "0"
+     ],
+     "close": [
+      "2.25",
+      "0",
+      "1.57",
+      "0"
+     ],
+     "current": [
+      "2.2",
+      "0",
+      "1.61",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "1X2": {
+     "open": [
+      "1.2",
+      "0",
+      "4.33",
+      "0"
+     ],
+     "close": [
+      "1.2",
+      "0",
+      "4.33",
+      "0"
+     ],
+     "current": [
+      "1.16",
+      "0",
+      "4.5",
+      "0"
+     ],
+     "company": "bet365"
+    },
+    "OU": {
+     "open": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "close": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "current": [
+      "1.83",
+      "0",
+      "1.83",
+      "0"
+     ],
+     "company": "bet365"
+    }
+   }
+  }
+ ]
 }
