@@ -1,88 +1,119 @@
 {
- "generated": "2026-11-21T03:28:50Z",
+ "generated": "2026-11-21T11:35:51Z",
  "matches": [
   {
-   "match_id": "9gkldiwlo5wfmqx",
-   "league": "SV.League",
-   "home": "JTEKT",
-   "away": "FC Tokyo",
-   "start": "1795230300",
-   "status": "432",
-   "set_home": 0,
+   "match_id": "l6kexi0p6gpfvq5",
+   "league": "Premier Volleyball League",
+   "home": "Nxled Chameleons Women",
+   "away": "Zus Coffee Thunderbelles Women",
+   "start": "1795255200",
+   "status": "436",
+   "set_home": 2,
    "set_away": 1,
    "sets": [
     [
-     18,
-     22
+     25,
+     21
+    ],
+    [
+     25,
+     20
+    ],
+    [
+     15,
+     24
     ]
    ],
-   "pt_home": 18,
-   "pt_away": 22,
+   "pt_home": 65,
+   "pt_away": 65,
    "odds": {
-    "AH": {
-     "open": [
-      "1.9",
-      "0",
-      "1.8",
-      "0"
-     ],
-     "close": [
-      "1.9",
-      "0",
-      "1.8",
-      "0"
-     ],
-     "current": [
-      "1.61",
-      "0",
-      "2.2",
-      "0"
-     ],
-     "company": "bet365"
-    },
     "1X2": {
      "open": [
-      "1.44",
+      "1.2",
       "0",
-      "2.62",
+      "4.33",
       "0"
      ],
      "close": [
-      "1.44",
+      "1.2",
       "0",
-      "2.62",
+      "4.33",
       "0"
      ],
      "current": [
-      "2.25",
+      "1.16",
       "0",
-      "1.57",
-      "0"
-     ],
-     "company": "bet365"
-    },
-    "OU": {
-     "open": [
-      "1.83",
-      "0",
-      "1.83",
-      "0"
-     ],
-     "close": [
-      "1.83",
-      "0",
-      "1.83",
-      "0"
-     ],
-     "current": [
-      "1.83",
-      "0",
-      "1.83",
+      "4.5",
       "0"
      ],
      "company": "bet365"
     }
    }
+  },
+  {
+   "match_id": "j374zirlp1vhgko",
+   "league": "Nacionala Liga Women",
+   "home": "Jurmala Women",
+   "away": "Marupes Women",
+   "start": "1795258800",
+   "status": "434",
+   "set_home": 0,
+   "set_away": 2,
+   "sets": [
+    [
+     11,
+     25
+    ],
+    [
+     6,
+     18
+    ]
+   ],
+   "pt_home": 17,
+   "pt_away": 43,
+   "odds": {}
+  },
+  {
+   "match_id": "6975ridjw0xfgk2",
+   "league": "Nacionala Liga",
+   "home": "VK Jelgava",
+   "away": "Liepaja",
+   "start": "1795258800",
+   "status": "434",
+   "set_home": 1,
+   "set_away": 1,
+   "sets": [
+    [
+     23,
+     25
+    ],
+    [
+     4,
+     3
+    ]
+   ],
+   "pt_home": 27,
+   "pt_away": 28,
+   "odds": {}
+  },
+  {
+   "match_id": "edq0yie53eefe7x",
+   "league": "1. Ligi Women",
+   "home": "Vakifbank 2 Women",
+   "away": "Eczacibasi 2 Women",
+   "start": "1795260600",
+   "status": "432",
+   "set_home": 1,
+   "set_away": 0,
+   "sets": [
+    [
+     7,
+     4
+    ]
+   ],
+   "pt_home": 7,
+   "pt_away": 4,
+   "odds": {}
   }
  ]
 }
